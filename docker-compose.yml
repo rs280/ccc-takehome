@@ -1,0 +1,30 @@
+# MCP server over Streamable HTTP + the agent connecting to it over the network.
+# The LLM runs on the host (Ollama) by default; override LLM_* for a hosted provider.
+#   docker compose up -d mcp-server
+#   docker compose run --rm agent investigate
+services:
+  mcp-server:
+    build: .
+    command: ["mcp-server", "--transport", "http", "--host", "0.0.0.0", "--port", "8000"]
+    environment:
+      SCENARIO: ${SCENARIO:-checkout_bad_config}
+    ports: ["8000:8000"]
+    healthcheck:
+      test: ["CMD", "python", "-c", "import socket; socket.create_connection(('localhost', 8000), 2)"]
+      interval: 5s
+      retries: 10
+
+  agent:
+    build: .
+    depends_on:
+      mcp-server: {condition: service_healthy}
+    environment:
+      MCP_URL: http://mcp-server:8000/mcp
+      LLM_BASE_URL: ${LLM_BASE_URL:-http://host.docker.internal:11434/v1}
+      LLM_MODEL: ${LLM_MODEL:-incident-qwen3}
+      LLM_API_KEY: ${LLM_API_KEY:-ollama}
+      LLM_REASONING_EFFORT: ${LLM_REASONING_EFFORT-none}
+      LLM_MAX_CONCURRENCY: ${LLM_MAX_CONCURRENCY:-1}
+    extra_hosts: ["host.docker.internal:host-gateway"]
+    volumes: ["./runs:/app/runs"]
+    profiles: ["cli"]

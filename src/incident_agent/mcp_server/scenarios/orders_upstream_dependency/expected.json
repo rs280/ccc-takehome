@@ -1,0 +1,20 @@
+{
+  "category": "dependency_failure",
+  "acceptable_categories": [
+    "dependency_failure"
+  ],
+  "caused_by_latest_deploy": false,
+  "key_facts": [
+    "inventory-service",
+    "pool"
+  ],
+  "expected_tools": [
+    "search_logs|get_error_summary",
+    "get_recent_deployments",
+    "get_metrics"
+  ],
+  "next_step_keywords": [
+    "inventory"
+  ],
+  "reference_answer": "inventory-service exhausted its database connection pool from 09:18, so orders-api calls to it time out (5000ms) and return 500 from 09:20. The orders-api v1.9.3 deploy at 10:10 came after the errors began and only bumped a logging library; do not roll back. Escalate to team-fulfilment for inventory-service, add a circuit breaker/fallback in orders-api."
+}

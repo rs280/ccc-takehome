@@ -1,0 +1,25 @@
+{
+  "category": "resource_exhaustion",
+  "acceptable_categories": [
+    "resource_exhaustion",
+    "bad_config"
+  ],
+  "caused_by_latest_deploy": true,
+  "key_facts": [
+    "512Mi",
+    "OOMKilled"
+  ],
+  "expected_tools": [
+    "get_recent_deployments",
+    "get_deployment_diff",
+    "get_metrics"
+  ],
+  "next_step_keywords": [
+    "memory",
+    "1024",
+    "roll back",
+    "rollback",
+    "revert"
+  ],
+  "reference_answer": "v0.14.0 (dep-7711, 09:50) lowered the memory limit from 1024Mi to 512Mi while raising BATCH_SIZE from 2000 to 5000; the worker is OOMKilled (exit 137) and crash-loops. Restore the 1024Mi limit (or roll back / reduce batch size), then right-size from observed peak."
+}

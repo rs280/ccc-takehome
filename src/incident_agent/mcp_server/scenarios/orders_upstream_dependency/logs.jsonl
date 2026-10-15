@@ -1,0 +1,465 @@
+{"ts": "2026-10-14T08:00:00Z", "service": "orders-api", "level": "INFO", "message": "GET /orders 200 in 78ms"}
+{"ts": "2026-10-14T08:00:00Z", "service": "orders-api", "level": "WARN", "message": "Slow request GET /healthz took 13478ms"}
+{"ts": "2026-10-14T08:00:00Z", "service": "inventory-service", "level": "INFO", "message": "GET /stock 200 in 46ms"}
+{"ts": "2026-10-14T08:00:00Z", "service": "inventory-service", "level": "WARN", "message": "Slow request GET /healthz took 18832ms"}
+{"ts": "2026-10-14T08:03:34Z", "service": "orders-api", "level": "INFO", "message": "GET /orders 200 in 58ms"}
+{"ts": "2026-10-14T08:05:01Z", "service": "inventory-service", "level": "INFO", "message": "GET /stock 200 in 63ms"}
+{"ts": "2026-10-14T08:08:51Z", "service": "orders-api", "level": "INFO", "message": "GET /orders 200 in 133ms"}
+{"ts": "2026-10-14T08:09:49Z", "service": "inventory-service", "level": "INFO", "message": "GET /stock 200 in 172ms"}
+{"ts": "2026-10-14T08:13:11Z", "service": "orders-api", "level": "INFO", "message": "GET /orders 200 in 94ms"}
+{"ts": "2026-10-14T08:13:17Z", "service": "inventory-service", "level": "INFO", "message": "GET /stock 200 in 131ms"}
+{"ts": "2026-10-14T08:15:02Z", "service": "orders-api", "level": "WARN", "message": "Retrying metrics push to collector (attempt 1)"}
+{"ts": "2026-10-14T08:15:20Z", "service": "orders-api", "level": "INFO", "message": "GET /orders 200 in 147ms"}
+{"ts": "2026-10-14T08:17:37Z", "service": "orders-api", "level": "INFO", "message": "GET /orders 200 in 148ms"}
+{"ts": "2026-10-14T08:18:22Z", "service": "inventory-service", "level": "INFO", "message": "GET /stock 200 in 178ms"}
+{"ts": "2026-10-14T08:19:51Z", "service": "orders-api", "level": "INFO", "message": "GET /orders 200 in 97ms"}
+{"ts": "2026-10-14T08:23:29Z", "service": "inventory-service", "level": "INFO", "message": "GET /stock 200 in 97ms"}
+{"ts": "2026-10-14T08:24:23Z", "service": "orders-api", "level": "INFO", "message": "GET /orders 200 in 141ms"}
+{"ts": "2026-10-14T08:26:34Z", "service": "orders-api", "level": "INFO", "message": "GET /orders 200 in 51ms"}
+{"ts": "2026-10-14T08:27:56Z", "service": "inventory-service", "level": "INFO", "message": "GET /stock 200 in 101ms"}
+{"ts": "2026-10-14T08:29:17Z", "service": "orders-api", "level": "WARN", "message": "Slow request GET /healthz took 14407ms"}
+{"ts": "2026-10-14T08:30:48Z", "service": "orders-api", "level": "INFO", "message": "GET /orders 200 in 114ms"}
+{"ts": "2026-10-14T08:33:12Z", "service": "inventory-service", "level": "INFO", "message": "GET /stock 200 in 91ms"}
+{"ts": "2026-10-14T08:34:29Z", "service": "orders-api", "level": "INFO", "message": "GET /orders 200 in 70ms"}
+{"ts": "2026-10-14T08:36:02Z", "service": "inventory-service", "level": "WARN", "message": "Retrying metrics push to collector (attempt 1)"}
+{"ts": "2026-10-14T08:37:17Z", "service": "inventory-service", "level": "INFO", "message": "GET /stock 200 in 47ms"}
+{"ts": "2026-10-14T08:38:46Z", "service": "orders-api", "level": "INFO", "message": "GET /orders 200 in 66ms"}
+{"ts": "2026-10-14T08:43:05Z", "service": "orders-api", "level": "INFO", "message": "GET /orders 200 in 135ms"}
+{"ts": "2026-10-14T08:43:14Z", "service": "inventory-service", "level": "INFO", "message": "GET /stock 200 in 160ms"}
+{"ts": "2026-10-14T08:45:29Z", "service": "orders-api", "level": "INFO", "message": "GET /orders 200 in 55ms"}
+{"ts": "2026-10-14T08:45:30Z", "service": "orders-api", "level": "WARN", "message": "Retrying metrics push to collector (attempt 1)"}
+{"ts": "2026-10-14T08:46:16Z", "service": "inventory-service", "level": "INFO", "message": "GET /stock 200 in 154ms"}
+{"ts": "2026-10-14T08:49:57Z", "service": "orders-api", "level": "INFO", "message": "GET /orders 200 in 176ms"}
+{"ts": "2026-10-14T08:51:30Z", "service": "inventory-service", "level": "INFO", "message": "GET /stock 200 in 133ms"}
+{"ts": "2026-10-14T08:53:40Z", "service": "orders-api", "level": "INFO", "message": "GET /orders 200 in 159ms"}
+{"ts": "2026-10-14T08:53:50Z", "service": "inventory-service", "level": "INFO", "message": "GET /stock 200 in 98ms"}
+{"ts": "2026-10-14T08:57:43Z", "service": "inventory-service", "level": "INFO", "message": "GET /stock 200 in 92ms"}
+{"ts": "2026-10-14T08:58:00Z", "service": "orders-api", "level": "INFO", "message": "GET /orders 200 in 132ms"}
+{"ts": "2026-10-14T09:01:12Z", "service": "orders-api", "level": "INFO", "message": "GET /orders 200 in 102ms"}
+{"ts": "2026-10-14T09:01:38Z", "service": "inventory-service", "level": "INFO", "message": "GET /stock 200 in 162ms"}
+{"ts": "2026-10-14T09:03:32Z", "service": "orders-api", "level": "INFO", "message": "GET /orders 200 in 174ms"}
+{"ts": "2026-10-14T09:07:17Z", "service": "inventory-service", "level": "INFO", "message": "GET /stock 200 in 61ms"}
+{"ts": "2026-10-14T09:07:31Z", "service": "orders-api", "level": "INFO", "message": "GET /orders 200 in 154ms"}
+{"ts": "2026-10-14T09:10:40Z", "service": "orders-api", "level": "INFO", "message": "GET /orders 200 in 70ms"}
+{"ts": "2026-10-14T09:11:36Z", "service": "inventory-service", "level": "WARN", "message": "Slow request GET /healthz took 14319ms"}
+{"ts": "2026-10-14T09:12:37Z", "service": "inventory-service", "level": "INFO", "message": "GET /stock 200 in 139ms"}
+{"ts": "2026-10-14T09:13:03Z", "service": "orders-api", "level": "WARN", "message": "Slow request GET /healthz took 18768ms"}
+{"ts": "2026-10-14T09:14:43Z", "service": "orders-api", "level": "INFO", "message": "GET /orders 200 in 127ms"}
+{"ts": "2026-10-14T09:17:19Z", "service": "orders-api", "level": "INFO", "message": "GET /orders 200 in 147ms"}
+{"ts": "2026-10-14T09:17:45Z", "service": "inventory-service", "level": "INFO", "message": "GET /stock 200 in 162ms"}
+{"ts": "2026-10-14T09:18:00Z", "service": "inventory-service", "level": "ERROR", "message": "Database connection pool exhausted (max=20, waiting=57); request aborted after 5000ms"}
+{"ts": "2026-10-14T09:18:32Z", "service": "inventory-service", "level": "ERROR", "message": "Database connection pool exhausted (max=20, waiting=57); request aborted after 5000ms"}
+{"ts": "2026-10-14T09:19:29Z", "service": "orders-api", "level": "INFO", "message": "GET /orders 200 in 120ms"}
+{"ts": "2026-10-14T09:19:34Z", "service": "inventory-service", "level": "ERROR", "message": "Database connection pool exhausted (max=20, waiting=57); request aborted after 5000ms"}
+{"ts": "2026-10-14T09:20:00Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/9592 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T09:20:04Z", "service": "inventory-service", "level": "ERROR", "message": "Database connection pool exhausted (max=20, waiting=57); request aborted after 5000ms"}
+{"ts": "2026-10-14T09:20:26Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/4663 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T09:20:41Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/5940 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T09:20:45Z", "service": "inventory-service", "level": "ERROR", "message": "Database connection pool exhausted (max=20, waiting=57); request aborted after 5000ms"}
+{"ts": "2026-10-14T09:21:05Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/6183 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T09:21:23Z", "service": "inventory-service", "level": "ERROR", "message": "Database connection pool exhausted (max=20, waiting=57); request aborted after 5000ms"}
+{"ts": "2026-10-14T09:21:34Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/4846 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T09:21:47Z", "service": "inventory-service", "level": "ERROR", "message": "Database connection pool exhausted (max=20, waiting=57); request aborted after 5000ms"}
+{"ts": "2026-10-14T09:21:56Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/7747 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T09:22:13Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/4180 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T09:22:41Z", "service": "inventory-service", "level": "ERROR", "message": "Database connection pool exhausted (max=20, waiting=57); request aborted after 5000ms"}
+{"ts": "2026-10-14T09:22:50Z", "service": "orders-api", "level": "INFO", "message": "GET /orders 200 in 167ms"}
+{"ts": "2026-10-14T09:22:55Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/7881 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T09:23:17Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/7952 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T09:23:18Z", "service": "inventory-service", "level": "INFO", "message": "GET /stock 200 in 125ms"}
+{"ts": "2026-10-14T09:23:26Z", "service": "inventory-service", "level": "ERROR", "message": "Database connection pool exhausted (max=20, waiting=57); request aborted after 5000ms"}
+{"ts": "2026-10-14T09:23:39Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/1558 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T09:24:16Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/6936 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T09:24:32Z", "service": "inventory-service", "level": "ERROR", "message": "Database connection pool exhausted (max=20, waiting=57); request aborted after 5000ms"}
+{"ts": "2026-10-14T09:24:37Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/5785 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T09:24:54Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/9121 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T09:25:18Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/4177 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T09:25:38Z", "service": "inventory-service", "level": "ERROR", "message": "Database connection pool exhausted (max=20, waiting=57); request aborted after 5000ms"}
+{"ts": "2026-10-14T09:25:39Z", "service": "inventory-service", "level": "INFO", "message": "GET /stock 200 in 158ms"}
+{"ts": "2026-10-14T09:25:47Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/5342 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T09:26:05Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/9122 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T09:26:13Z", "service": "inventory-service", "level": "ERROR", "message": "Database connection pool exhausted (max=20, waiting=57); request aborted after 5000ms"}
+{"ts": "2026-10-14T09:26:47Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/8947 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T09:26:48Z", "service": "inventory-service", "level": "ERROR", "message": "Database connection pool exhausted (max=20, waiting=57); request aborted after 5000ms"}
+{"ts": "2026-10-14T09:27:09Z", "service": "orders-api", "level": "INFO", "message": "GET /orders 200 in 57ms"}
+{"ts": "2026-10-14T09:27:30Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/1924 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T09:27:32Z", "service": "inventory-service", "level": "WARN", "message": "Retrying metrics push to collector (attempt 1)"}
+{"ts": "2026-10-14T09:27:48Z", "service": "inventory-service", "level": "ERROR", "message": "Database connection pool exhausted (max=20, waiting=57); request aborted after 5000ms"}
+{"ts": "2026-10-14T09:28:12Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/1890 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T09:28:18Z", "service": "inventory-service", "level": "ERROR", "message": "Database connection pool exhausted (max=20, waiting=57); request aborted after 5000ms"}
+{"ts": "2026-10-14T09:28:26Z", "service": "orders-api", "level": "WARN", "message": "Retrying metrics push to collector (attempt 1)"}
+{"ts": "2026-10-14T09:28:28Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/3325 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T09:28:44Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/1985 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T09:29:11Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/6147 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T09:29:12Z", "service": "inventory-service", "level": "ERROR", "message": "Database connection pool exhausted (max=20, waiting=57); request aborted after 5000ms"}
+{"ts": "2026-10-14T09:29:15Z", "service": "inventory-service", "level": "INFO", "message": "GET /stock 200 in 80ms"}
+{"ts": "2026-10-14T09:29:37Z", "service": "inventory-service", "level": "ERROR", "message": "Database connection pool exhausted (max=20, waiting=57); request aborted after 5000ms"}
+{"ts": "2026-10-14T09:29:56Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/3713 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T09:30:17Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/9598 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T09:30:33Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/7203 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T09:30:39Z", "service": "inventory-service", "level": "ERROR", "message": "Database connection pool exhausted (max=20, waiting=57); request aborted after 5000ms"}
+{"ts": "2026-10-14T09:31:17Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/8248 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T09:31:30Z", "service": "inventory-service", "level": "ERROR", "message": "Database connection pool exhausted (max=20, waiting=57); request aborted after 5000ms"}
+{"ts": "2026-10-14T09:31:36Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/2281 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T09:31:53Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/7884 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T09:31:56Z", "service": "inventory-service", "level": "INFO", "message": "GET /stock 200 in 47ms"}
+{"ts": "2026-10-14T09:32:20Z", "service": "inventory-service", "level": "ERROR", "message": "Database connection pool exhausted (max=20, waiting=57); request aborted after 5000ms"}
+{"ts": "2026-10-14T09:32:25Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/4398 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T09:32:31Z", "service": "orders-api", "level": "INFO", "message": "GET /orders 200 in 161ms"}
+{"ts": "2026-10-14T09:32:51Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/6057 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T09:32:55Z", "service": "inventory-service", "level": "ERROR", "message": "Database connection pool exhausted (max=20, waiting=57); request aborted after 5000ms"}
+{"ts": "2026-10-14T09:33:08Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/8757 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T09:33:18Z", "service": "inventory-service", "level": "ERROR", "message": "Database connection pool exhausted (max=20, waiting=57); request aborted after 5000ms"}
+{"ts": "2026-10-14T09:33:34Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/8312 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T09:33:59Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/8774 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T09:34:08Z", "service": "inventory-service", "level": "ERROR", "message": "Database connection pool exhausted (max=20, waiting=57); request aborted after 5000ms"}
+{"ts": "2026-10-14T09:34:32Z", "service": "inventory-service", "level": "INFO", "message": "GET /stock 200 in 77ms"}
+{"ts": "2026-10-14T09:34:33Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/5063 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T09:34:49Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/1571 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T09:35:03Z", "service": "inventory-service", "level": "ERROR", "message": "Database connection pool exhausted (max=20, waiting=57); request aborted after 5000ms"}
+{"ts": "2026-10-14T09:35:06Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/2015 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T09:35:27Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/2029 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T09:35:37Z", "service": "inventory-service", "level": "ERROR", "message": "Database connection pool exhausted (max=20, waiting=57); request aborted after 5000ms"}
+{"ts": "2026-10-14T09:35:53Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/6488 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T09:36:16Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/6185 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T09:36:40Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/2070 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T09:36:41Z", "service": "inventory-service", "level": "ERROR", "message": "Database connection pool exhausted (max=20, waiting=57); request aborted after 5000ms"}
+{"ts": "2026-10-14T09:37:18Z", "service": "orders-api", "level": "INFO", "message": "GET /orders 200 in 55ms"}
+{"ts": "2026-10-14T09:37:19Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/2757 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T09:37:38Z", "service": "inventory-service", "level": "ERROR", "message": "Database connection pool exhausted (max=20, waiting=57); request aborted after 5000ms"}
+{"ts": "2026-10-14T09:37:56Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/8630 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T09:38:23Z", "service": "inventory-service", "level": "ERROR", "message": "Database connection pool exhausted (max=20, waiting=57); request aborted after 5000ms"}
+{"ts": "2026-10-14T09:38:35Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/8044 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T09:38:54Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/9135 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T09:38:59Z", "service": "inventory-service", "level": "INFO", "message": "GET /stock 200 in 129ms"}
+{"ts": "2026-10-14T09:39:01Z", "service": "inventory-service", "level": "ERROR", "message": "Database connection pool exhausted (max=20, waiting=57); request aborted after 5000ms"}
+{"ts": "2026-10-14T09:39:09Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/5969 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T09:39:25Z", "service": "inventory-service", "level": "ERROR", "message": "Database connection pool exhausted (max=20, waiting=57); request aborted after 5000ms"}
+{"ts": "2026-10-14T09:39:42Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/6370 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T09:40:11Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/2294 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T09:40:13Z", "service": "inventory-service", "level": "ERROR", "message": "Database connection pool exhausted (max=20, waiting=57); request aborted after 5000ms"}
+{"ts": "2026-10-14T09:40:32Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/3620 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T09:40:57Z", "service": "inventory-service", "level": "ERROR", "message": "Database connection pool exhausted (max=20, waiting=57); request aborted after 5000ms"}
+{"ts": "2026-10-14T09:40:59Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/1554 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T09:41:31Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/6337 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T09:41:36Z", "service": "inventory-service", "level": "INFO", "message": "GET /stock 200 in 73ms"}
+{"ts": "2026-10-14T09:41:49Z", "service": "inventory-service", "level": "ERROR", "message": "Database connection pool exhausted (max=20, waiting=57); request aborted after 5000ms"}
+{"ts": "2026-10-14T09:42:14Z", "service": "orders-api", "level": "INFO", "message": "GET /orders 200 in 154ms"}
+{"ts": "2026-10-14T09:42:15Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/2723 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T09:42:36Z", "service": "inventory-service", "level": "ERROR", "message": "Database connection pool exhausted (max=20, waiting=57); request aborted after 5000ms"}
+{"ts": "2026-10-14T09:42:38Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/2377 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T09:42:56Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/9167 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T09:43:12Z", "service": "inventory-service", "level": "ERROR", "message": "Database connection pool exhausted (max=20, waiting=57); request aborted after 5000ms"}
+{"ts": "2026-10-14T09:43:16Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/3177 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T09:43:42Z", "service": "inventory-service", "level": "INFO", "message": "GET /stock 200 in 174ms"}
+{"ts": "2026-10-14T09:43:45Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/4849 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T09:43:50Z", "service": "inventory-service", "level": "ERROR", "message": "Database connection pool exhausted (max=20, waiting=57); request aborted after 5000ms"}
+{"ts": "2026-10-14T09:44:25Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/2985 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T09:44:49Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/5385 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T09:44:57Z", "service": "inventory-service", "level": "ERROR", "message": "Database connection pool exhausted (max=20, waiting=57); request aborted after 5000ms"}
+{"ts": "2026-10-14T09:45:12Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/5265 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T09:45:20Z", "service": "inventory-service", "level": "ERROR", "message": "Database connection pool exhausted (max=20, waiting=57); request aborted after 5000ms"}
+{"ts": "2026-10-14T09:45:22Z", "service": "orders-api", "level": "INFO", "message": "GET /orders 200 in 128ms"}
+{"ts": "2026-10-14T09:45:40Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/4043 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T09:45:50Z", "service": "inventory-service", "level": "ERROR", "message": "Database connection pool exhausted (max=20, waiting=57); request aborted after 5000ms"}
+{"ts": "2026-10-14T09:46:02Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/5609 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T09:46:27Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/7489 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T09:46:52Z", "service": "inventory-service", "level": "ERROR", "message": "Database connection pool exhausted (max=20, waiting=57); request aborted after 5000ms"}
+{"ts": "2026-10-14T09:47:12Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/9312 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T09:47:27Z", "service": "orders-api", "level": "INFO", "message": "GET /orders 200 in 130ms"}
+{"ts": "2026-10-14T09:47:34Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/2647 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T09:47:45Z", "service": "inventory-service", "level": "ERROR", "message": "Database connection pool exhausted (max=20, waiting=57); request aborted after 5000ms"}
+{"ts": "2026-10-14T09:48:16Z", "service": "inventory-service", "level": "ERROR", "message": "Database connection pool exhausted (max=20, waiting=57); request aborted after 5000ms"}
+{"ts": "2026-10-14T09:48:18Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/2676 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T09:48:39Z", "service": "inventory-service", "level": "ERROR", "message": "Database connection pool exhausted (max=20, waiting=57); request aborted after 5000ms"}
+{"ts": "2026-10-14T09:48:41Z", "service": "inventory-service", "level": "INFO", "message": "GET /stock 200 in 151ms"}
+{"ts": "2026-10-14T09:48:47Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/4786 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T09:49:30Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/1661 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T09:49:45Z", "service": "inventory-service", "level": "ERROR", "message": "Database connection pool exhausted (max=20, waiting=57); request aborted after 5000ms"}
+{"ts": "2026-10-14T09:49:52Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/1825 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T09:50:08Z", "service": "orders-api", "level": "INFO", "message": "GET /orders 200 in 166ms"}
+{"ts": "2026-10-14T09:50:19Z", "service": "inventory-service", "level": "ERROR", "message": "Database connection pool exhausted (max=20, waiting=57); request aborted after 5000ms"}
+{"ts": "2026-10-14T09:50:25Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/4181 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T09:50:51Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/3912 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T09:50:57Z", "service": "inventory-service", "level": "ERROR", "message": "Database connection pool exhausted (max=20, waiting=57); request aborted after 5000ms"}
+{"ts": "2026-10-14T09:51:05Z", "service": "inventory-service", "level": "WARN", "message": "Slow request GET /healthz took 12188ms"}
+{"ts": "2026-10-14T09:51:24Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/1103 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T09:51:37Z", "service": "inventory-service", "level": "ERROR", "message": "Database connection pool exhausted (max=20, waiting=57); request aborted after 5000ms"}
+{"ts": "2026-10-14T09:51:58Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/6729 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T09:52:14Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/6570 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T09:52:22Z", "service": "orders-api", "level": "INFO", "message": "GET /orders 200 in 73ms"}
+{"ts": "2026-10-14T09:52:22Z", "service": "inventory-service", "level": "ERROR", "message": "Database connection pool exhausted (max=20, waiting=57); request aborted after 5000ms"}
+{"ts": "2026-10-14T09:52:31Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/5176 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T09:52:57Z", "service": "orders-api", "level": "WARN", "message": "Slow request GET /healthz took 16109ms"}
+{"ts": "2026-10-14T09:53:04Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/4333 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T09:53:07Z", "service": "inventory-service", "level": "ERROR", "message": "Database connection pool exhausted (max=20, waiting=57); request aborted after 5000ms"}
+{"ts": "2026-10-14T09:53:42Z", "service": "inventory-service", "level": "ERROR", "message": "Database connection pool exhausted (max=20, waiting=57); request aborted after 5000ms"}
+{"ts": "2026-10-14T09:53:43Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/7700 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T09:54:04Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/6115 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T09:54:22Z", "service": "inventory-service", "level": "ERROR", "message": "Database connection pool exhausted (max=20, waiting=57); request aborted after 5000ms"}
+{"ts": "2026-10-14T09:54:25Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/9120 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T09:54:38Z", "service": "inventory-service", "level": "INFO", "message": "GET /stock 200 in 94ms"}
+{"ts": "2026-10-14T09:54:46Z", "service": "inventory-service", "level": "ERROR", "message": "Database connection pool exhausted (max=20, waiting=57); request aborted after 5000ms"}
+{"ts": "2026-10-14T09:54:54Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/7687 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T09:55:12Z", "service": "inventory-service", "level": "ERROR", "message": "Database connection pool exhausted (max=20, waiting=57); request aborted after 5000ms"}
+{"ts": "2026-10-14T09:55:33Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/3532 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T09:55:51Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/3681 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T09:56:04Z", "service": "inventory-service", "level": "ERROR", "message": "Database connection pool exhausted (max=20, waiting=57); request aborted after 5000ms"}
+{"ts": "2026-10-14T09:56:27Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/7713 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T09:56:45Z", "service": "inventory-service", "level": "INFO", "message": "GET /stock 200 in 114ms"}
+{"ts": "2026-10-14T09:56:59Z", "service": "inventory-service", "level": "ERROR", "message": "Database connection pool exhausted (max=20, waiting=57); request aborted after 5000ms"}
+{"ts": "2026-10-14T09:57:02Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/7845 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T09:57:19Z", "service": "orders-api", "level": "INFO", "message": "GET /orders 200 in 140ms"}
+{"ts": "2026-10-14T09:57:26Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/6852 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T09:57:34Z", "service": "inventory-service", "level": "ERROR", "message": "Database connection pool exhausted (max=20, waiting=57); request aborted after 5000ms"}
+{"ts": "2026-10-14T09:57:54Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/6960 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T09:58:21Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/7635 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T09:58:34Z", "service": "inventory-service", "level": "ERROR", "message": "Database connection pool exhausted (max=20, waiting=57); request aborted after 5000ms"}
+{"ts": "2026-10-14T09:59:04Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/8113 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T09:59:29Z", "service": "inventory-service", "level": "ERROR", "message": "Database connection pool exhausted (max=20, waiting=57); request aborted after 5000ms"}
+{"ts": "2026-10-14T09:59:32Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/2482 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T10:00:04Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/6975 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T10:00:33Z", "service": "inventory-service", "level": "ERROR", "message": "Database connection pool exhausted (max=20, waiting=57); request aborted after 5000ms"}
+{"ts": "2026-10-14T10:00:42Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/3129 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T10:00:45Z", "service": "inventory-service", "level": "INFO", "message": "GET /stock 200 in 106ms"}
+{"ts": "2026-10-14T10:00:59Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/3334 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T10:01:16Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/7075 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T10:01:32Z", "service": "inventory-service", "level": "ERROR", "message": "Database connection pool exhausted (max=20, waiting=57); request aborted after 5000ms"}
+{"ts": "2026-10-14T10:01:36Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/6700 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T10:01:56Z", "service": "inventory-service", "level": "ERROR", "message": "Database connection pool exhausted (max=20, waiting=57); request aborted after 5000ms"}
+{"ts": "2026-10-14T10:01:56Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/3814 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T10:02:15Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/9036 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T10:02:39Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/1712 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T10:02:59Z", "service": "orders-api", "level": "INFO", "message": "GET /orders 200 in 60ms"}
+{"ts": "2026-10-14T10:03:02Z", "service": "inventory-service", "level": "ERROR", "message": "Database connection pool exhausted (max=20, waiting=57); request aborted after 5000ms"}
+{"ts": "2026-10-14T10:03:03Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/7355 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T10:03:45Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/3625 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T10:03:50Z", "service": "inventory-service", "level": "ERROR", "message": "Database connection pool exhausted (max=20, waiting=57); request aborted after 5000ms"}
+{"ts": "2026-10-14T10:04:19Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/4213 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T10:04:39Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/4573 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T10:04:43Z", "service": "inventory-service", "level": "ERROR", "message": "Database connection pool exhausted (max=20, waiting=57); request aborted after 5000ms"}
+{"ts": "2026-10-14T10:04:56Z", "service": "inventory-service", "level": "INFO", "message": "GET /stock 200 in 55ms"}
+{"ts": "2026-10-14T10:05:05Z", "service": "inventory-service", "level": "ERROR", "message": "Database connection pool exhausted (max=20, waiting=57); request aborted after 5000ms"}
+{"ts": "2026-10-14T10:05:06Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/9485 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T10:05:33Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/3016 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T10:05:39Z", "service": "orders-api", "level": "INFO", "message": "GET /orders 200 in 180ms"}
+{"ts": "2026-10-14T10:05:55Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/4155 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T10:06:08Z", "service": "inventory-service", "level": "ERROR", "message": "Database connection pool exhausted (max=20, waiting=57); request aborted after 5000ms"}
+{"ts": "2026-10-14T10:06:34Z", "service": "inventory-service", "level": "ERROR", "message": "Database connection pool exhausted (max=20, waiting=57); request aborted after 5000ms"}
+{"ts": "2026-10-14T10:06:37Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/1624 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T10:06:55Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/8466 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T10:07:33Z", "service": "inventory-service", "level": "ERROR", "message": "Database connection pool exhausted (max=20, waiting=57); request aborted after 5000ms"}
+{"ts": "2026-10-14T10:07:36Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/6017 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T10:08:00Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/5083 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T10:08:27Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/7020 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T10:08:28Z", "service": "inventory-service", "level": "ERROR", "message": "Database connection pool exhausted (max=20, waiting=57); request aborted after 5000ms"}
+{"ts": "2026-10-14T10:08:46Z", "service": "orders-api", "level": "INFO", "message": "GET /orders 200 in 150ms"}
+{"ts": "2026-10-14T10:08:57Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/3928 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T10:09:03Z", "service": "orders-api", "level": "WARN", "message": "Retrying metrics push to collector (attempt 1)"}
+{"ts": "2026-10-14T10:09:12Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/9019 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T10:09:24Z", "service": "inventory-service", "level": "ERROR", "message": "Database connection pool exhausted (max=20, waiting=57); request aborted after 5000ms"}
+{"ts": "2026-10-14T10:09:34Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/8508 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T10:10:00Z", "service": "orders-api", "level": "INFO", "message": "Starting orders-api v1.9.3 (pid 1)"}
+{"ts": "2026-10-14T10:10:13Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/7559 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T10:10:24Z", "service": "inventory-service", "level": "ERROR", "message": "Database connection pool exhausted (max=20, waiting=57); request aborted after 5000ms"}
+{"ts": "2026-10-14T10:10:30Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/6874 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T10:10:34Z", "service": "inventory-service", "level": "INFO", "message": "GET /stock 200 in 157ms"}
+{"ts": "2026-10-14T10:10:56Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/8241 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T10:11:26Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/1667 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T10:11:28Z", "service": "inventory-service", "level": "ERROR", "message": "Database connection pool exhausted (max=20, waiting=57); request aborted after 5000ms"}
+{"ts": "2026-10-14T10:12:01Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/2347 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T10:12:18Z", "service": "inventory-service", "level": "ERROR", "message": "Database connection pool exhausted (max=20, waiting=57); request aborted after 5000ms"}
+{"ts": "2026-10-14T10:12:39Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/9380 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T10:12:56Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/9256 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T10:13:08Z", "service": "inventory-service", "level": "ERROR", "message": "Database connection pool exhausted (max=20, waiting=57); request aborted after 5000ms"}
+{"ts": "2026-10-14T10:13:30Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/3231 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T10:13:59Z", "service": "inventory-service", "level": "ERROR", "message": "Database connection pool exhausted (max=20, waiting=57); request aborted after 5000ms"}
+{"ts": "2026-10-14T10:14:11Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/2795 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T10:14:13Z", "service": "orders-api", "level": "INFO", "message": "GET /orders 200 in 146ms"}
+{"ts": "2026-10-14T10:14:17Z", "service": "inventory-service", "level": "WARN", "message": "Retrying metrics push to collector (attempt 1)"}
+{"ts": "2026-10-14T10:14:22Z", "service": "inventory-service", "level": "ERROR", "message": "Database connection pool exhausted (max=20, waiting=57); request aborted after 5000ms"}
+{"ts": "2026-10-14T10:14:30Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/9058 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T10:14:57Z", "service": "inventory-service", "level": "ERROR", "message": "Database connection pool exhausted (max=20, waiting=57); request aborted after 5000ms"}
+{"ts": "2026-10-14T10:15:13Z", "service": "inventory-service", "level": "INFO", "message": "GET /stock 200 in 147ms"}
+{"ts": "2026-10-14T10:15:13Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/3705 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T10:15:30Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/6749 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T10:15:50Z", "service": "inventory-service", "level": "ERROR", "message": "Database connection pool exhausted (max=20, waiting=57); request aborted after 5000ms"}
+{"ts": "2026-10-14T10:15:50Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/5505 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T10:16:10Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/9228 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T10:16:25Z", "service": "inventory-service", "level": "ERROR", "message": "Database connection pool exhausted (max=20, waiting=57); request aborted after 5000ms"}
+{"ts": "2026-10-14T10:16:31Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/5306 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T10:16:53Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/7099 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T10:17:14Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/7610 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T10:17:22Z", "service": "inventory-service", "level": "ERROR", "message": "Database connection pool exhausted (max=20, waiting=57); request aborted after 5000ms"}
+{"ts": "2026-10-14T10:17:48Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/5557 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T10:17:59Z", "service": "inventory-service", "level": "ERROR", "message": "Database connection pool exhausted (max=20, waiting=57); request aborted after 5000ms"}
+{"ts": "2026-10-14T10:18:22Z", "service": "inventory-service", "level": "ERROR", "message": "Database connection pool exhausted (max=20, waiting=57); request aborted after 5000ms"}
+{"ts": "2026-10-14T10:18:30Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/3764 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T10:18:48Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/9695 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T10:19:22Z", "service": "inventory-service", "level": "ERROR", "message": "Database connection pool exhausted (max=20, waiting=57); request aborted after 5000ms"}
+{"ts": "2026-10-14T10:19:22Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/6894 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T10:19:54Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/2713 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T10:20:01Z", "service": "inventory-service", "level": "ERROR", "message": "Database connection pool exhausted (max=20, waiting=57); request aborted after 5000ms"}
+{"ts": "2026-10-14T10:20:10Z", "service": "orders-api", "level": "INFO", "message": "GET /orders 200 in 99ms"}
+{"ts": "2026-10-14T10:20:32Z", "service": "inventory-service", "level": "INFO", "message": "GET /stock 200 in 73ms"}
+{"ts": "2026-10-14T10:20:39Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/7459 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T10:20:50Z", "service": "inventory-service", "level": "ERROR", "message": "Database connection pool exhausted (max=20, waiting=57); request aborted after 5000ms"}
+{"ts": "2026-10-14T10:21:02Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/7044 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T10:21:24Z", "service": "inventory-service", "level": "ERROR", "message": "Database connection pool exhausted (max=20, waiting=57); request aborted after 5000ms"}
+{"ts": "2026-10-14T10:21:28Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/2333 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T10:21:49Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/1791 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T10:22:14Z", "service": "inventory-service", "level": "ERROR", "message": "Database connection pool exhausted (max=20, waiting=57); request aborted after 5000ms"}
+{"ts": "2026-10-14T10:22:29Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/5155 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T10:22:46Z", "service": "orders-api", "level": "INFO", "message": "GET /orders 200 in 78ms"}
+{"ts": "2026-10-14T10:23:03Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/6122 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T10:23:16Z", "service": "inventory-service", "level": "ERROR", "message": "Database connection pool exhausted (max=20, waiting=57); request aborted after 5000ms"}
+{"ts": "2026-10-14T10:23:41Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/4631 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T10:24:01Z", "service": "inventory-service", "level": "ERROR", "message": "Database connection pool exhausted (max=20, waiting=57); request aborted after 5000ms"}
+{"ts": "2026-10-14T10:24:04Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/8081 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T10:24:25Z", "service": "inventory-service", "level": "ERROR", "message": "Database connection pool exhausted (max=20, waiting=57); request aborted after 5000ms"}
+{"ts": "2026-10-14T10:24:35Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/1782 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T10:24:39Z", "service": "inventory-service", "level": "INFO", "message": "GET /stock 200 in 170ms"}
+{"ts": "2026-10-14T10:25:04Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/1746 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T10:25:18Z", "service": "inventory-service", "level": "ERROR", "message": "Database connection pool exhausted (max=20, waiting=57); request aborted after 5000ms"}
+{"ts": "2026-10-14T10:25:21Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/6815 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T10:25:39Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/6851 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T10:25:42Z", "service": "orders-api", "level": "INFO", "message": "GET /orders 200 in 43ms"}
+{"ts": "2026-10-14T10:26:01Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/5934 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T10:26:13Z", "service": "inventory-service", "level": "ERROR", "message": "Database connection pool exhausted (max=20, waiting=57); request aborted after 5000ms"}
+{"ts": "2026-10-14T10:26:22Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/8780 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T10:26:41Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/4990 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T10:26:44Z", "service": "inventory-service", "level": "INFO", "message": "GET /stock 200 in 86ms"}
+{"ts": "2026-10-14T10:26:53Z", "service": "inventory-service", "level": "ERROR", "message": "Database connection pool exhausted (max=20, waiting=57); request aborted after 5000ms"}
+{"ts": "2026-10-14T10:27:10Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/2043 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T10:27:15Z", "service": "inventory-service", "level": "ERROR", "message": "Database connection pool exhausted (max=20, waiting=57); request aborted after 5000ms"}
+{"ts": "2026-10-14T10:27:43Z", "service": "inventory-service", "level": "ERROR", "message": "Database connection pool exhausted (max=20, waiting=57); request aborted after 5000ms"}
+{"ts": "2026-10-14T10:27:51Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/5419 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T10:28:30Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/1188 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T10:28:46Z", "service": "inventory-service", "level": "ERROR", "message": "Database connection pool exhausted (max=20, waiting=57); request aborted after 5000ms"}
+{"ts": "2026-10-14T10:29:04Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/6739 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T10:29:26Z", "service": "inventory-service", "level": "ERROR", "message": "Database connection pool exhausted (max=20, waiting=57); request aborted after 5000ms"}
+{"ts": "2026-10-14T10:29:38Z", "service": "orders-api", "level": "INFO", "message": "GET /orders 200 in 107ms"}
+{"ts": "2026-10-14T10:29:38Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/9480 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T10:30:00Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/1006 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T10:30:17Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/1413 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T10:30:33Z", "service": "inventory-service", "level": "ERROR", "message": "Database connection pool exhausted (max=20, waiting=57); request aborted after 5000ms"}
+{"ts": "2026-10-14T10:30:37Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/3608 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T10:31:10Z", "service": "inventory-service", "level": "INFO", "message": "GET /stock 200 in 84ms"}
+{"ts": "2026-10-14T10:31:20Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/2718 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T10:31:37Z", "service": "inventory-service", "level": "ERROR", "message": "Database connection pool exhausted (max=20, waiting=57); request aborted after 5000ms"}
+{"ts": "2026-10-14T10:31:53Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/4231 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T10:32:12Z", "service": "inventory-service", "level": "ERROR", "message": "Database connection pool exhausted (max=20, waiting=57); request aborted after 5000ms"}
+{"ts": "2026-10-14T10:32:21Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/9491 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T10:32:46Z", "service": "orders-api", "level": "INFO", "message": "GET /orders 200 in 147ms"}
+{"ts": "2026-10-14T10:32:55Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/7803 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T10:33:03Z", "service": "inventory-service", "level": "ERROR", "message": "Database connection pool exhausted (max=20, waiting=57); request aborted after 5000ms"}
+{"ts": "2026-10-14T10:33:25Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/2044 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T10:33:31Z", "service": "orders-api", "level": "WARN", "message": "Slow request GET /healthz took 13645ms"}
+{"ts": "2026-10-14T10:33:44Z", "service": "inventory-service", "level": "INFO", "message": "GET /stock 200 in 55ms"}
+{"ts": "2026-10-14T10:33:59Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/8830 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T10:34:10Z", "service": "inventory-service", "level": "ERROR", "message": "Database connection pool exhausted (max=20, waiting=57); request aborted after 5000ms"}
+{"ts": "2026-10-14T10:34:14Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/8154 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T10:34:32Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/8413 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T10:34:46Z", "service": "inventory-service", "level": "ERROR", "message": "Database connection pool exhausted (max=20, waiting=57); request aborted after 5000ms"}
+{"ts": "2026-10-14T10:34:53Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/2724 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T10:35:15Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/1635 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T10:35:40Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/5313 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T10:35:49Z", "service": "inventory-service", "level": "ERROR", "message": "Database connection pool exhausted (max=20, waiting=57); request aborted after 5000ms"}
+{"ts": "2026-10-14T10:36:03Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/8144 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T10:36:20Z", "service": "inventory-service", "level": "ERROR", "message": "Database connection pool exhausted (max=20, waiting=57); request aborted after 5000ms"}
+{"ts": "2026-10-14T10:36:48Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/5843 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T10:36:54Z", "service": "orders-api", "level": "INFO", "message": "GET /orders 200 in 72ms"}
+{"ts": "2026-10-14T10:37:02Z", "service": "inventory-service", "level": "INFO", "message": "GET /stock 200 in 175ms"}
+{"ts": "2026-10-14T10:37:05Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/9313 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T10:37:25Z", "service": "inventory-service", "level": "ERROR", "message": "Database connection pool exhausted (max=20, waiting=57); request aborted after 5000ms"}
+{"ts": "2026-10-14T10:37:25Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/4868 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T10:38:09Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/6355 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T10:38:15Z", "service": "inventory-service", "level": "ERROR", "message": "Database connection pool exhausted (max=20, waiting=57); request aborted after 5000ms"}
+{"ts": "2026-10-14T10:38:50Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/6383 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T10:38:59Z", "service": "inventory-service", "level": "ERROR", "message": "Database connection pool exhausted (max=20, waiting=57); request aborted after 5000ms"}
+{"ts": "2026-10-14T10:39:16Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/9787 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T10:39:43Z", "service": "inventory-service", "level": "ERROR", "message": "Database connection pool exhausted (max=20, waiting=57); request aborted after 5000ms"}
+{"ts": "2026-10-14T10:39:45Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/9693 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T10:40:19Z", "service": "inventory-service", "level": "ERROR", "message": "Database connection pool exhausted (max=20, waiting=57); request aborted after 5000ms"}
+{"ts": "2026-10-14T10:40:26Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/8163 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T10:40:58Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/6042 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T10:41:11Z", "service": "inventory-service", "level": "ERROR", "message": "Database connection pool exhausted (max=20, waiting=57); request aborted after 5000ms"}
+{"ts": "2026-10-14T10:41:15Z", "service": "inventory-service", "level": "INFO", "message": "GET /stock 200 in 54ms"}
+{"ts": "2026-10-14T10:41:25Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/2274 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T10:41:40Z", "service": "orders-api", "level": "INFO", "message": "GET /orders 200 in 53ms"}
+{"ts": "2026-10-14T10:41:44Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/1440 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T10:41:59Z", "service": "inventory-service", "level": "ERROR", "message": "Database connection pool exhausted (max=20, waiting=57); request aborted after 5000ms"}
+{"ts": "2026-10-14T10:42:03Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/3651 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T10:42:29Z", "service": "inventory-service", "level": "ERROR", "message": "Database connection pool exhausted (max=20, waiting=57); request aborted after 5000ms"}
+{"ts": "2026-10-14T10:42:47Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/1470 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T10:43:00Z", "service": "inventory-service", "level": "ERROR", "message": "Database connection pool exhausted (max=20, waiting=57); request aborted after 5000ms"}
+{"ts": "2026-10-14T10:43:03Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/1698 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T10:43:33Z", "service": "inventory-service", "level": "ERROR", "message": "Database connection pool exhausted (max=20, waiting=57); request aborted after 5000ms"}
+{"ts": "2026-10-14T10:43:40Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/2077 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T10:44:01Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/9747 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T10:44:15Z", "service": "inventory-service", "level": "INFO", "message": "GET /stock 200 in 50ms"}
+{"ts": "2026-10-14T10:44:15Z", "service": "inventory-service", "level": "ERROR", "message": "Database connection pool exhausted (max=20, waiting=57); request aborted after 5000ms"}
+{"ts": "2026-10-14T10:44:43Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/7288 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T10:44:48Z", "service": "inventory-service", "level": "ERROR", "message": "Database connection pool exhausted (max=20, waiting=57); request aborted after 5000ms"}
+{"ts": "2026-10-14T10:45:05Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/4328 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T10:45:21Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/2433 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T10:45:29Z", "service": "orders-api", "level": "INFO", "message": "GET /orders 200 in 141ms"}
+{"ts": "2026-10-14T10:45:36Z", "service": "inventory-service", "level": "ERROR", "message": "Database connection pool exhausted (max=20, waiting=57); request aborted after 5000ms"}
+{"ts": "2026-10-14T10:45:50Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/3173 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T10:46:15Z", "service": "inventory-service", "level": "ERROR", "message": "Database connection pool exhausted (max=20, waiting=57); request aborted after 5000ms"}
+{"ts": "2026-10-14T10:46:23Z", "service": "inventory-service", "level": "WARN", "message": "Slow request GET /healthz took 13530ms"}
+{"ts": "2026-10-14T10:46:29Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/4358 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T10:46:36Z", "service": "orders-api", "level": "WARN", "message": "Retrying metrics push to collector (attempt 1)"}
+{"ts": "2026-10-14T10:46:54Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/7942 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T10:47:09Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/5205 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T10:47:11Z", "service": "inventory-service", "level": "ERROR", "message": "Database connection pool exhausted (max=20, waiting=57); request aborted after 5000ms"}
+{"ts": "2026-10-14T10:47:26Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/7029 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T10:47:52Z", "service": "inventory-service", "level": "ERROR", "message": "Database connection pool exhausted (max=20, waiting=57); request aborted after 5000ms"}
+{"ts": "2026-10-14T10:48:04Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/9253 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T10:48:31Z", "service": "inventory-service", "level": "ERROR", "message": "Database connection pool exhausted (max=20, waiting=57); request aborted after 5000ms"}
+{"ts": "2026-10-14T10:48:44Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/1507 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T10:49:00Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/9497 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T10:49:05Z", "service": "orders-api", "level": "INFO", "message": "GET /orders 200 in 163ms"}
+{"ts": "2026-10-14T10:49:16Z", "service": "inventory-service", "level": "ERROR", "message": "Database connection pool exhausted (max=20, waiting=57); request aborted after 5000ms"}
+{"ts": "2026-10-14T10:49:20Z", "service": "inventory-service", "level": "INFO", "message": "GET /stock 200 in 155ms"}
+{"ts": "2026-10-14T10:49:26Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/1788 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T10:49:58Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/2489 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T10:50:10Z", "service": "inventory-service", "level": "ERROR", "message": "Database connection pool exhausted (max=20, waiting=57); request aborted after 5000ms"}
+{"ts": "2026-10-14T10:50:18Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/1021 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T10:50:36Z", "service": "inventory-service", "level": "ERROR", "message": "Database connection pool exhausted (max=20, waiting=57); request aborted after 5000ms"}
+{"ts": "2026-10-14T10:50:39Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/1884 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T10:51:04Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/2567 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T10:51:17Z", "service": "inventory-service", "level": "ERROR", "message": "Database connection pool exhausted (max=20, waiting=57); request aborted after 5000ms"}
+{"ts": "2026-10-14T10:51:40Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/4023 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T10:52:13Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/9440 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T10:52:22Z", "service": "inventory-service", "level": "ERROR", "message": "Database connection pool exhausted (max=20, waiting=57); request aborted after 5000ms"}
+{"ts": "2026-10-14T10:52:45Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/3603 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T10:52:46Z", "service": "inventory-service", "level": "ERROR", "message": "Database connection pool exhausted (max=20, waiting=57); request aborted after 5000ms"}
+{"ts": "2026-10-14T10:53:09Z", "service": "inventory-service", "level": "ERROR", "message": "Database connection pool exhausted (max=20, waiting=57); request aborted after 5000ms"}
+{"ts": "2026-10-14T10:53:25Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/4793 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T10:53:35Z", "service": "inventory-service", "level": "INFO", "message": "GET /stock 200 in 153ms"}
+{"ts": "2026-10-14T10:53:37Z", "service": "orders-api", "level": "INFO", "message": "GET /orders 200 in 88ms"}
+{"ts": "2026-10-14T10:53:45Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/2325 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T10:54:10Z", "service": "inventory-service", "level": "ERROR", "message": "Database connection pool exhausted (max=20, waiting=57); request aborted after 5000ms"}
+{"ts": "2026-10-14T10:54:23Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/2713 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T10:54:49Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/7574 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T10:55:08Z", "service": "inventory-service", "level": "ERROR", "message": "Database connection pool exhausted (max=20, waiting=57); request aborted after 5000ms"}
+{"ts": "2026-10-14T10:55:31Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/2411 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T10:55:37Z", "service": "inventory-service", "level": "ERROR", "message": "Database connection pool exhausted (max=20, waiting=57); request aborted after 5000ms"}
+{"ts": "2026-10-14T10:55:54Z", "service": "orders-api", "level": "INFO", "message": "GET /orders 200 in 152ms"}
+{"ts": "2026-10-14T10:56:03Z", "service": "inventory-service", "level": "ERROR", "message": "Database connection pool exhausted (max=20, waiting=57); request aborted after 5000ms"}
+{"ts": "2026-10-14T10:56:12Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/1412 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T10:56:34Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/5312 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T10:56:53Z", "service": "inventory-service", "level": "INFO", "message": "GET /stock 200 in 171ms"}
+{"ts": "2026-10-14T10:57:01Z", "service": "inventory-service", "level": "ERROR", "message": "Database connection pool exhausted (max=20, waiting=57); request aborted after 5000ms"}
+{"ts": "2026-10-14T10:57:16Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/9211 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T10:57:42Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/4826 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T10:57:52Z", "service": "inventory-service", "level": "ERROR", "message": "Database connection pool exhausted (max=20, waiting=57); request aborted after 5000ms"}
+{"ts": "2026-10-14T10:58:01Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/1555 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T10:58:33Z", "service": "orders-api", "level": "INFO", "message": "GET /orders 200 in 53ms"}
+{"ts": "2026-10-14T10:58:33Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/9548 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T10:58:43Z", "service": "inventory-service", "level": "ERROR", "message": "Database connection pool exhausted (max=20, waiting=57); request aborted after 5000ms"}
+{"ts": "2026-10-14T10:59:14Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/8377 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T10:59:34Z", "service": "orders-api", "level": "ERROR", "message": "GET /orders/8189 failed: upstream inventory-service timeout after 5000ms -> 500"}
+{"ts": "2026-10-14T10:59:37Z", "service": "inventory-service", "level": "ERROR", "message": "Database connection pool exhausted (max=20, waiting=57); request aborted after 5000ms"}
+{"ts": "2026-10-14T10:59:41Z", "service": "inventory-service", "level": "INFO", "message": "GET /stock 200 in 155ms"}

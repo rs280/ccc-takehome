@@ -1,0 +1,23 @@
+{
+  "category": "schema_migration",
+  "acceptable_categories": [
+    "schema_migration"
+  ],
+  "caused_by_latest_deploy": true,
+  "key_facts": [
+    "refund_reason",
+    "0042"
+  ],
+  "expected_tools": [
+    "get_recent_deployments",
+    "get_deployment_diff",
+    "search_logs|get_error_summary"
+  ],
+  "next_step_keywords": [
+    "migration",
+    "migrate",
+    "roll back",
+    "rollback"
+  ],
+  "reference_answer": "v3.8.0 (dep-7712, 09:40) ships code writing refunds.refund_reason, but the db-migrate step (0042_add_refund_reason) was skipped pending approval, so POST /v1/refunds fails with UndefinedColumn. Approve and run the migration (or roll back), and make skipped migrations block deploys."
+}

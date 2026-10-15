@@ -1,0 +1,68 @@
+{"ts": "2026-10-14T08:00:00Z", "service": "profile-api", "level": "INFO", "message": "GET /profile 200 in 78ms"}
+{"ts": "2026-10-14T08:00:00Z", "service": "profile-api", "level": "WARN", "message": "Slow request GET /healthz took 13478ms"}
+{"ts": "2026-10-14T08:00:00Z", "service": "profile-api", "level": "ERROR", "message": "GET /profile/9899 failed: ConnectionResetError: [Errno 54] Connection reset by peer -> 502"}
+{"ts": "2026-10-14T08:03:34Z", "service": "profile-api", "level": "INFO", "message": "GET /profile 200 in 58ms"}
+{"ts": "2026-10-14T08:08:51Z", "service": "profile-api", "level": "INFO", "message": "GET /profile 200 in 133ms"}
+{"ts": "2026-10-14T08:13:11Z", "service": "profile-api", "level": "INFO", "message": "GET /profile 200 in 94ms"}
+{"ts": "2026-10-14T08:15:02Z", "service": "profile-api", "level": "WARN", "message": "Retrying metrics push to collector (attempt 1)"}
+{"ts": "2026-10-14T08:15:20Z", "service": "profile-api", "level": "INFO", "message": "GET /profile 200 in 147ms"}
+{"ts": "2026-10-14T08:17:37Z", "service": "profile-api", "level": "INFO", "message": "GET /profile 200 in 148ms"}
+{"ts": "2026-10-14T08:19:51Z", "service": "profile-api", "level": "INFO", "message": "GET /profile 200 in 97ms"}
+{"ts": "2026-10-14T08:24:23Z", "service": "profile-api", "level": "INFO", "message": "GET /profile 200 in 141ms"}
+{"ts": "2026-10-14T08:26:34Z", "service": "profile-api", "level": "INFO", "message": "GET /profile 200 in 51ms"}
+{"ts": "2026-10-14T08:26:51Z", "service": "profile-api", "level": "ERROR", "message": "GET /profile/5883/avatar failed: ReadTimeout after 2000ms -> 504"}
+{"ts": "2026-10-14T08:29:17Z", "service": "profile-api", "level": "WARN", "message": "Slow request GET /healthz took 14407ms"}
+{"ts": "2026-10-14T08:30:48Z", "service": "profile-api", "level": "INFO", "message": "GET /profile 200 in 114ms"}
+{"ts": "2026-10-14T08:34:29Z", "service": "profile-api", "level": "INFO", "message": "GET /profile 200 in 70ms"}
+{"ts": "2026-10-14T08:38:46Z", "service": "profile-api", "level": "INFO", "message": "GET /profile 200 in 66ms"}
+{"ts": "2026-10-14T08:43:05Z", "service": "profile-api", "level": "INFO", "message": "GET /profile 200 in 135ms"}
+{"ts": "2026-10-14T08:45:29Z", "service": "profile-api", "level": "INFO", "message": "GET /profile 200 in 55ms"}
+{"ts": "2026-10-14T08:45:30Z", "service": "profile-api", "level": "WARN", "message": "Retrying metrics push to collector (attempt 1)"}
+{"ts": "2026-10-14T08:49:57Z", "service": "profile-api", "level": "INFO", "message": "GET /profile 200 in 176ms"}
+{"ts": "2026-10-14T08:51:39Z", "service": "profile-api", "level": "ERROR", "message": "GET /profile/5278 failed: ConnectionResetError: [Errno 54] Connection reset by peer -> 502"}
+{"ts": "2026-10-14T08:53:40Z", "service": "profile-api", "level": "INFO", "message": "GET /profile 200 in 159ms"}
+{"ts": "2026-10-14T08:58:00Z", "service": "profile-api", "level": "INFO", "message": "GET /profile 200 in 132ms"}
+{"ts": "2026-10-14T09:01:12Z", "service": "profile-api", "level": "INFO", "message": "GET /profile 200 in 102ms"}
+{"ts": "2026-10-14T09:03:32Z", "service": "profile-api", "level": "INFO", "message": "GET /profile 200 in 174ms"}
+{"ts": "2026-10-14T09:05:35Z", "service": "profile-api", "level": "ERROR", "message": "GET /profile/3736/avatar failed: ReadTimeout after 2000ms -> 504"}
+{"ts": "2026-10-14T09:07:31Z", "service": "profile-api", "level": "INFO", "message": "GET /profile 200 in 154ms"}
+{"ts": "2026-10-14T09:10:40Z", "service": "profile-api", "level": "INFO", "message": "GET /profile 200 in 70ms"}
+{"ts": "2026-10-14T09:13:03Z", "service": "profile-api", "level": "WARN", "message": "Slow request GET /healthz took 18768ms"}
+{"ts": "2026-10-14T09:14:43Z", "service": "profile-api", "level": "INFO", "message": "GET /profile 200 in 127ms"}
+{"ts": "2026-10-14T09:17:19Z", "service": "profile-api", "level": "INFO", "message": "GET /profile 200 in 147ms"}
+{"ts": "2026-10-14T09:19:29Z", "service": "profile-api", "level": "INFO", "message": "GET /profile 200 in 120ms"}
+{"ts": "2026-10-14T09:22:50Z", "service": "profile-api", "level": "INFO", "message": "GET /profile 200 in 167ms"}
+{"ts": "2026-10-14T09:27:09Z", "service": "profile-api", "level": "INFO", "message": "GET /profile 200 in 57ms"}
+{"ts": "2026-10-14T09:28:26Z", "service": "profile-api", "level": "WARN", "message": "Retrying metrics push to collector (attempt 1)"}
+{"ts": "2026-10-14T09:32:31Z", "service": "profile-api", "level": "INFO", "message": "GET /profile 200 in 161ms"}
+{"ts": "2026-10-14T09:32:54Z", "service": "profile-api", "level": "ERROR", "message": "GET /profile/9725 failed: ConnectionResetError: [Errno 54] Connection reset by peer -> 502"}
+{"ts": "2026-10-14T09:37:18Z", "service": "profile-api", "level": "INFO", "message": "GET /profile 200 in 55ms"}
+{"ts": "2026-10-14T09:42:14Z", "service": "profile-api", "level": "INFO", "message": "GET /profile 200 in 154ms"}
+{"ts": "2026-10-14T09:45:22Z", "service": "profile-api", "level": "INFO", "message": "GET /profile 200 in 128ms"}
+{"ts": "2026-10-14T09:47:27Z", "service": "profile-api", "level": "INFO", "message": "GET /profile 200 in 130ms"}
+{"ts": "2026-10-14T09:50:08Z", "service": "profile-api", "level": "INFO", "message": "GET /profile 200 in 166ms"}
+{"ts": "2026-10-14T09:52:22Z", "service": "profile-api", "level": "INFO", "message": "GET /profile 200 in 73ms"}
+{"ts": "2026-10-14T09:52:57Z", "service": "profile-api", "level": "WARN", "message": "Slow request GET /healthz took 16109ms"}
+{"ts": "2026-10-14T09:57:19Z", "service": "profile-api", "level": "INFO", "message": "GET /profile 200 in 140ms"}
+{"ts": "2026-10-14T10:00:26Z", "service": "profile-api", "level": "ERROR", "message": "GET /profile/6401/avatar failed: ReadTimeout after 2000ms -> 504"}
+{"ts": "2026-10-14T10:02:59Z", "service": "profile-api", "level": "INFO", "message": "GET /profile 200 in 60ms"}
+{"ts": "2026-10-14T10:05:39Z", "service": "profile-api", "level": "INFO", "message": "GET /profile 200 in 180ms"}
+{"ts": "2026-10-14T10:08:46Z", "service": "profile-api", "level": "INFO", "message": "GET /profile 200 in 150ms"}
+{"ts": "2026-10-14T10:09:03Z", "service": "profile-api", "level": "WARN", "message": "Retrying metrics push to collector (attempt 1)"}
+{"ts": "2026-10-14T10:14:13Z", "service": "profile-api", "level": "INFO", "message": "GET /profile 200 in 146ms"}
+{"ts": "2026-10-14T10:20:10Z", "service": "profile-api", "level": "INFO", "message": "GET /profile 200 in 99ms"}
+{"ts": "2026-10-14T10:22:30Z", "service": "profile-api", "level": "ERROR", "message": "GET /profile/4197 failed: ConnectionResetError: [Errno 54] Connection reset by peer -> 502"}
+{"ts": "2026-10-14T10:22:46Z", "service": "profile-api", "level": "INFO", "message": "GET /profile 200 in 78ms"}
+{"ts": "2026-10-14T10:25:42Z", "service": "profile-api", "level": "INFO", "message": "GET /profile 200 in 43ms"}
+{"ts": "2026-10-14T10:29:38Z", "service": "profile-api", "level": "INFO", "message": "GET /profile 200 in 107ms"}
+{"ts": "2026-10-14T10:32:46Z", "service": "profile-api", "level": "INFO", "message": "GET /profile 200 in 147ms"}
+{"ts": "2026-10-14T10:33:31Z", "service": "profile-api", "level": "WARN", "message": "Slow request GET /healthz took 13645ms"}
+{"ts": "2026-10-14T10:36:54Z", "service": "profile-api", "level": "INFO", "message": "GET /profile 200 in 72ms"}
+{"ts": "2026-10-14T10:41:40Z", "service": "profile-api", "level": "INFO", "message": "GET /profile 200 in 53ms"}
+{"ts": "2026-10-14T10:45:29Z", "service": "profile-api", "level": "INFO", "message": "GET /profile 200 in 141ms"}
+{"ts": "2026-10-14T10:46:36Z", "service": "profile-api", "level": "WARN", "message": "Retrying metrics push to collector (attempt 1)"}
+{"ts": "2026-10-14T10:49:05Z", "service": "profile-api", "level": "INFO", "message": "GET /profile 200 in 163ms"}
+{"ts": "2026-10-14T10:51:21Z", "service": "profile-api", "level": "ERROR", "message": "GET /profile/4714/avatar failed: ReadTimeout after 2000ms -> 504"}
+{"ts": "2026-10-14T10:53:37Z", "service": "profile-api", "level": "INFO", "message": "GET /profile 200 in 88ms"}
+{"ts": "2026-10-14T10:55:54Z", "service": "profile-api", "level": "INFO", "message": "GET /profile 200 in 152ms"}
+{"ts": "2026-10-14T10:58:33Z", "service": "profile-api", "level": "INFO", "message": "GET /profile 200 in 53ms"}

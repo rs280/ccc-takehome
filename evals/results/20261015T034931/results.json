@@ -1,0 +1,127 @@
+{
+  "meta": {
+    "timestamp": "20261015T034931",
+    "model": "qwen/qwen3.8-27b",
+    "base_url": "https://api.groq.com/openai/v1",
+    "reasoning_effort": "none",
+    "k": 1,
+    "critic": true,
+    "judge": false,
+    "scenarios": [
+      "ambiguous_low_signal",
+      "auth_cert_expiry",
+      "checkout_bad_config",
+      "orders_upstream_dependency",
+      "payments_missing_migration",
+      "search_latency_regression",
+      "worker_oom_crashloop"
+    ],
+    "stopped": "Stopped before payments_missing_migration #1: provider quota exhausted (Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m4ymab7ge61a6xhdb3h0xnp2` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 196737, Requested 4404. Please try again in 8m12.912s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}})"
+  },
+  "runs": [
+    {
+      "scenario": "ambiguous_low_signal",
+      "attempt": 1,
+      "passed": false,
+      "scores": {
+        "schema_valid": {
+          "value": 0.0,
+          "passed": false,
+          "detail": "no valid report produced"
+        }
+      },
+      "elapsed_s": 334.6,
+      "llm_calls": 20,
+      "tool_calls": 25,
+      "tokens": {
+        "prompt": 45738,
+        "completion": 3187
+      },
+      "report": null,
+      "failed_specialists": {},
+      "revised": false,
+      "judge": null,
+      "error": "ExceptionGroup: unhandled errors in a TaskGroup (1 sub-exception)",
+      "trace_file": "/Users/rishabh/dev/ccc-takehome/evals/results/20261015T034931/traces/ambiguous_low_signal-1.jsonl",
+      "evidence": []
+    },
+    {
+      "scenario": "auth_cert_expiry",
+      "attempt": 1,
+      "passed": false,
+      "scores": {
+        "schema_valid": {
+          "value": 0.0,
+          "passed": false,
+          "detail": "no valid report produced"
+        }
+      },
+      "elapsed_s": 282.2,
+      "llm_calls": 19,
+      "tool_calls": 16,
+      "tokens": {
+        "prompt": 32806,
+        "completion": 2886
+      },
+      "report": null,
+      "failed_specialists": {},
+      "revised": false,
+      "judge": null,
+      "error": "ExceptionGroup: unhandled errors in a TaskGroup (1 sub-exception)",
+      "trace_file": "/Users/rishabh/dev/ccc-takehome/evals/results/20261015T034931/traces/auth_cert_expiry-1.jsonl",
+      "evidence": []
+    },
+    {
+      "scenario": "checkout_bad_config",
+      "attempt": 1,
+      "passed": false,
+      "scores": {
+        "schema_valid": {
+          "value": 0.0,
+          "passed": false,
+          "detail": "no valid report produced"
+        }
+      },
+      "elapsed_s": 266.0,
+      "llm_calls": 15,
+      "tool_calls": 23,
+      "tokens": {
+        "prompt": 31067,
+        "completion": 3325
+      },
+      "report": null,
+      "failed_specialists": {},
+      "revised": false,
+      "judge": null,
+      "error": "ExceptionGroup: unhandled errors in a TaskGroup (1 sub-exception)",
+      "trace_file": "/Users/rishabh/dev/ccc-takehome/evals/results/20261015T034931/traces/checkout_bad_config-1.jsonl",
+      "evidence": []
+    },
+    {
+      "scenario": "orders_upstream_dependency",
+      "attempt": 1,
+      "passed": false,
+      "scores": {
+        "schema_valid": {
+          "value": 0.0,
+          "passed": false,
+          "detail": "no valid report produced"
+        }
+      },
+      "elapsed_s": 409.5,
+      "llm_calls": 20,
+      "tool_calls": 27,
+      "tokens": {
+        "prompt": 47771,
+        "completion": 3378
+      },
+      "report": null,
+      "failed_specialists": {},
+      "revised": false,
+      "judge": null,
+      "error": "ExceptionGroup: unhandled errors in a TaskGroup (1 sub-exception)",
+      "trace_file": "/Users/rishabh/dev/ccc-takehome/evals/results/20261015T034931/traces/orders_upstream_dependency-1.jsonl",
+      "evidence": []
+    }
+  ]
+}

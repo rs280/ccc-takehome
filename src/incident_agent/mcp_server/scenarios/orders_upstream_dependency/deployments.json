@@ -1,0 +1,101 @@
+[
+  {
+    "id": "dep-7685",
+    "service": "orders-api",
+    "version": "v1.9.2",
+    "deployed_at": "2026-10-08T13:00:00Z",
+    "author": "kai.r",
+    "status": "succeeded",
+    "summary": "Add order notes",
+    "diff": {
+      "commits": [
+        "feat: order notes"
+      ],
+      "files_changed": [
+        "orders/notes.py"
+      ],
+      "config_changes": [],
+      "pipeline_steps": [
+        {
+          "name": "build",
+          "status": "passed"
+        },
+        {
+          "name": "unit-tests",
+          "status": "passed"
+        },
+        {
+          "name": "deploy",
+          "status": "passed"
+        }
+      ]
+    }
+  },
+  {
+    "id": "dep-7716",
+    "service": "orders-api",
+    "version": "v1.9.3",
+    "deployed_at": "2026-10-14T10:10:00Z",
+    "author": "kai.r",
+    "status": "succeeded",
+    "summary": "Bump logging library",
+    "diff": {
+      "commits": [
+        "chore(deps): bump structlog 24.1 -> 24.4"
+      ],
+      "files_changed": [
+        "pyproject.toml",
+        "uv.lock"
+      ],
+      "config_changes": [],
+      "pipeline_steps": [
+        {
+          "name": "build",
+          "status": "passed"
+        },
+        {
+          "name": "unit-tests",
+          "status": "passed"
+        },
+        {
+          "name": "deploy",
+          "status": "passed"
+        }
+      ]
+    }
+  },
+  {
+    "id": "dep-7710",
+    "service": "frontend-web",
+    "version": "v9.3.0",
+    "deployed_at": "2026-10-14T09:30:00Z",
+    "author": "lena.k",
+    "status": "succeeded",
+    "summary": "Update footer links and analytics snippet",
+    "diff": {
+      "commits": [
+        "chore: update footer links",
+        "feat: add consent banner analytics"
+      ],
+      "files_changed": [
+        "web/components/Footer.tsx",
+        "web/analytics.ts"
+      ],
+      "config_changes": [],
+      "pipeline_steps": [
+        {
+          "name": "build",
+          "status": "passed"
+        },
+        {
+          "name": "unit-tests",
+          "status": "passed"
+        },
+        {
+          "name": "deploy",
+          "status": "passed"
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,23 @@
+{
+  "category": "performance_regression",
+  "acceptable_categories": [
+    "performance_regression"
+  ],
+  "caused_by_latest_deploy": true,
+  "key_facts": [
+    "v5.2.0",
+    "cache"
+  ],
+  "expected_tools": [
+    "get_metrics",
+    "get_recent_deployments",
+    "get_deployment_diff"
+  ],
+  "next_step_keywords": [
+    "roll back",
+    "rollback",
+    "revert",
+    "cache"
+  ],
+  "reference_answer": "v5.2.0 (dep-7709, 09:15) removed the Redis result cache (REDIS_CACHE_ENABLED=false); all queries now hit elasticsearch, p99 went from ~120ms to ~2400ms with 504 timeouts. Roll back or re-enable the cache; load-test before removing caches."
+}

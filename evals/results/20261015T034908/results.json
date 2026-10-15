@@ -1,0 +1,22 @@
+{
+  "meta": {
+    "timestamp": "20261015T034908",
+    "model": "openai/gpt-oss-20b",
+    "base_url": "https://api.groq.com/openai/v1",
+    "reasoning_effort": "low",
+    "k": 1,
+    "critic": true,
+    "judge": false,
+    "scenarios": [
+      "ambiguous_low_signal",
+      "auth_cert_expiry",
+      "checkout_bad_config",
+      "orders_upstream_dependency",
+      "payments_missing_migration",
+      "search_latency_regression",
+      "worker_oom_crashloop"
+    ],
+    "stopped": "Stopped before ambiguous_low_signal #1: provider quota exhausted (Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m4ymab7ge61a6xhdb3h0xnp2` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199640, Requested 1622. Please try again in 9m5.183999999s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}})"
+  },
+  "runs": []
+}

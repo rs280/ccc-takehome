@@ -1,0 +1,873 @@
+{
+  "meta": {
+    "timestamp": "20261014T201633",
+    "model": "incident-qwen3",
+    "base_url": "http://localhost:11434/v1",
+    "reasoning_effort": "none",
+    "k": 1,
+    "critic": true,
+    "judge": false,
+    "scenarios": [
+      "ambiguous_low_signal",
+      "auth_cert_expiry",
+      "checkout_bad_config",
+      "orders_upstream_dependency",
+      "payments_missing_migration",
+      "search_latency_regression",
+      "worker_oom_crashloop"
+    ]
+  },
+  "runs": [
+    {
+      "scenario": "ambiguous_low_signal",
+      "attempt": 1,
+      "passed": false,
+      "scores": {
+        "schema_valid": {
+          "value": 1.0,
+          "passed": true,
+          "detail": ""
+        },
+        "root_cause_category": {
+          "value": 0.0,
+          "passed": false,
+          "detail": "got dependency_failure, expected unknown"
+        },
+        "deploy_attribution": {
+          "value": 1.0,
+          "passed": true,
+          "detail": "got False, expected None"
+        },
+        "key_fact_recall": {
+          "value": 1.0,
+          "passed": true,
+          "detail": "all found"
+        },
+        "citation_grounding": {
+          "value": 1.0,
+          "passed": true,
+          "detail": ""
+        },
+        "tool_coverage": {
+          "value": 1.0,
+          "passed": true,
+          "detail": ""
+        },
+        "next_step_relevance": {
+          "value": 1.0,
+          "passed": true,
+          "detail": "matched ['monitor', 'investigate']"
+        },
+        "calibration": {
+          "value": 0.0,
+          "passed": false,
+          "detail": "confidence 0.80, want <= 0.5"
+        }
+      },
+      "elapsed_s": 204.9,
+      "llm_calls": 14,
+      "tool_calls": 9,
+      "tokens": {
+        "prompt": 19009,
+        "completion": 1741
+      },
+      "report": {
+        "summary": "The profile-api service experienced an increase in error rates and connection issues starting around 2026-10-14, which coincides with the deployment of v2.0.7. The errors are likely due to a dependency issue with avatar-cdn.",
+        "incident_type": "error",
+        "affected_services": [
+          "profile-api"
+        ],
+        "evidence": [
+          {
+            "evidence_id": "E8",
+            "source": "logs",
+            "detail": "The profile-api service has 4 ERRORs related to 'ConnectionResetError' and 'ReadTimeout' since 2026-10-14T08:00:00Z."
+          },
+          {
+            "evidence_id": "E4",
+            "source": "metrics",
+            "detail": "The error rate for profile-api increased from a baseline of 0.23% to 0.563% as of 2026-10-14T11:00:00Z."
+          },
+          {
+            "evidence_id": "E7",
+            "source": "docs",
+            "detail": "The profile-api service proxies avatar images from avatar-cdn, which can occasionally cause connection resets and timeouts."
+          },
+          {
+            "evidence_id": "E3",
+            "source": "changes",
+            "detail": "The deployment of profile-api (dep-7698) was successful with all pipeline steps passing."
+          }
+        ],
+        "root_cause": {
+          "hypothesis": "The recent deployment of profile-api (v2.0.7) did not directly cause the errors, but the errors are likely due to an issue with the avatar-cdn dependency, which the profile-api service proxies images from.",
+          "category": "dependency_failure",
+          "confidence": 0.8
+        },
+        "deploy_related": false,
+        "alternatives_ruled_out": [
+          "The deployment of profile-api (v2.0.7) did not introduce any configuration or code changes that would directly cause the observed errors.",
+          "The error rate and connection issues are not due to performance regression or resource exhaustion, as metrics show no significant changes in latency or memory usage."
+        ],
+        "next_steps": [
+          {
+            "action": "Investigate the health and availability of the avatar-cdn service.",
+            "priority": "P0",
+            "rationale": "The errors are likely due to an issue with the avatar-cdn dependency, which the profile-api service proxies images from."
+          },
+          {
+            "action": "Verify if there are any recent changes or outages in the avatar-cdn service.",
+            "priority": "P1",
+            "rationale": "Understanding the root cause of the dependency issue is critical to resolving the errors."
+          },
+          {
+            "action": "Monitor the error rate and connection issues in profile-api after resolving the avatar-cdn issue.",
+            "priority": "P2",
+            "rationale": "Ensure that the issue is fully resolved and no further impact is observed."
+          }
+        ],
+        "open_questions": [
+          "What specific changes or outages occurred in the avatar-cdn service that caused the connection resets and timeouts?",
+          "Are there any other dependencies of profile-api that could be contributing to the errors?"
+        ]
+      },
+      "failed_specialists": {},
+      "revised": false,
+      "judge": null,
+      "error": null,
+      "trace_file": "/Users/rishabh/dev/ccc-takehome/evals/results/20261014T201633/traces/ambiguous_low_signal-1.jsonl"
+    },
+    {
+      "scenario": "auth_cert_expiry",
+      "attempt": 1,
+      "passed": false,
+      "scores": {
+        "schema_valid": {
+          "value": 1.0,
+          "passed": true,
+          "detail": ""
+        },
+        "root_cause_category": {
+          "value": 1.0,
+          "passed": true,
+          "detail": "got certificate_expiry, expected certificate_expiry"
+        },
+        "deploy_attribution": {
+          "value": 0.0,
+          "passed": false,
+          "detail": "got True, expected False"
+        },
+        "key_fact_recall": {
+          "value": 1.0,
+          "passed": true,
+          "detail": "all found"
+        },
+        "citation_grounding": {
+          "value": 1.0,
+          "passed": true,
+          "detail": ""
+        },
+        "tool_coverage": {
+          "value": 1.0,
+          "passed": true,
+          "detail": ""
+        },
+        "next_step_relevance": {
+          "value": 1.0,
+          "passed": true,
+          "detail": "matched ['renew', 'certificate', 'cert']"
+        },
+        "calibration": {
+          "value": 1.0,
+          "passed": true,
+          "detail": "confidence 0.90, want >= 0.5 when correct"
+        }
+      },
+      "elapsed_s": 221.3,
+      "llm_calls": 14,
+      "tool_calls": 11,
+      "tokens": {
+        "prompt": 18976,
+        "completion": 1913
+      },
+      "report": {
+        "summary": "The auth-api is experiencing 500 errors due to an expired certificate in the identity-provider TLS handshake, which started after the latest deploy.",
+        "incident_type": "tls_certificate_expiry",
+        "affected_services": [
+          "auth-api"
+        ],
+        "evidence": [
+          {
+            "evidence_id": "E8",
+            "source": "logs",
+            "detail": "The auth-api has 247 ERROR logs with the message 'POST /login failed: identity-provider TLS handshake error: SSL: CERTIFICATE_VERIFY_FAILED certificate has expired (client cert auth-api-idp-mtls)' since 2026-10-14T10:00:00Z."
+          },
+          {
+            "evidence_id": "E8",
+            "source": "logs",
+            "detail": "The certificate 'auth-api-idp-mtls' expired at 2026-10-14T10:00:00Z, and the renewal failed due to the issuer 'internal-ca' being unreachable."
+          },
+          {
+            "evidence_id": "E3",
+            "source": "changes",
+            "detail": "The most recent deployment to auth-api was dep-7701, version v4.2.0, deployed at 2026-10-08T14:30:00Z, with changes to auth/webauthn.py."
+          }
+        ],
+        "root_cause": {
+          "hypothesis": "The 500 errors in auth-api are caused by an expired certificate 'auth-api-idp-mtls' used for TLS handshake with the identity-provider, which expired at 2026-10-14T10:00:00Z. The certificate renewal failed due to the issuer 'internal-ca' being unreachable.",
+          "category": "certificate_expiry",
+          "confidence": 0.9
+        },
+        "deploy_related": true,
+        "alternatives_ruled_out": [
+          "The deployment of WebAuthn support did not cause the TLS handshake error, as the certificate issue is unrelated to the deployed code.",
+          "The error is not due to a performance regression or resource exhaustion, as metrics show stable latency and memory usage."
+        ],
+        "next_steps": [
+          {
+            "action": "Renew the certificate 'auth-api-idp-mtls' and ensure the issuer 'internal-ca' is reachable.",
+            "priority": "P0",
+            "rationale": "The expired certificate is the root cause of the TLS handshake error, and renewing it will resolve the 500 errors."
+          },
+          {
+            "action": "Verify that the certificate renewal is successful and the TLS handshake is working.",
+            "priority": "P1",
+            "rationale": "Confirm that the certificate renewal has resolved the issue and that the service is functioning correctly."
+          },
+          {
+            "action": "Investigate why the certificate renewal failed and ensure that the issuer 'internal-ca' is reachable.",
+            "priority": "P2",
+            "rationale": "Prevent future certificate expiry issues by addressing the root cause of the renewal failure."
+          }
+        ],
+        "open_questions": [
+          "What caused the issuer 'internal-ca' to be unreachable during the certificate renewal process?"
+        ]
+      },
+      "failed_specialists": {},
+      "revised": false,
+      "judge": null,
+      "error": null,
+      "trace_file": "/Users/rishabh/dev/ccc-takehome/evals/results/20261014T201633/traces/auth_cert_expiry-1.jsonl"
+    },
+    {
+      "scenario": "checkout_bad_config",
+      "attempt": 1,
+      "passed": false,
+      "scores": {
+        "schema_valid": {
+          "value": 1.0,
+          "passed": true,
+          "detail": ""
+        },
+        "root_cause_category": {
+          "value": 1.0,
+          "passed": true,
+          "detail": "got bad_config, expected bad_config"
+        },
+        "deploy_attribution": {
+          "value": 1.0,
+          "passed": true,
+          "detail": "got True, expected True"
+        },
+        "key_fact_recall": {
+          "value": 1.0,
+          "passed": true,
+          "detail": "all found"
+        },
+        "citation_grounding": {
+          "value": 0.75,
+          "passed": false,
+          "detail": "E7: unsupported ['checkout-api', 'configuration', 'deployment', 'experienced']"
+        },
+        "tool_coverage": {
+          "value": 1.0,
+          "passed": true,
+          "detail": ""
+        },
+        "next_step_relevance": {
+          "value": 1.0,
+          "passed": true,
+          "detail": "matched ['roll back', 'rollback', 'DATABASE_POOL_SIZE']"
+        },
+        "calibration": {
+          "value": 1.0,
+          "passed": true,
+          "detail": "confidence 0.90, want >= 0.5 when correct"
+        }
+      },
+      "elapsed_s": 292.8,
+      "llm_calls": 14,
+      "tool_calls": 15,
+      "tokens": {
+        "prompt": 22040,
+        "completion": 2154
+      },
+      "report": {
+        "summary": "The checkout-api service started returning HTTP 500 errors after the deployment of version v2.4.1, which included changes to config loading and database settings. The errors are due to a missing 'DATABASE_POOL_SIZE' configuration.",
+        "incident_type": "config_error",
+        "affected_services": [
+          "checkout-api"
+        ],
+        "evidence": [
+          {
+            "evidence_id": "E7",
+            "source": "logs",
+            "detail": "The checkout-api service experienced 143 ERRORs after the latest deployment, including an unhandled exception due to a missing 'DATABASE_POOL_SIZE' configuration."
+          },
+          {
+            "evidence_id": "E3",
+            "source": "changes",
+            "detail": "The deployment dep-7715 of checkout-api (version v2.4.1) was successful and included changes to config loading and database settings."
+          },
+          {
+            "evidence_id": "E8",
+            "source": "changes",
+            "detail": "The deployment dep-7715 included changes to the app/config/settings.py and app/db/pool.py files."
+          },
+          {
+            "evidence_id": "E4",
+            "source": "metrics",
+            "detail": "The error rate for checkout-api increased from 0.2% to 38.116% with the first significant change at 2026-10-14T10:10:00Z."
+          }
+        ],
+        "root_cause": {
+          "hypothesis": "The HTTP 500 errors in checkout-api are caused by a missing 'DATABASE_POOL_SIZE' configuration, which was introduced in the deployment of version v2.4.1. The change to config loading in the deployment caused the service to fail to read the required configuration variable, leading to unhandled exceptions.",
+          "category": "bad_config",
+          "confidence": 0.9
+        },
+        "deploy_related": true,
+        "alternatives_ruled_out": [
+          "The error rate did not increase before the deployment, ruling out pre-deploy issues.",
+          "The error logs specifically point to a missing configuration variable, not a dependency or performance issue."
+        ],
+        "next_steps": [
+          {
+            "action": "Roll back the deployment of checkout-api to version v2.4.0 to resolve the 500 errors.",
+            "priority": "P0",
+            "rationale": "The deployment introduced a missing configuration variable, which is the root cause of the 500 errors. Rolling back will restore the previous working state."
+          },
+          {
+            "action": "Verify that the error rate has returned to normal after the rollback.",
+            "priority": "P1",
+            "rationale": "Confirming the resolution of the issue is critical to ensure service stability."
+          },
+          {
+            "action": "Investigate and implement a fix for the missing 'DATABASE_POOL_SIZE' configuration in the new version.",
+            "priority": "P2",
+            "rationale": "This will prevent the issue from recurring in future deployments."
+          }
+        ],
+        "open_questions": [
+          "What was the reason for the change to config loading in the deployment of v2.4.1?"
+        ]
+      },
+      "failed_specialists": {},
+      "revised": false,
+      "judge": null,
+      "error": null,
+      "trace_file": "/Users/rishabh/dev/ccc-takehome/evals/results/20261014T201633/traces/checkout_bad_config-1.jsonl"
+    },
+    {
+      "scenario": "orders_upstream_dependency",
+      "attempt": 1,
+      "passed": false,
+      "scores": {
+        "schema_valid": {
+          "value": 1.0,
+          "passed": true,
+          "detail": ""
+        },
+        "root_cause_category": {
+          "value": 1.0,
+          "passed": true,
+          "detail": "got dependency_failure, expected dependency_failure"
+        },
+        "deploy_attribution": {
+          "value": 0.0,
+          "passed": false,
+          "detail": "got True, expected False"
+        },
+        "key_fact_recall": {
+          "value": 0.5,
+          "passed": true,
+          "detail": "missing ['pool']"
+        },
+        "citation_grounding": {
+          "value": 0.8,
+          "passed": true,
+          "detail": "E8: unsupported ['deployment', 'occurrence']"
+        },
+        "tool_coverage": {
+          "value": 1.0,
+          "passed": true,
+          "detail": ""
+        },
+        "next_step_relevance": {
+          "value": 1.0,
+          "passed": true,
+          "detail": "matched ['inventory']"
+        },
+        "calibration": {
+          "value": 1.0,
+          "passed": true,
+          "detail": "confidence 0.80, want >= 0.5 when correct"
+        }
+      },
+      "elapsed_s": 264.3,
+      "llm_calls": 14,
+      "tool_calls": 11,
+      "tokens": {
+        "prompt": 23558,
+        "completion": 2105
+      },
+      "report": {
+        "summary": "The orders-api started returning HTTP 500 errors after the deployment of version v1.9.3 (dep-7716), which coincided with a significant increase in errors and latency for both the orders-api and inventory-service. The errors are likely due to the inventory-service becoming unresponsive, possibly due to a deployment-related issue.",
+        "incident_type": "elevated 5xx errors",
+        "affected_services": [
+          "orders-api",
+          "inventory-service"
+        ],
+        "evidence": [
+          {
+            "evidence_id": "E8",
+            "source": "logs",
+            "detail": "The first occurrence of these errors was at 2026-10-14T09:20:00Z, which is after the latest deployment."
+          },
+          {
+            "evidence_id": "E3",
+            "source": "changes",
+            "detail": "The deployment of version v1.9.3 (dep-7716) was the most recent deployment for the orders-api service."
+          },
+          {
+            "evidence_id": "E4",
+            "source": "metrics",
+            "detail": "The error rate for orders-api increased from 0.2% to 21.124% with a significant change at 2026-10-14T09:20:00Z."
+          },
+          {
+            "evidence_id": "E11",
+            "source": "metrics",
+            "detail": "The error rate for inventory-service increased from 0.1% to 31.935% with a significant change at 2026-10-14T09:20:00Z."
+          },
+          {
+            "evidence_id": "E7",
+            "source": "docs",
+            "detail": "The orders-api has a synchronous call to inventory-service with a 5000ms timeout and no fallback."
+          }
+        ],
+        "root_cause": {
+          "hypothesis": "The deployment of version v1.9.3 (dep-7716) caused the inventory-service to become unresponsive, leading to timeouts and HTTP 500 errors in the orders-api.",
+          "category": "dependency_failure",
+          "confidence": 0.8
+        },
+        "deploy_related": true,
+        "alternatives_ruled_out": [
+          "The deployment diff for dep-7716 did not include changes that directly caused the 500 errors.",
+          "The error rate and latency for inventory-service also increased at the same time, indicating a dependency issue rather than a code bug or configuration error."
+        ],
+        "next_steps": [
+          {
+            "action": "Roll back the deployment of version v1.9.3 (dep-7716) to restore the orders-api and inventory-service to their previous state.",
+            "priority": "P0",
+            "rationale": "The deployment is likely the cause of the 500 errors and the inventory-service's unresponsiveness."
+          },
+          {
+            "action": "Investigate the inventory-service for any deployment-related issues or configuration errors.",
+            "priority": "P1",
+            "rationale": "The inventory-service's error rate and latency increased at the same time as the orders-api's errors, indicating a dependency issue."
+          },
+          {
+            "action": "Monitor the services to ensure that the rollback resolves the 500 errors and that the inventory-service is functioning correctly.",
+            "priority": "P1",
+            "rationale": "Confirm that the rollback has resolved the issue and that the inventory-service is stable."
+          }
+        ],
+        "open_questions": [
+          "What caused the inventory-service to become unresponsive after the deployment?",
+          "Are there any other services that may have been affected by the same issue?",
+          "Is there a need to update the timeout or add a fallback for the inventory-service call in the orders-api?"
+        ]
+      },
+      "failed_specialists": {},
+      "revised": false,
+      "judge": null,
+      "error": null,
+      "trace_file": "/Users/rishabh/dev/ccc-takehome/evals/results/20261014T201633/traces/orders_upstream_dependency-1.jsonl"
+    },
+    {
+      "scenario": "payments_missing_migration",
+      "attempt": 1,
+      "passed": false,
+      "scores": {
+        "schema_valid": {
+          "value": 1.0,
+          "passed": true,
+          "detail": ""
+        },
+        "root_cause_category": {
+          "value": 1.0,
+          "passed": true,
+          "detail": "got schema_migration, expected schema_migration"
+        },
+        "deploy_attribution": {
+          "value": 1.0,
+          "passed": true,
+          "detail": "got True, expected True"
+        },
+        "key_fact_recall": {
+          "value": 0.5,
+          "passed": true,
+          "detail": "missing ['0042']"
+        },
+        "citation_grounding": {
+          "value": 0.75,
+          "passed": false,
+          "detail": "E8: unsupported ['deployment', 'functionality', 'introduced', 'potentially']"
+        },
+        "tool_coverage": {
+          "value": 1.0,
+          "passed": true,
+          "detail": ""
+        },
+        "next_step_relevance": {
+          "value": 1.0,
+          "passed": true,
+          "detail": "matched ['migration', 'migrate', 'roll back', 'rollback']"
+        },
+        "calibration": {
+          "value": 1.0,
+          "passed": true,
+          "detail": "confidence 0.90, want >= 0.5 when correct"
+        }
+      },
+      "elapsed_s": 271.6,
+      "llm_calls": 15,
+      "tool_calls": 12,
+      "tokens": {
+        "prompt": 22935,
+        "completion": 1924
+      },
+      "report": {
+        "summary": "The payments-api is throwing 500 errors due to an undefined column 'refund_reason' in the 'refunds' table, which started occurring after the deployment of version v3.8.0 this morning.",
+        "incident_type": "schema_migration",
+        "affected_services": [
+          "payments-api"
+        ],
+        "evidence": [
+          {
+            "evidence_id": "E7",
+            "source": "logs",
+            "detail": "The error 'column \"refund_reason\" of relation \"refunds\" does not exist' started occurring after the deployment around 2026-10-14T09:30:00Z."
+          },
+          {
+            "evidence_id": "E13",
+            "source": "logs",
+            "detail": "The error first appeared at 2026-10-14T09:41:00Z and has been occurring continuously until 2026-10-14T10:59:31Z."
+          },
+          {
+            "evidence_id": "E8",
+            "source": "changes",
+            "detail": "The deployment dep-7712 introduced a database migration that was skipped, potentially causing issues with the refund functionality."
+          },
+          {
+            "evidence_id": "E4",
+            "source": "metrics",
+            "detail": "The error rate for payments-api increased from 0.1% to 6.289% with a first significant change at 2026-10-14T09:50:00Z."
+          }
+        ],
+        "root_cause": {
+          "hypothesis": "The deployment of version v3.8.0 introduced a new column 'refund_reason' in the 'refunds' table, but the corresponding database migration was skipped, leading to the 'undefined column' error when the code tried to access it.",
+          "category": "schema_migration",
+          "confidence": 0.9
+        },
+        "deploy_related": true,
+        "alternatives_ruled_out": [
+          "The error is not caused by a configuration change, as the logs indicate a database schema issue, not a missing or incorrect configuration.",
+          "The error is not caused by a dependency failure, as there are no metrics indicating issues with the PostgreSQL service."
+        ],
+        "next_steps": [
+          {
+            "action": "Roll back the deployment dep-7712 to revert the changes and stop the 500 errors.",
+            "priority": "P0",
+            "rationale": "The deployment introduced a schema change that was not properly migrated, causing the undefined column error."
+          },
+          {
+            "action": "Apply the missing database migration for the 'refund_reason' column to the 'refunds' table.",
+            "priority": "P1",
+            "rationale": "The migration is necessary to ensure the schema is updated and the error is resolved permanently."
+          },
+          {
+            "action": "Verify that the refund functionality is working correctly after the rollback and migration.",
+            "priority": "P1",
+            "rationale": "This ensures that the issue is fully resolved and no further errors are introduced."
+          }
+        ],
+        "open_questions": [
+          "Is there any other schema change in the deployment that might have caused similar issues?"
+        ]
+      },
+      "failed_specialists": {},
+      "revised": false,
+      "judge": null,
+      "error": null,
+      "trace_file": "/Users/rishabh/dev/ccc-takehome/evals/results/20261014T201633/traces/payments_missing_migration-1.jsonl"
+    },
+    {
+      "scenario": "search_latency_regression",
+      "attempt": 1,
+      "passed": false,
+      "scores": {
+        "schema_valid": {
+          "value": 1.0,
+          "passed": true,
+          "detail": ""
+        },
+        "root_cause_category": {
+          "value": 0.0,
+          "passed": false,
+          "detail": "got code_bug, expected performance_regression"
+        },
+        "deploy_attribution": {
+          "value": 1.0,
+          "passed": true,
+          "detail": "got True, expected True"
+        },
+        "key_fact_recall": {
+          "value": 0.5,
+          "passed": true,
+          "detail": "missing ['v5.2.0']"
+        },
+        "citation_grounding": {
+          "value": 0.833,
+          "passed": true,
+          "detail": "E8: unsupported ['occurring', 'search-api']"
+        },
+        "tool_coverage": {
+          "value": 1.0,
+          "passed": true,
+          "detail": ""
+        },
+        "next_step_relevance": {
+          "value": 1.0,
+          "passed": true,
+          "detail": "matched ['roll back', 'cache']"
+        },
+        "calibration": {
+          "value": 0.0,
+          "passed": false,
+          "detail": "confidence 0.90, want < 0.7 when wrong"
+        }
+      },
+      "elapsed_s": 261.9,
+      "llm_calls": 13,
+      "tool_calls": 8,
+      "tokens": {
+        "prompt": 16912,
+        "completion": 1799
+      },
+      "report": {
+        "summary": "The search-api service experienced increased latency and timeouts starting after its latest deploy, which removed the Redis result cache and changed the query path. This caused a shift in load to Elasticsearch, leading to slow queries and timeouts.",
+        "incident_type": "latency",
+        "affected_services": [
+          "search-api"
+        ],
+        "evidence": [
+          {
+            "evidence_id": "E3",
+            "source": "changes",
+            "detail": "The deployment dep-7709 was made 1.8 hours before the incident started."
+          },
+          {
+            "evidence_id": "E9",
+            "source": "changes",
+            "detail": "The deployment dep-7709 removed the Redis result cache and changed the query path."
+          },
+          {
+            "evidence_id": "E8",
+            "source": "logs",
+            "detail": "The search-api service had 29 ERRORs related to timeouts after its latest deploy, with the first timeout occurring at 2026-10-14T09:30:00Z."
+          },
+          {
+            "evidence_id": "E4",
+            "source": "metrics",
+            "detail": "The latency_p99_ms for search-api increased from a baseline of 121.57 ms to 2428.075 ms, with the first significant change occurring at 2026-10-14T09:20:00Z."
+          },
+          {
+            "evidence_id": "E5",
+            "source": "metrics",
+            "detail": "The error_rate for search-api increased from a baseline of 0.1% to 3.337%, with the first significant change occurring at 2026-10-14T09:30:00Z."
+          },
+          {
+            "evidence_id": "E7",
+            "source": "docs",
+            "detail": "The search-api relies on Elasticsearch for queries and Redis for caching, with Redis handling approximately 85% of read traffic."
+          }
+        ],
+        "root_cause": {
+          "hypothesis": "The removal of the Redis result cache in deployment dep-7709 caused a shift in load to Elasticsearch, leading to slow queries and timeouts.",
+          "category": "code_bug",
+          "confidence": 0.9
+        },
+        "deploy_related": true,
+        "alternatives_ruled_out": [
+          "Elasticsearch failure: No evidence of Elasticsearch failure or degradation was found in the logs or metrics.",
+          "Redis failure: Redis was not reported as failing, and the cache was removed intentionally in the deployment."
+        ],
+        "next_steps": [
+          {
+            "action": "Roll back deployment dep-7709 to re-enable the Redis result cache.",
+            "priority": "P0",
+            "rationale": "The removal of the Redis cache caused a significant increase in load on Elasticsearch, leading to slow queries and timeouts."
+          },
+          {
+            "action": "Verify that the Redis cache is re-enabled and that the latency and error rates return to normal levels.",
+            "priority": "P1",
+            "rationale": "This will confirm that the cache re-enablement resolved the issue."
+          },
+          {
+            "action": "Investigate the query path changes in deployment dep-7709 to ensure they are optimized for performance.",
+            "priority": "P2",
+            "rationale": "This will help prevent similar issues in the future."
+          }
+        ],
+        "open_questions": [
+          "What specific changes in the query path caused the increased load on Elasticsearch?",
+          "Is the Elasticsearch infrastructure capable of handling the increased load without performance degradation?"
+        ]
+      },
+      "failed_specialists": {},
+      "revised": false,
+      "judge": null,
+      "error": null,
+      "trace_file": "/Users/rishabh/dev/ccc-takehome/evals/results/20261014T201633/traces/search_latency_regression-1.jsonl"
+    },
+    {
+      "scenario": "worker_oom_crashloop",
+      "attempt": 1,
+      "passed": true,
+      "scores": {
+        "schema_valid": {
+          "value": 1.0,
+          "passed": true,
+          "detail": ""
+        },
+        "root_cause_category": {
+          "value": 1.0,
+          "passed": true,
+          "detail": "got resource_exhaustion, expected resource_exhaustion"
+        },
+        "deploy_attribution": {
+          "value": 1.0,
+          "passed": true,
+          "detail": "got True, expected True"
+        },
+        "key_fact_recall": {
+          "value": 1.0,
+          "passed": true,
+          "detail": "all found"
+        },
+        "citation_grounding": {
+          "value": 1.0,
+          "passed": true,
+          "detail": ""
+        },
+        "tool_coverage": {
+          "value": 1.0,
+          "passed": true,
+          "detail": ""
+        },
+        "next_step_relevance": {
+          "value": 1.0,
+          "passed": true,
+          "detail": "matched ['memory', 'roll back']"
+        },
+        "calibration": {
+          "value": 1.0,
+          "passed": true,
+          "detail": "confidence 0.90, want >= 0.5 when correct"
+        }
+      },
+      "elapsed_s": 253.2,
+      "llm_calls": 15,
+      "tool_calls": 13,
+      "tokens": {
+        "prompt": 19962,
+        "completion": 1746
+      },
+      "report": {
+        "summary": "The report-worker pod is restarting and experiencing OOMKilled errors after the latest deploy, likely due to a change in resource limits and batch size that caused memory exhaustion.",
+        "incident_type": "pod restarts",
+        "affected_services": [
+          "report-worker"
+        ],
+        "evidence": [
+          {
+            "evidence_id": "E8",
+            "source": "logs",
+            "detail": "The report-worker service has 10 ERRORs related to 'Container report-worker terminated: OOMKilled (exit code 137)' after the latest deploy."
+          },
+          {
+            "evidence_id": "E8",
+            "source": "logs",
+            "detail": "The report-worker service has 10 WARNs related to 'Back-off restarting failed container report-worker (CrashLoopBackOff)' after the latest deploy."
+          },
+          {
+            "evidence_id": "E4",
+            "source": "metrics",
+            "detail": "The report-worker service had a significant increase in restarts from 0 to 3 per 10 minutes at 10:00 this morning."
+          },
+          {
+            "evidence_id": "E5",
+            "source": "metrics",
+            "detail": "The error rate for the report-worker service spiked to 100% at 10:00 this morning, indicating all jobs are failing."
+          },
+          {
+            "evidence_id": "E3",
+            "source": "changes",
+            "detail": "The deployment dep-7711 of report-worker on 2026-10-14 included changes to resource limits and batch size."
+          },
+          {
+            "evidence_id": "E9",
+            "source": "changes",
+            "detail": "The deployment dep-7711 reduced memory limits from 1024Mi to 512Mi and increased the batch size from 2000 to 5000."
+          }
+        ],
+        "root_cause": {
+          "hypothesis": "The deployment dep-7711 reduced the memory limit for the report-worker service from 1024Mi to 512Mi while increasing the batch size to 5000, which caused memory exhaustion and OOMKilled errors.",
+          "category": "resource_exhaustion",
+          "confidence": 0.9
+        },
+        "deploy_related": true,
+        "alternatives_ruled_out": [
+          "The memory usage metrics did not show a significant increase, ruling out a memory leak or unexpected usage.",
+          "The CPU usage metrics did not show a significant change, ruling out performance regression as the cause."
+        ],
+        "next_steps": [
+          {
+            "action": "Roll back the deployment dep-7711 to restore the previous memory limit and batch size.",
+            "priority": "P0",
+            "rationale": "The deployment caused memory exhaustion and OOMKilled errors, which are directly related to the resource limits and batch size changes."
+          },
+          {
+            "action": "Verify that the report-worker pod is stable and report generation jobs are functioning correctly.",
+            "priority": "P1",
+            "rationale": "Ensure that the issue is resolved and the service is operating as expected."
+          },
+          {
+            "action": "Review the deployment process to prevent similar issues in the future, including testing resource limits and batch size changes in a staging environment.",
+            "priority": "P2",
+            "rationale": "Prevent recurrence by ensuring proper testing and validation of resource configurations before deployment."
+          }
+        ],
+        "open_questions": [
+          "Was the batch size increase in the deployment dep-7711 tested in a staging environment to ensure it would not cause memory issues?"
+        ]
+      },
+      "failed_specialists": {},
+      "revised": false,
+      "judge": null,
+      "error": null,
+      "trace_file": "/Users/rishabh/dev/ccc-takehome/evals/results/20261014T201633/traces/worker_oom_crashloop-1.jsonl"
+    }
+  ]
+}

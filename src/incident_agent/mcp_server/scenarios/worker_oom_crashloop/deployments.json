@@ -1,0 +1,113 @@
+[
+  {
+    "id": "dep-7660",
+    "service": "report-worker",
+    "version": "v0.13.5",
+    "deployed_at": "2026-10-01T10:00:00Z",
+    "author": "mei.l",
+    "status": "succeeded",
+    "summary": "CSV export tweaks",
+    "diff": {
+      "commits": [
+        "fix: csv quoting"
+      ],
+      "files_changed": [
+        "worker/export.py"
+      ],
+      "config_changes": [],
+      "pipeline_steps": [
+        {
+          "name": "build",
+          "status": "passed"
+        },
+        {
+          "name": "unit-tests",
+          "status": "passed"
+        },
+        {
+          "name": "deploy",
+          "status": "passed"
+        }
+      ]
+    }
+  },
+  {
+    "id": "dep-7711",
+    "service": "report-worker",
+    "version": "v0.14.0",
+    "deployed_at": "2026-10-14T09:50:00Z",
+    "author": "mei.l",
+    "status": "succeeded",
+    "summary": "Right-size worker resources",
+    "diff": {
+      "commits": [
+        "chore: right-size worker resources",
+        "feat: larger default batch size"
+      ],
+      "files_changed": [
+        "deploy/values.yaml",
+        "worker/config.py"
+      ],
+      "config_changes": [
+        {
+          "key": "resources.limits.memory",
+          "old": "1024Mi",
+          "new": "512Mi"
+        },
+        {
+          "key": "BATCH_SIZE",
+          "old": "2000",
+          "new": "5000"
+        }
+      ],
+      "pipeline_steps": [
+        {
+          "name": "build",
+          "status": "passed"
+        },
+        {
+          "name": "unit-tests",
+          "status": "passed"
+        },
+        {
+          "name": "deploy",
+          "status": "passed"
+        }
+      ]
+    }
+  },
+  {
+    "id": "dep-7710",
+    "service": "frontend-web",
+    "version": "v9.3.0",
+    "deployed_at": "2026-10-14T09:30:00Z",
+    "author": "lena.k",
+    "status": "succeeded",
+    "summary": "Update footer links and analytics snippet",
+    "diff": {
+      "commits": [
+        "chore: update footer links",
+        "feat: add consent banner analytics"
+      ],
+      "files_changed": [
+        "web/components/Footer.tsx",
+        "web/analytics.ts"
+      ],
+      "config_changes": [],
+      "pipeline_steps": [
+        {
+          "name": "build",
+          "status": "passed"
+        },
+        {
+          "name": "unit-tests",
+          "status": "passed"
+        },
+        {
+          "name": "deploy",
+          "status": "passed"
+        }
+      ]
+    }
+  }
+]

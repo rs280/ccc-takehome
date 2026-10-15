@@ -1,0 +1,66 @@
+{"ts": "2026-10-14T08:00:00Z", "service": "report-worker", "level": "INFO", "message": "Processed batch of 2000 rows in 78s"}
+{"ts": "2026-10-14T08:04:28Z", "service": "report-worker", "level": "INFO", "message": "Processed batch of 2000 rows in 58s"}
+{"ts": "2026-10-14T08:11:04Z", "service": "report-worker", "level": "INFO", "message": "Processed batch of 2000 rows in 133s"}
+{"ts": "2026-10-14T08:16:29Z", "service": "report-worker", "level": "INFO", "message": "Processed batch of 2000 rows in 94s"}
+{"ts": "2026-10-14T08:19:10Z", "service": "report-worker", "level": "INFO", "message": "Processed batch of 2000 rows in 147s"}
+{"ts": "2026-10-14T08:22:01Z", "service": "report-worker", "level": "INFO", "message": "Processed batch of 2000 rows in 148s"}
+{"ts": "2026-10-14T08:24:49Z", "service": "report-worker", "level": "INFO", "message": "Processed batch of 2000 rows in 97s"}
+{"ts": "2026-10-14T08:30:28Z", "service": "report-worker", "level": "INFO", "message": "Processed batch of 2000 rows in 141s"}
+{"ts": "2026-10-14T08:33:13Z", "service": "report-worker", "level": "INFO", "message": "Processed batch of 2000 rows in 51s"}
+{"ts": "2026-10-14T08:38:30Z", "service": "report-worker", "level": "INFO", "message": "Processed batch of 2000 rows in 114s"}
+{"ts": "2026-10-14T08:43:06Z", "service": "report-worker", "level": "INFO", "message": "Processed batch of 2000 rows in 70s"}
+{"ts": "2026-10-14T08:48:27Z", "service": "report-worker", "level": "INFO", "message": "Processed batch of 2000 rows in 66s"}
+{"ts": "2026-10-14T08:53:52Z", "service": "report-worker", "level": "INFO", "message": "Processed batch of 2000 rows in 135s"}
+{"ts": "2026-10-14T08:56:51Z", "service": "report-worker", "level": "INFO", "message": "Processed batch of 2000 rows in 55s"}
+{"ts": "2026-10-14T09:02:27Z", "service": "report-worker", "level": "INFO", "message": "Processed batch of 2000 rows in 176s"}
+{"ts": "2026-10-14T09:07:05Z", "service": "report-worker", "level": "INFO", "message": "Processed batch of 2000 rows in 159s"}
+{"ts": "2026-10-14T09:12:31Z", "service": "report-worker", "level": "INFO", "message": "Processed batch of 2000 rows in 132s"}
+{"ts": "2026-10-14T09:16:30Z", "service": "report-worker", "level": "INFO", "message": "Processed batch of 2000 rows in 102s"}
+{"ts": "2026-10-14T09:19:25Z", "service": "report-worker", "level": "INFO", "message": "Processed batch of 2000 rows in 174s"}
+{"ts": "2026-10-14T09:24:24Z", "service": "report-worker", "level": "INFO", "message": "Processed batch of 2000 rows in 154s"}
+{"ts": "2026-10-14T09:28:20Z", "service": "report-worker", "level": "INFO", "message": "Processed batch of 2000 rows in 70s"}
+{"ts": "2026-10-14T09:33:24Z", "service": "report-worker", "level": "INFO", "message": "Processed batch of 2000 rows in 127s"}
+{"ts": "2026-10-14T09:36:39Z", "service": "report-worker", "level": "INFO", "message": "Processed batch of 2000 rows in 147s"}
+{"ts": "2026-10-14T09:39:21Z", "service": "report-worker", "level": "INFO", "message": "Processed batch of 2000 rows in 120s"}
+{"ts": "2026-10-14T09:43:33Z", "service": "report-worker", "level": "INFO", "message": "Processed batch of 2000 rows in 167s"}
+{"ts": "2026-10-14T09:48:57Z", "service": "report-worker", "level": "INFO", "message": "Processed batch of 2000 rows in 57s"}
+{"ts": "2026-10-14T09:51:00Z", "service": "report-worker", "level": "INFO", "message": "Starting report-worker v0.14.0; BATCH_SIZE=5000"}
+{"ts": "2026-10-14T09:51:40Z", "service": "report-worker", "level": "INFO", "message": "Loading batch of 5000 rows into memory"}
+{"ts": "2026-10-14T09:54:00Z", "service": "report-worker", "level": "ERROR", "message": "Container report-worker terminated: OOMKilled (exit code 137), memory limit 512Mi"}
+{"ts": "2026-10-14T09:54:05Z", "service": "report-worker", "level": "WARN", "message": "Back-off restarting failed container report-worker (CrashLoopBackOff)"}
+{"ts": "2026-10-14T09:58:00Z", "service": "report-worker", "level": "INFO", "message": "Starting report-worker v0.14.0; BATCH_SIZE=5000"}
+{"ts": "2026-10-14T09:58:40Z", "service": "report-worker", "level": "INFO", "message": "Loading batch of 5000 rows into memory"}
+{"ts": "2026-10-14T10:01:00Z", "service": "report-worker", "level": "ERROR", "message": "Container report-worker terminated: OOMKilled (exit code 137), memory limit 512Mi"}
+{"ts": "2026-10-14T10:01:05Z", "service": "report-worker", "level": "WARN", "message": "Back-off restarting failed container report-worker (CrashLoopBackOff)"}
+{"ts": "2026-10-14T10:05:00Z", "service": "report-worker", "level": "INFO", "message": "Starting report-worker v0.14.0; BATCH_SIZE=5000"}
+{"ts": "2026-10-14T10:05:40Z", "service": "report-worker", "level": "INFO", "message": "Loading batch of 5000 rows into memory"}
+{"ts": "2026-10-14T10:08:00Z", "service": "report-worker", "level": "ERROR", "message": "Container report-worker terminated: OOMKilled (exit code 137), memory limit 512Mi"}
+{"ts": "2026-10-14T10:08:05Z", "service": "report-worker", "level": "WARN", "message": "Back-off restarting failed container report-worker (CrashLoopBackOff)"}
+{"ts": "2026-10-14T10:12:00Z", "service": "report-worker", "level": "INFO", "message": "Starting report-worker v0.14.0; BATCH_SIZE=5000"}
+{"ts": "2026-10-14T10:12:40Z", "service": "report-worker", "level": "INFO", "message": "Loading batch of 5000 rows into memory"}
+{"ts": "2026-10-14T10:15:00Z", "service": "report-worker", "level": "ERROR", "message": "Container report-worker terminated: OOMKilled (exit code 137), memory limit 512Mi"}
+{"ts": "2026-10-14T10:15:05Z", "service": "report-worker", "level": "WARN", "message": "Back-off restarting failed container report-worker (CrashLoopBackOff)"}
+{"ts": "2026-10-14T10:19:00Z", "service": "report-worker", "level": "INFO", "message": "Starting report-worker v0.14.0; BATCH_SIZE=5000"}
+{"ts": "2026-10-14T10:19:40Z", "service": "report-worker", "level": "INFO", "message": "Loading batch of 5000 rows into memory"}
+{"ts": "2026-10-14T10:22:00Z", "service": "report-worker", "level": "ERROR", "message": "Container report-worker terminated: OOMKilled (exit code 137), memory limit 512Mi"}
+{"ts": "2026-10-14T10:22:05Z", "service": "report-worker", "level": "WARN", "message": "Back-off restarting failed container report-worker (CrashLoopBackOff)"}
+{"ts": "2026-10-14T10:26:00Z", "service": "report-worker", "level": "INFO", "message": "Starting report-worker v0.14.0; BATCH_SIZE=5000"}
+{"ts": "2026-10-14T10:26:40Z", "service": "report-worker", "level": "INFO", "message": "Loading batch of 5000 rows into memory"}
+{"ts": "2026-10-14T10:29:00Z", "service": "report-worker", "level": "ERROR", "message": "Container report-worker terminated: OOMKilled (exit code 137), memory limit 512Mi"}
+{"ts": "2026-10-14T10:29:05Z", "service": "report-worker", "level": "WARN", "message": "Back-off restarting failed container report-worker (CrashLoopBackOff)"}
+{"ts": "2026-10-14T10:33:00Z", "service": "report-worker", "level": "INFO", "message": "Starting report-worker v0.14.0; BATCH_SIZE=5000"}
+{"ts": "2026-10-14T10:33:40Z", "service": "report-worker", "level": "INFO", "message": "Loading batch of 5000 rows into memory"}
+{"ts": "2026-10-14T10:36:00Z", "service": "report-worker", "level": "ERROR", "message": "Container report-worker terminated: OOMKilled (exit code 137), memory limit 512Mi"}
+{"ts": "2026-10-14T10:36:05Z", "service": "report-worker", "level": "WARN", "message": "Back-off restarting failed container report-worker (CrashLoopBackOff)"}
+{"ts": "2026-10-14T10:40:00Z", "service": "report-worker", "level": "INFO", "message": "Starting report-worker v0.14.0; BATCH_SIZE=5000"}
+{"ts": "2026-10-14T10:40:40Z", "service": "report-worker", "level": "INFO", "message": "Loading batch of 5000 rows into memory"}
+{"ts": "2026-10-14T10:43:00Z", "service": "report-worker", "level": "ERROR", "message": "Container report-worker terminated: OOMKilled (exit code 137), memory limit 512Mi"}
+{"ts": "2026-10-14T10:43:05Z", "service": "report-worker", "level": "WARN", "message": "Back-off restarting failed container report-worker (CrashLoopBackOff)"}
+{"ts": "2026-10-14T10:47:00Z", "service": "report-worker", "level": "INFO", "message": "Starting report-worker v0.14.0; BATCH_SIZE=5000"}
+{"ts": "2026-10-14T10:47:40Z", "service": "report-worker", "level": "INFO", "message": "Loading batch of 5000 rows into memory"}
+{"ts": "2026-10-14T10:50:00Z", "service": "report-worker", "level": "ERROR", "message": "Container report-worker terminated: OOMKilled (exit code 137), memory limit 512Mi"}
+{"ts": "2026-10-14T10:50:05Z", "service": "report-worker", "level": "WARN", "message": "Back-off restarting failed container report-worker (CrashLoopBackOff)"}
+{"ts": "2026-10-14T10:54:00Z", "service": "report-worker", "level": "INFO", "message": "Starting report-worker v0.14.0; BATCH_SIZE=5000"}
+{"ts": "2026-10-14T10:54:40Z", "service": "report-worker", "level": "INFO", "message": "Loading batch of 5000 rows into memory"}
+{"ts": "2026-10-14T10:57:00Z", "service": "report-worker", "level": "ERROR", "message": "Container report-worker terminated: OOMKilled (exit code 137), memory limit 512Mi"}
+{"ts": "2026-10-14T10:57:05Z", "service": "report-worker", "level": "WARN", "message": "Back-off restarting failed container report-worker (CrashLoopBackOff)"}

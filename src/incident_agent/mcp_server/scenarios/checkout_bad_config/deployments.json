@@ -1,0 +1,103 @@
+[
+  {
+    "id": "dep-7702",
+    "service": "checkout-api",
+    "version": "v2.4.0",
+    "deployed_at": "2026-10-09T15:10:00Z",
+    "author": "sam.o",
+    "status": "succeeded",
+    "summary": "Add gift card support",
+    "diff": {
+      "commits": [
+        "feat: gift card redemption"
+      ],
+      "files_changed": [
+        "app/giftcards.py",
+        "tests/test_giftcards.py"
+      ],
+      "config_changes": [],
+      "pipeline_steps": [
+        {
+          "name": "build",
+          "status": "passed"
+        },
+        {
+          "name": "unit-tests",
+          "status": "passed"
+        },
+        {
+          "name": "deploy",
+          "status": "passed"
+        }
+      ]
+    }
+  },
+  {
+    "id": "dep-7710",
+    "service": "frontend-web",
+    "version": "v9.3.0",
+    "deployed_at": "2026-10-14T09:30:00Z",
+    "author": "lena.k",
+    "status": "succeeded",
+    "summary": "Update footer links and analytics snippet",
+    "diff": {
+      "commits": [
+        "chore: update footer links",
+        "feat: add consent banner analytics"
+      ],
+      "files_changed": [
+        "web/components/Footer.tsx",
+        "web/analytics.ts"
+      ],
+      "config_changes": [],
+      "pipeline_steps": [
+        {
+          "name": "build",
+          "status": "passed"
+        },
+        {
+          "name": "unit-tests",
+          "status": "passed"
+        },
+        {
+          "name": "deploy",
+          "status": "passed"
+        }
+      ]
+    }
+  },
+  {
+    "id": "dep-7715",
+    "service": "checkout-api",
+    "version": "v2.4.1",
+    "deployed_at": "2026-10-14T10:02:00Z",
+    "author": "sam.o",
+    "status": "succeeded",
+    "summary": "Refactor config loading",
+    "diff": {
+      "commits": [
+        "refactor: unify database settings under DATABASE_ prefix",
+        "chore: read DATABASE_POOL_SIZE instead of DB_POOL_SIZE"
+      ],
+      "files_changed": [
+        "app/config/settings.py",
+        "app/db/pool.py"
+      ],
+      "config_changes": [],
+      "pipeline_steps": [
+        {
+          "name": "build",
+          "status": "passed"
+        },
+        {
+          "name": "unit-tests",
+          "status": "passed"
+        },
+        {
+          "name": "deploy",
+          "status": "passed"
+        }
+      ]
+    }
+  }
+]

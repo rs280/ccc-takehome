@@ -1,0 +1,22 @@
+{
+  "category": "certificate_expiry",
+  "acceptable_categories": [
+    "certificate_expiry"
+  ],
+  "caused_by_latest_deploy": false,
+  "key_facts": [
+    "expired",
+    "certificate"
+  ],
+  "expected_tools": [
+    "search_logs|get_error_summary",
+    "get_recent_deployments"
+  ],
+  "next_step_keywords": [
+    "renew",
+    "rotate",
+    "certificate",
+    "cert"
+  ],
+  "reference_answer": "The auth-api mTLS client certificate auth-api-idp-mtls expired at 10:00 because cert-manager renewal failed (issuer internal-ca unreachable); TLS to identity-provider fails and login returns 500. No deploy since Oct 8. Restore issuer connectivity, force renewal, restart pods, add expiry alerting."
+}

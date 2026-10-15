@@ -1,0 +1,68 @@
+[
+  {
+    "id": "dep-7698",
+    "service": "profile-api",
+    "version": "v2.0.7",
+    "deployed_at": "2026-10-12T12:00:00Z",
+    "author": "dev.s",
+    "status": "succeeded",
+    "summary": "Copy changes",
+    "diff": {
+      "commits": [
+        "chore: update copy"
+      ],
+      "files_changed": [
+        "profile/strings.py"
+      ],
+      "config_changes": [],
+      "pipeline_steps": [
+        {
+          "name": "build",
+          "status": "passed"
+        },
+        {
+          "name": "unit-tests",
+          "status": "passed"
+        },
+        {
+          "name": "deploy",
+          "status": "passed"
+        }
+      ]
+    }
+  },
+  {
+    "id": "dep-7710",
+    "service": "frontend-web",
+    "version": "v9.3.0",
+    "deployed_at": "2026-10-14T09:30:00Z",
+    "author": "lena.k",
+    "status": "succeeded",
+    "summary": "Update footer links and analytics snippet",
+    "diff": {
+      "commits": [
+        "chore: update footer links",
+        "feat: add consent banner analytics"
+      ],
+      "files_changed": [
+        "web/components/Footer.tsx",
+        "web/analytics.ts"
+      ],
+      "config_changes": [],
+      "pipeline_steps": [
+        {
+          "name": "build",
+          "status": "passed"
+        },
+        {
+          "name": "unit-tests",
+          "status": "passed"
+        },
+        {
+          "name": "deploy",
+          "status": "passed"
+        }
+      ]
+    }
+  }
+]

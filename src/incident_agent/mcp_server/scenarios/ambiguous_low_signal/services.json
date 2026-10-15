@@ -1,0 +1,78 @@
+[
+  {
+    "name": "checkout-api",
+    "owner": "team-payments",
+    "tier": 1,
+    "depends_on": [
+      "payments-api",
+      "inventory-service",
+      "postgres-checkout"
+    ]
+  },
+  {
+    "name": "payments-api",
+    "owner": "team-payments",
+    "tier": 1,
+    "depends_on": [
+      "postgres-payments"
+    ]
+  },
+  {
+    "name": "orders-api",
+    "owner": "team-fulfilment",
+    "tier": 1,
+    "depends_on": [
+      "inventory-service"
+    ]
+  },
+  {
+    "name": "inventory-service",
+    "owner": "team-fulfilment",
+    "tier": 1,
+    "depends_on": [
+      "postgres-inventory"
+    ]
+  },
+  {
+    "name": "search-api",
+    "owner": "team-discovery",
+    "tier": 2,
+    "depends_on": [
+      "elasticsearch",
+      "redis-search-cache"
+    ]
+  },
+  {
+    "name": "report-worker",
+    "owner": "team-data",
+    "tier": 3,
+    "depends_on": [
+      "postgres-analytics"
+    ]
+  },
+  {
+    "name": "auth-api",
+    "owner": "team-identity",
+    "tier": 0,
+    "depends_on": [
+      "identity-provider"
+    ]
+  },
+  {
+    "name": "profile-api",
+    "owner": "team-identity",
+    "tier": 2,
+    "depends_on": [
+      "postgres-profile",
+      "avatar-cdn"
+    ]
+  },
+  {
+    "name": "frontend-web",
+    "owner": "team-web",
+    "tier": 1,
+    "depends_on": [
+      "checkout-api"
+    ]
+  }
+]

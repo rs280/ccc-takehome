@@ -1,0 +1,52 @@
+name: ci
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+    inputs:
+      run_model_evals:
+        description: Run the eval suite against a hosted model (uses repository secrets)
+        type: boolean
+        default: false
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+      - run: uv sync --frozen
+      - run: uv run ruff check .
+      - run: uv run ruff format --check .
+      # Unit, MCP stdio integration, orchestrator and eval-harness tests. No model or network.
+      - run: uv run pytest -q
+      - name: Scenario data is reproducible from the generator
+        run: uv run python scripts/gen_scenarios.py && git diff --exit-code src/incident_agent/mcp_server/scenarios
+
+  docker:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: docker build -t incident-agent .
+      - run: docker run --rm incident-agent python -c "import incident_agent.orchestrator, evals.runner"
+
+  model-evals:
+    if: github.event_name == 'workflow_dispatch' && inputs.run_model_evals
+    needs: test
+    runs-on: ubuntu-latest
+    env:
+      LLM_BASE_URL: ${{ secrets.LLM_BASE_URL }}
+      LLM_MODEL: ${{ secrets.LLM_MODEL }}
+      LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
+      LLM_REASONING_EFFORT: ""
+      LLM_MAX_CONCURRENCY: "4"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+      - run: uv sync --frozen
+      - run: uv run evals --k 3
+      - uses: actions/upload-artifact@v4
+        with:
+          name: eval-results
+          path: evals/results/

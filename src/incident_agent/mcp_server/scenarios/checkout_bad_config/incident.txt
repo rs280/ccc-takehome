@@ -1,0 +1,1 @@
+My service checkout-api started returning HTTP 500 errors after the latest deployment. Help me investigate the issue and recommend the next steps.

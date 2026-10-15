@@ -1,0 +1,5 @@
+# qwen3:8b with a context window large enough for multi-step tool use.
+# Ollama's default (4096) silently truncates long agent conversations.
+FROM qwen3:8b
+PARAMETER num_ctx 16384
+PARAMETER temperature 0.2

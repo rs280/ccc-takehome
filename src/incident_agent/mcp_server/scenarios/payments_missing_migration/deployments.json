@@ -1,0 +1,108 @@
+[
+  {
+    "id": "dep-7690",
+    "service": "payments-api",
+    "version": "v3.7.2",
+    "deployed_at": "2026-10-07T11:00:00Z",
+    "author": "ari.m",
+    "status": "succeeded",
+    "summary": "Fix currency rounding",
+    "diff": {
+      "commits": [
+        "fix: round JPY amounts"
+      ],
+      "files_changed": [
+        "payments/currency.py"
+      ],
+      "config_changes": [],
+      "pipeline_steps": [
+        {
+          "name": "build",
+          "status": "passed"
+        },
+        {
+          "name": "unit-tests",
+          "status": "passed"
+        },
+        {
+          "name": "deploy",
+          "status": "passed"
+        }
+      ]
+    }
+  },
+  {
+    "id": "dep-7710",
+    "service": "frontend-web",
+    "version": "v9.3.0",
+    "deployed_at": "2026-10-14T09:30:00Z",
+    "author": "lena.k",
+    "status": "succeeded",
+    "summary": "Update footer links and analytics snippet",
+    "diff": {
+      "commits": [
+        "chore: update footer links",
+        "feat: add consent banner analytics"
+      ],
+      "files_changed": [
+        "web/components/Footer.tsx",
+        "web/analytics.ts"
+      ],
+      "config_changes": [],
+      "pipeline_steps": [
+        {
+          "name": "build",
+          "status": "passed"
+        },
+        {
+          "name": "unit-tests",
+          "status": "passed"
+        },
+        {
+          "name": "deploy",
+          "status": "passed"
+        }
+      ]
+    }
+  },
+  {
+    "id": "dep-7712",
+    "service": "payments-api",
+    "version": "v3.8.0",
+    "deployed_at": "2026-10-14T09:40:00Z",
+    "author": "ari.m",
+    "status": "succeeded",
+    "summary": "Store refund reasons",
+    "diff": {
+      "commits": [
+        "feat: capture refund_reason on refunds",
+        "db: add migration 0042_add_refund_reason"
+      ],
+      "files_changed": [
+        "payments/models/refund.py",
+        "payments/api/refunds.py",
+        "migrations/0042_add_refund_reason.py"
+      ],
+      "config_changes": [],
+      "pipeline_steps": [
+        {
+          "name": "build",
+          "status": "passed"
+        },
+        {
+          "name": "unit-tests",
+          "status": "passed"
+        },
+        {
+          "name": "db-migrate",
+          "status": "skipped",
+          "note": "requires manual approval; not approved"
+        },
+        {
+          "name": "deploy",
+          "status": "passed"
+        }
+      ]
+    }
+  }
+]

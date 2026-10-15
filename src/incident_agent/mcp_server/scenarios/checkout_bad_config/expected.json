@@ -1,0 +1,24 @@
+{
+  "category": "bad_config",
+  "acceptable_categories": [
+    "bad_config",
+    "code_bug"
+  ],
+  "caused_by_latest_deploy": true,
+  "key_facts": [
+    "v2.4.1",
+    "DATABASE_POOL_SIZE"
+  ],
+  "expected_tools": [
+    "get_recent_deployments",
+    "get_deployment_diff",
+    "search_logs|get_error_summary"
+  ],
+  "next_step_keywords": [
+    "roll back",
+    "rollback",
+    "revert",
+    "DATABASE_POOL_SIZE"
+  ],
+  "reference_answer": "v2.4.1 (dep-7715, 10:02) changed code to read DATABASE_POOL_SIZE but the deployment still only sets DB_POOL_SIZE, so POST /api/checkout raises KeyError and returns 500. Roll back to v2.4.0 or set DATABASE_POOL_SIZE, then add config validation at startup."
+}

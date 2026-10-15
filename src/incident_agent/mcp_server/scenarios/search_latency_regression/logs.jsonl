@@ -1,0 +1,246 @@
+{"ts": "2026-10-14T08:00:00Z", "service": "search-api", "level": "INFO", "message": "GET /search 200 in 78ms"}
+{"ts": "2026-10-14T08:00:00Z", "service": "search-api", "level": "WARN", "message": "Slow request GET /healthz took 13478ms"}
+{"ts": "2026-10-14T08:00:00Z", "service": "frontend-web", "level": "INFO", "message": "GET / 200 in 46ms"}
+{"ts": "2026-10-14T08:00:00Z", "service": "frontend-web", "level": "WARN", "message": "Slow request GET /healthz took 18832ms"}
+{"ts": "2026-10-14T08:03:34Z", "service": "search-api", "level": "INFO", "message": "GET /search 200 in 58ms"}
+{"ts": "2026-10-14T08:05:01Z", "service": "frontend-web", "level": "INFO", "message": "GET / 200 in 63ms"}
+{"ts": "2026-10-14T08:08:51Z", "service": "search-api", "level": "INFO", "message": "GET /search 200 in 133ms"}
+{"ts": "2026-10-14T08:09:49Z", "service": "frontend-web", "level": "INFO", "message": "GET / 200 in 172ms"}
+{"ts": "2026-10-14T08:13:11Z", "service": "search-api", "level": "INFO", "message": "GET /search 200 in 94ms"}
+{"ts": "2026-10-14T08:13:17Z", "service": "frontend-web", "level": "INFO", "message": "GET / 200 in 131ms"}
+{"ts": "2026-10-14T08:15:02Z", "service": "search-api", "level": "WARN", "message": "Retrying metrics push to collector (attempt 1)"}
+{"ts": "2026-10-14T08:15:20Z", "service": "search-api", "level": "INFO", "message": "GET /search 200 in 147ms"}
+{"ts": "2026-10-14T08:17:37Z", "service": "search-api", "level": "INFO", "message": "GET /search 200 in 148ms"}
+{"ts": "2026-10-14T08:18:22Z", "service": "frontend-web", "level": "INFO", "message": "GET / 200 in 178ms"}
+{"ts": "2026-10-14T08:19:51Z", "service": "search-api", "level": "INFO", "message": "GET /search 200 in 97ms"}
+{"ts": "2026-10-14T08:23:29Z", "service": "frontend-web", "level": "INFO", "message": "GET / 200 in 97ms"}
+{"ts": "2026-10-14T08:24:23Z", "service": "search-api", "level": "INFO", "message": "GET /search 200 in 141ms"}
+{"ts": "2026-10-14T08:26:34Z", "service": "search-api", "level": "INFO", "message": "GET /search 200 in 51ms"}
+{"ts": "2026-10-14T08:27:56Z", "service": "frontend-web", "level": "INFO", "message": "GET / 200 in 101ms"}
+{"ts": "2026-10-14T08:29:17Z", "service": "search-api", "level": "WARN", "message": "Slow request GET /healthz took 14407ms"}
+{"ts": "2026-10-14T08:30:48Z", "service": "search-api", "level": "INFO", "message": "GET /search 200 in 114ms"}
+{"ts": "2026-10-14T08:33:12Z", "service": "frontend-web", "level": "INFO", "message": "GET / 200 in 91ms"}
+{"ts": "2026-10-14T08:34:29Z", "service": "search-api", "level": "INFO", "message": "GET /search 200 in 70ms"}
+{"ts": "2026-10-14T08:36:02Z", "service": "frontend-web", "level": "WARN", "message": "Retrying metrics push to collector (attempt 1)"}
+{"ts": "2026-10-14T08:37:17Z", "service": "frontend-web", "level": "INFO", "message": "GET / 200 in 47ms"}
+{"ts": "2026-10-14T08:38:46Z", "service": "search-api", "level": "INFO", "message": "GET /search 200 in 66ms"}
+{"ts": "2026-10-14T08:43:05Z", "service": "search-api", "level": "INFO", "message": "GET /search 200 in 135ms"}
+{"ts": "2026-10-14T08:43:14Z", "service": "frontend-web", "level": "INFO", "message": "GET / 200 in 160ms"}
+{"ts": "2026-10-14T08:45:29Z", "service": "search-api", "level": "INFO", "message": "GET /search 200 in 55ms"}
+{"ts": "2026-10-14T08:45:30Z", "service": "search-api", "level": "WARN", "message": "Retrying metrics push to collector (attempt 1)"}
+{"ts": "2026-10-14T08:46:16Z", "service": "frontend-web", "level": "INFO", "message": "GET / 200 in 154ms"}
+{"ts": "2026-10-14T08:49:57Z", "service": "search-api", "level": "INFO", "message": "GET /search 200 in 176ms"}
+{"ts": "2026-10-14T08:51:30Z", "service": "frontend-web", "level": "INFO", "message": "GET / 200 in 133ms"}
+{"ts": "2026-10-14T08:53:40Z", "service": "search-api", "level": "INFO", "message": "GET /search 200 in 159ms"}
+{"ts": "2026-10-14T08:53:50Z", "service": "frontend-web", "level": "INFO", "message": "GET / 200 in 98ms"}
+{"ts": "2026-10-14T08:57:43Z", "service": "frontend-web", "level": "INFO", "message": "GET / 200 in 92ms"}
+{"ts": "2026-10-14T08:58:00Z", "service": "search-api", "level": "INFO", "message": "GET /search 200 in 132ms"}
+{"ts": "2026-10-14T09:01:12Z", "service": "search-api", "level": "INFO", "message": "GET /search 200 in 102ms"}
+{"ts": "2026-10-14T09:01:38Z", "service": "frontend-web", "level": "INFO", "message": "GET / 200 in 162ms"}
+{"ts": "2026-10-14T09:03:32Z", "service": "search-api", "level": "INFO", "message": "GET /search 200 in 174ms"}
+{"ts": "2026-10-14T09:07:17Z", "service": "frontend-web", "level": "INFO", "message": "GET / 200 in 61ms"}
+{"ts": "2026-10-14T09:07:31Z", "service": "search-api", "level": "INFO", "message": "GET /search 200 in 154ms"}
+{"ts": "2026-10-14T09:10:40Z", "service": "search-api", "level": "INFO", "message": "GET /search 200 in 70ms"}
+{"ts": "2026-10-14T09:11:36Z", "service": "frontend-web", "level": "WARN", "message": "Slow request GET /healthz took 14319ms"}
+{"ts": "2026-10-14T09:12:37Z", "service": "frontend-web", "level": "INFO", "message": "GET / 200 in 139ms"}
+{"ts": "2026-10-14T09:13:03Z", "service": "search-api", "level": "WARN", "message": "Slow request GET /healthz took 18768ms"}
+{"ts": "2026-10-14T09:14:43Z", "service": "search-api", "level": "INFO", "message": "GET /search 200 in 127ms"}
+{"ts": "2026-10-14T09:15:00Z", "service": "search-api", "level": "INFO", "message": "Starting search-api v5.2.0 (pid 1); result cache: disabled"}
+{"ts": "2026-10-14T09:16:00Z", "service": "search-api", "level": "WARN", "message": "Slow query: elasticsearch took 23248ms for q='...' (cache miss)"}
+{"ts": "2026-10-14T09:16:43Z", "service": "search-api", "level": "WARN", "message": "Slow query: elasticsearch took 22542ms for q='...' (cache miss)"}
+{"ts": "2026-10-14T09:17:19Z", "service": "search-api", "level": "INFO", "message": "GET /search 200 in 147ms"}
+{"ts": "2026-10-14T09:17:45Z", "service": "frontend-web", "level": "INFO", "message": "GET / 200 in 162ms"}
+{"ts": "2026-10-14T09:18:06Z", "service": "search-api", "level": "WARN", "message": "Slow query: elasticsearch took 23667ms for q='...' (cache miss)"}
+{"ts": "2026-10-14T09:18:45Z", "service": "search-api", "level": "WARN", "message": "Slow query: elasticsearch took 28070ms for q='...' (cache miss)"}
+{"ts": "2026-10-14T09:19:29Z", "service": "search-api", "level": "INFO", "message": "GET /search 200 in 120ms"}
+{"ts": "2026-10-14T09:19:40Z", "service": "search-api", "level": "WARN", "message": "Slow query: elasticsearch took 27902ms for q='...' (cache miss)"}
+{"ts": "2026-10-14T09:20:31Z", "service": "search-api", "level": "WARN", "message": "Slow query: elasticsearch took 22510ms for q='...' (cache miss)"}
+{"ts": "2026-10-14T09:21:02Z", "service": "search-api", "level": "WARN", "message": "Slow query: elasticsearch took 28514ms for q='...' (cache miss)"}
+{"ts": "2026-10-14T09:22:14Z", "service": "search-api", "level": "WARN", "message": "Slow query: elasticsearch took 27297ms for q='...' (cache miss)"}
+{"ts": "2026-10-14T09:22:50Z", "service": "search-api", "level": "INFO", "message": "GET /search 200 in 167ms"}
+{"ts": "2026-10-14T09:23:15Z", "service": "search-api", "level": "WARN", "message": "Slow query: elasticsearch took 25840ms for q='...' (cache miss)"}
+{"ts": "2026-10-14T09:23:18Z", "service": "frontend-web", "level": "INFO", "message": "GET / 200 in 125ms"}
+{"ts": "2026-10-14T09:24:43Z", "service": "search-api", "level": "WARN", "message": "Slow query: elasticsearch took 22848ms for q='...' (cache miss)"}
+{"ts": "2026-10-14T09:25:39Z", "service": "frontend-web", "level": "INFO", "message": "GET / 200 in 158ms"}
+{"ts": "2026-10-14T09:26:11Z", "service": "search-api", "level": "WARN", "message": "Slow query: elasticsearch took 22716ms for q='...' (cache miss)"}
+{"ts": "2026-10-14T09:26:57Z", "service": "search-api", "level": "WARN", "message": "Slow query: elasticsearch took 21648ms for q='...' (cache miss)"}
+{"ts": "2026-10-14T09:27:09Z", "service": "search-api", "level": "INFO", "message": "GET /search 200 in 57ms"}
+{"ts": "2026-10-14T09:27:32Z", "service": "frontend-web", "level": "WARN", "message": "Retrying metrics push to collector (attempt 1)"}
+{"ts": "2026-10-14T09:27:44Z", "service": "search-api", "level": "WARN", "message": "Slow query: elasticsearch took 23122ms for q='...' (cache miss)"}
+{"ts": "2026-10-14T09:28:26Z", "service": "search-api", "level": "WARN", "message": "Retrying metrics push to collector (attempt 1)"}
+{"ts": "2026-10-14T09:29:05Z", "service": "search-api", "level": "WARN", "message": "Slow query: elasticsearch took 25237ms for q='...' (cache miss)"}
+{"ts": "2026-10-14T09:29:15Z", "service": "frontend-web", "level": "INFO", "message": "GET / 200 in 80ms"}
+{"ts": "2026-10-14T09:29:44Z", "service": "search-api", "level": "WARN", "message": "Slow query: elasticsearch took 29434ms for q='...' (cache miss)"}
+{"ts": "2026-10-14T09:30:00Z", "service": "search-api", "level": "ERROR", "message": "GET /search timed out after 3000ms -> 504"}
+{"ts": "2026-10-14T09:30:56Z", "service": "search-api", "level": "WARN", "message": "Slow query: elasticsearch took 22465ms for q='...' (cache miss)"}
+{"ts": "2026-10-14T09:31:29Z", "service": "search-api", "level": "WARN", "message": "Slow query: elasticsearch took 24003ms for q='...' (cache miss)"}
+{"ts": "2026-10-14T09:31:56Z", "service": "frontend-web", "level": "INFO", "message": "GET / 200 in 47ms"}
+{"ts": "2026-10-14T09:32:31Z", "service": "search-api", "level": "INFO", "message": "GET /search 200 in 161ms"}
+{"ts": "2026-10-14T09:32:53Z", "service": "search-api", "level": "WARN", "message": "Slow query: elasticsearch took 25406ms for q='...' (cache miss)"}
+{"ts": "2026-10-14T09:34:01Z", "service": "search-api", "level": "WARN", "message": "Slow query: elasticsearch took 25268ms for q='...' (cache miss)"}
+{"ts": "2026-10-14T09:34:32Z", "service": "frontend-web", "level": "INFO", "message": "GET / 200 in 77ms"}
+{"ts": "2026-10-14T09:34:46Z", "service": "search-api", "level": "ERROR", "message": "GET /search timed out after 3000ms -> 504"}
+{"ts": "2026-10-14T09:35:07Z", "service": "search-api", "level": "WARN", "message": "Slow query: elasticsearch took 24643ms for q='...' (cache miss)"}
+{"ts": "2026-10-14T09:35:53Z", "service": "search-api", "level": "WARN", "message": "Slow query: elasticsearch took 22993ms for q='...' (cache miss)"}
+{"ts": "2026-10-14T09:36:24Z", "service": "search-api", "level": "WARN", "message": "Slow query: elasticsearch took 27844ms for q='...' (cache miss)"}
+{"ts": "2026-10-14T09:37:18Z", "service": "search-api", "level": "INFO", "message": "GET /search 200 in 55ms"}
+{"ts": "2026-10-14T09:37:31Z", "service": "search-api", "level": "WARN", "message": "Slow query: elasticsearch took 21707ms for q='...' (cache miss)"}
+{"ts": "2026-10-14T09:38:29Z", "service": "search-api", "level": "ERROR", "message": "GET /search timed out after 3000ms -> 504"}
+{"ts": "2026-10-14T09:38:44Z", "service": "search-api", "level": "WARN", "message": "Slow query: elasticsearch took 22793ms for q='...' (cache miss)"}
+{"ts": "2026-10-14T09:38:59Z", "service": "frontend-web", "level": "INFO", "message": "GET / 200 in 129ms"}
+{"ts": "2026-10-14T09:39:29Z", "service": "search-api", "level": "WARN", "message": "Slow query: elasticsearch took 23967ms for q='...' (cache miss)"}
+{"ts": "2026-10-14T09:40:55Z", "service": "search-api", "level": "WARN", "message": "Slow query: elasticsearch took 25997ms for q='...' (cache miss)"}
+{"ts": "2026-10-14T09:41:36Z", "service": "frontend-web", "level": "INFO", "message": "GET / 200 in 73ms"}
+{"ts": "2026-10-14T09:41:46Z", "service": "search-api", "level": "ERROR", "message": "GET /search timed out after 3000ms -> 504"}
+{"ts": "2026-10-14T09:42:11Z", "service": "search-api", "level": "WARN", "message": "Slow query: elasticsearch took 25750ms for q='...' (cache miss)"}
+{"ts": "2026-10-14T09:42:14Z", "service": "search-api", "level": "INFO", "message": "GET /search 200 in 154ms"}
+{"ts": "2026-10-14T09:43:11Z", "service": "search-api", "level": "WARN", "message": "Slow query: elasticsearch took 23914ms for q='...' (cache miss)"}
+{"ts": "2026-10-14T09:43:42Z", "service": "frontend-web", "level": "INFO", "message": "GET / 200 in 174ms"}
+{"ts": "2026-10-14T09:44:02Z", "service": "search-api", "level": "WARN", "message": "Slow query: elasticsearch took 21297ms for q='...' (cache miss)"}
+{"ts": "2026-10-14T09:44:34Z", "service": "search-api", "level": "WARN", "message": "Slow query: elasticsearch took 21302ms for q='...' (cache miss)"}
+{"ts": "2026-10-14T09:45:01Z", "service": "search-api", "level": "ERROR", "message": "GET /search timed out after 3000ms -> 504"}
+{"ts": "2026-10-14T09:45:22Z", "service": "search-api", "level": "INFO", "message": "GET /search 200 in 128ms"}
+{"ts": "2026-10-14T09:45:37Z", "service": "search-api", "level": "WARN", "message": "Slow query: elasticsearch took 24104ms for q='...' (cache miss)"}
+{"ts": "2026-10-14T09:46:36Z", "service": "search-api", "level": "WARN", "message": "Slow query: elasticsearch took 28324ms for q='...' (cache miss)"}
+{"ts": "2026-10-14T09:47:27Z", "service": "search-api", "level": "INFO", "message": "GET /search 200 in 130ms"}
+{"ts": "2026-10-14T09:47:40Z", "service": "search-api", "level": "ERROR", "message": "GET /search timed out after 3000ms -> 504"}
+{"ts": "2026-10-14T09:47:45Z", "service": "search-api", "level": "WARN", "message": "Slow query: elasticsearch took 28080ms for q='...' (cache miss)"}
+{"ts": "2026-10-14T09:48:41Z", "service": "frontend-web", "level": "INFO", "message": "GET / 200 in 151ms"}
+{"ts": "2026-10-14T09:48:48Z", "service": "search-api", "level": "WARN", "message": "Slow query: elasticsearch took 27440ms for q='...' (cache miss)"}
+{"ts": "2026-10-14T09:49:36Z", "service": "search-api", "level": "WARN", "message": "Slow query: elasticsearch took 24525ms for q='...' (cache miss)"}
+{"ts": "2026-10-14T09:50:08Z", "service": "search-api", "level": "INFO", "message": "GET /search 200 in 166ms"}
+{"ts": "2026-10-14T09:50:27Z", "service": "search-api", "level": "WARN", "message": "Slow query: elasticsearch took 23289ms for q='...' (cache miss)"}
+{"ts": "2026-10-14T09:51:05Z", "service": "frontend-web", "level": "WARN", "message": "Slow request GET /healthz took 12188ms"}
+{"ts": "2026-10-14T09:51:31Z", "service": "search-api", "level": "ERROR", "message": "GET /search timed out after 3000ms -> 504"}
+{"ts": "2026-10-14T09:51:56Z", "service": "search-api", "level": "WARN", "message": "Slow query: elasticsearch took 21891ms for q='...' (cache miss)"}
+{"ts": "2026-10-14T09:52:22Z", "service": "search-api", "level": "INFO", "message": "GET /search 200 in 73ms"}
+{"ts": "2026-10-14T09:52:27Z", "service": "search-api", "level": "WARN", "message": "Slow query: elasticsearch took 25187ms for q='...' (cache miss)"}
+{"ts": "2026-10-14T09:52:57Z", "service": "search-api", "level": "WARN", "message": "Slow request GET /healthz took 16109ms"}
+{"ts": "2026-10-14T09:53:07Z", "service": "search-api", "level": "WARN", "message": "Slow query: elasticsearch took 22384ms for q='...' (cache miss)"}
+{"ts": "2026-10-14T09:54:29Z", "service": "search-api", "level": "WARN", "message": "Slow query: elasticsearch took 25619ms for q='...' (cache miss)"}
+{"ts": "2026-10-14T09:54:38Z", "service": "frontend-web", "level": "INFO", "message": "GET / 200 in 94ms"}
+{"ts": "2026-10-14T09:55:03Z", "service": "search-api", "level": "ERROR", "message": "GET /search timed out after 3000ms -> 504"}
+{"ts": "2026-10-14T09:55:41Z", "service": "search-api", "level": "WARN", "message": "Slow query: elasticsearch took 21741ms for q='...' (cache miss)"}
+{"ts": "2026-10-14T09:56:22Z", "service": "search-api", "level": "WARN", "message": "Slow query: elasticsearch took 25407ms for q='...' (cache miss)"}
+{"ts": "2026-10-14T09:56:45Z", "service": "frontend-web", "level": "INFO", "message": "GET / 200 in 114ms"}
+{"ts": "2026-10-14T09:56:52Z", "service": "search-api", "level": "WARN", "message": "Slow query: elasticsearch took 26966ms for q='...' (cache miss)"}
+{"ts": "2026-10-14T09:57:16Z", "service": "search-api", "level": "ERROR", "message": "GET /search timed out after 3000ms -> 504"}
+{"ts": "2026-10-14T09:57:19Z", "service": "search-api", "level": "INFO", "message": "GET /search 200 in 140ms"}
+{"ts": "2026-10-14T09:58:20Z", "service": "search-api", "level": "WARN", "message": "Slow query: elasticsearch took 29963ms for q='...' (cache miss)"}
+{"ts": "2026-10-14T09:59:05Z", "service": "search-api", "level": "WARN", "message": "Slow query: elasticsearch took 26071ms for q='...' (cache miss)"}
+{"ts": "2026-10-14T09:59:38Z", "service": "search-api", "level": "ERROR", "message": "GET /search timed out after 3000ms -> 504"}
+{"ts": "2026-10-14T09:59:56Z", "service": "search-api", "level": "WARN", "message": "Slow query: elasticsearch took 21017ms for q='...' (cache miss)"}
+{"ts": "2026-10-14T10:00:45Z", "service": "frontend-web", "level": "INFO", "message": "GET / 200 in 106ms"}
+{"ts": "2026-10-14T10:00:49Z", "service": "search-api", "level": "WARN", "message": "Slow query: elasticsearch took 28776ms for q='...' (cache miss)"}
+{"ts": "2026-10-14T10:01:49Z", "service": "search-api", "level": "WARN", "message": "Slow query: elasticsearch took 24292ms for q='...' (cache miss)"}
+{"ts": "2026-10-14T10:02:02Z", "service": "search-api", "level": "ERROR", "message": "GET /search timed out after 3000ms -> 504"}
+{"ts": "2026-10-14T10:02:50Z", "service": "search-api", "level": "WARN", "message": "Slow query: elasticsearch took 21081ms for q='...' (cache miss)"}
+{"ts": "2026-10-14T10:02:59Z", "service": "search-api", "level": "INFO", "message": "GET /search 200 in 60ms"}
+{"ts": "2026-10-14T10:03:36Z", "service": "search-api", "level": "WARN", "message": "Slow query: elasticsearch took 22470ms for q='...' (cache miss)"}
+{"ts": "2026-10-14T10:04:30Z", "service": "search-api", "level": "WARN", "message": "Slow query: elasticsearch took 21682ms for q='...' (cache miss)"}
+{"ts": "2026-10-14T10:04:56Z", "service": "frontend-web", "level": "INFO", "message": "GET / 200 in 55ms"}
+{"ts": "2026-10-14T10:05:01Z", "service": "search-api", "level": "WARN", "message": "Slow query: elasticsearch took 25984ms for q='...' (cache miss)"}
+{"ts": "2026-10-14T10:05:07Z", "service": "search-api", "level": "ERROR", "message": "GET /search timed out after 3000ms -> 504"}
+{"ts": "2026-10-14T10:05:36Z", "service": "search-api", "level": "WARN", "message": "Slow query: elasticsearch took 29670ms for q='...' (cache miss)"}
+{"ts": "2026-10-14T10:05:39Z", "service": "search-api", "level": "INFO", "message": "GET /search 200 in 180ms"}
+{"ts": "2026-10-14T10:06:45Z", "service": "search-api", "level": "WARN", "message": "Slow query: elasticsearch took 27381ms for q='...' (cache miss)"}
+{"ts": "2026-10-14T10:07:36Z", "service": "search-api", "level": "ERROR", "message": "GET /search timed out after 3000ms -> 504"}
+{"ts": "2026-10-14T10:07:59Z", "service": "search-api", "level": "WARN", "message": "Slow query: elasticsearch took 29096ms for q='...' (cache miss)"}
+{"ts": "2026-10-14T10:08:46Z", "service": "search-api", "level": "INFO", "message": "GET /search 200 in 150ms"}
+{"ts": "2026-10-14T10:08:46Z", "service": "search-api", "level": "WARN", "message": "Slow query: elasticsearch took 23371ms for q='...' (cache miss)"}
+{"ts": "2026-10-14T10:09:03Z", "service": "search-api", "level": "WARN", "message": "Retrying metrics push to collector (attempt 1)"}
+{"ts": "2026-10-14T10:10:05Z", "service": "search-api", "level": "WARN", "message": "Slow query: elasticsearch took 29404ms for q='...' (cache miss)"}
+{"ts": "2026-10-14T10:10:34Z", "service": "frontend-web", "level": "INFO", "message": "GET / 200 in 157ms"}
+{"ts": "2026-10-14T10:11:07Z", "service": "search-api", "level": "ERROR", "message": "GET /search timed out after 3000ms -> 504"}
+{"ts": "2026-10-14T10:11:19Z", "service": "search-api", "level": "WARN", "message": "Slow query: elasticsearch took 29282ms for q='...' (cache miss)"}
+{"ts": "2026-10-14T10:12:44Z", "service": "search-api", "level": "WARN", "message": "Slow query: elasticsearch took 29263ms for q='...' (cache miss)"}
+{"ts": "2026-10-14T10:14:01Z", "service": "search-api", "level": "ERROR", "message": "GET /search timed out after 3000ms -> 504"}
+{"ts": "2026-10-14T10:14:03Z", "service": "search-api", "level": "WARN", "message": "Slow query: elasticsearch took 24767ms for q='...' (cache miss)"}
+{"ts": "2026-10-14T10:14:13Z", "service": "search-api", "level": "INFO", "message": "GET /search 200 in 146ms"}
+{"ts": "2026-10-14T10:14:17Z", "service": "frontend-web", "level": "WARN", "message": "Retrying metrics push to collector (attempt 1)"}
+{"ts": "2026-10-14T10:14:35Z", "service": "search-api", "level": "WARN", "message": "Slow query: elasticsearch took 23180ms for q='...' (cache miss)"}
+{"ts": "2026-10-14T10:15:13Z", "service": "frontend-web", "level": "INFO", "message": "GET / 200 in 147ms"}
+{"ts": "2026-10-14T10:16:03Z", "service": "search-api", "level": "WARN", "message": "Slow query: elasticsearch took 27170ms for q='...' (cache miss)"}
+{"ts": "2026-10-14T10:17:06Z", "service": "search-api", "level": "WARN", "message": "Slow query: elasticsearch took 21308ms for q='...' (cache miss)"}
+{"ts": "2026-10-14T10:18:11Z", "service": "search-api", "level": "ERROR", "message": "GET /search timed out after 3000ms -> 504"}
+{"ts": "2026-10-14T10:18:17Z", "service": "search-api", "level": "WARN", "message": "Slow query: elasticsearch took 29016ms for q='...' (cache miss)"}
+{"ts": "2026-10-14T10:18:47Z", "service": "search-api", "level": "WARN", "message": "Slow query: elasticsearch took 22148ms for q='...' (cache miss)"}
+{"ts": "2026-10-14T10:20:10Z", "service": "search-api", "level": "INFO", "message": "GET /search 200 in 99ms"}
+{"ts": "2026-10-14T10:20:11Z", "service": "search-api", "level": "WARN", "message": "Slow query: elasticsearch took 22506ms for q='...' (cache miss)"}
+{"ts": "2026-10-14T10:20:32Z", "service": "frontend-web", "level": "INFO", "message": "GET / 200 in 73ms"}
+{"ts": "2026-10-14T10:20:45Z", "service": "search-api", "level": "WARN", "message": "Slow query: elasticsearch took 28763ms for q='...' (cache miss)"}
+{"ts": "2026-10-14T10:21:14Z", "service": "search-api", "level": "ERROR", "message": "GET /search timed out after 3000ms -> 504"}
+{"ts": "2026-10-14T10:22:04Z", "service": "search-api", "level": "WARN", "message": "Slow query: elasticsearch took 25350ms for q='...' (cache miss)"}
+{"ts": "2026-10-14T10:22:46Z", "service": "search-api", "level": "INFO", "message": "GET /search 200 in 78ms"}
+{"ts": "2026-10-14T10:23:18Z", "service": "search-api", "level": "WARN", "message": "Slow query: elasticsearch took 24362ms for q='...' (cache miss)"}
+{"ts": "2026-10-14T10:24:09Z", "service": "search-api", "level": "ERROR", "message": "GET /search timed out after 3000ms -> 504"}
+{"ts": "2026-10-14T10:24:32Z", "service": "search-api", "level": "WARN", "message": "Slow query: elasticsearch took 28542ms for q='...' (cache miss)"}
+{"ts": "2026-10-14T10:24:39Z", "service": "frontend-web", "level": "INFO", "message": "GET / 200 in 170ms"}
+{"ts": "2026-10-14T10:25:42Z", "service": "search-api", "level": "INFO", "message": "GET /search 200 in 43ms"}
+{"ts": "2026-10-14T10:25:53Z", "service": "search-api", "level": "WARN", "message": "Slow query: elasticsearch took 22257ms for q='...' (cache miss)"}
+{"ts": "2026-10-14T10:26:44Z", "service": "frontend-web", "level": "INFO", "message": "GET / 200 in 86ms"}
+{"ts": "2026-10-14T10:27:17Z", "service": "search-api", "level": "WARN", "message": "Slow query: elasticsearch took 25707ms for q='...' (cache miss)"}
+{"ts": "2026-10-14T10:27:29Z", "service": "search-api", "level": "ERROR", "message": "GET /search timed out after 3000ms -> 504"}
+{"ts": "2026-10-14T10:28:24Z", "service": "search-api", "level": "WARN", "message": "Slow query: elasticsearch took 24248ms for q='...' (cache miss)"}
+{"ts": "2026-10-14T10:29:30Z", "service": "search-api", "level": "WARN", "message": "Slow query: elasticsearch took 26435ms for q='...' (cache miss)"}
+{"ts": "2026-10-14T10:29:38Z", "service": "search-api", "level": "INFO", "message": "GET /search 200 in 107ms"}
+{"ts": "2026-10-14T10:30:39Z", "service": "search-api", "level": "WARN", "message": "Slow query: elasticsearch took 25987ms for q='...' (cache miss)"}
+{"ts": "2026-10-14T10:31:10Z", "service": "frontend-web", "level": "INFO", "message": "GET / 200 in 84ms"}
+{"ts": "2026-10-14T10:31:10Z", "service": "search-api", "level": "WARN", "message": "Slow query: elasticsearch took 21993ms for q='...' (cache miss)"}
+{"ts": "2026-10-14T10:31:26Z", "service": "search-api", "level": "ERROR", "message": "GET /search timed out after 3000ms -> 504"}
+{"ts": "2026-10-14T10:31:56Z", "service": "search-api", "level": "WARN", "message": "Slow query: elasticsearch took 22630ms for q='...' (cache miss)"}
+{"ts": "2026-10-14T10:32:46Z", "service": "search-api", "level": "INFO", "message": "GET /search 200 in 147ms"}
+{"ts": "2026-10-14T10:33:07Z", "service": "search-api", "level": "WARN", "message": "Slow query: elasticsearch took 25765ms for q='...' (cache miss)"}
+{"ts": "2026-10-14T10:33:25Z", "service": "search-api", "level": "ERROR", "message": "GET /search timed out after 3000ms -> 504"}
+{"ts": "2026-10-14T10:33:31Z", "service": "search-api", "level": "WARN", "message": "Slow request GET /healthz took 13645ms"}
+{"ts": "2026-10-14T10:33:44Z", "service": "frontend-web", "level": "INFO", "message": "GET / 200 in 55ms"}
+{"ts": "2026-10-14T10:33:54Z", "service": "search-api", "level": "WARN", "message": "Slow query: elasticsearch took 28633ms for q='...' (cache miss)"}
+{"ts": "2026-10-14T10:35:10Z", "service": "search-api", "level": "WARN", "message": "Slow query: elasticsearch took 29996ms for q='...' (cache miss)"}
+{"ts": "2026-10-14T10:35:59Z", "service": "search-api", "level": "WARN", "message": "Slow query: elasticsearch took 22406ms for q='...' (cache miss)"}
+{"ts": "2026-10-14T10:36:25Z", "service": "search-api", "level": "ERROR", "message": "GET /search timed out after 3000ms -> 504"}
+{"ts": "2026-10-14T10:36:30Z", "service": "search-api", "level": "WARN", "message": "Slow query: elasticsearch took 28519ms for q='...' (cache miss)"}
+{"ts": "2026-10-14T10:36:54Z", "service": "search-api", "level": "INFO", "message": "GET /search 200 in 72ms"}
+{"ts": "2026-10-14T10:37:02Z", "service": "frontend-web", "level": "INFO", "message": "GET / 200 in 175ms"}
+{"ts": "2026-10-14T10:37:49Z", "service": "search-api", "level": "WARN", "message": "Slow query: elasticsearch took 28363ms for q='...' (cache miss)"}
+{"ts": "2026-10-14T10:38:42Z", "service": "search-api", "level": "WARN", "message": "Slow query: elasticsearch took 24452ms for q='...' (cache miss)"}
+{"ts": "2026-10-14T10:39:47Z", "service": "search-api", "level": "WARN", "message": "Slow query: elasticsearch took 23322ms for q='...' (cache miss)"}
+{"ts": "2026-10-14T10:40:33Z", "service": "search-api", "level": "WARN", "message": "Slow query: elasticsearch took 26890ms for q='...' (cache miss)"}
+{"ts": "2026-10-14T10:41:15Z", "service": "frontend-web", "level": "INFO", "message": "GET / 200 in 54ms"}
+{"ts": "2026-10-14T10:41:15Z", "service": "search-api", "level": "ERROR", "message": "GET /search timed out after 3000ms -> 504"}
+{"ts": "2026-10-14T10:41:39Z", "service": "search-api", "level": "WARN", "message": "Slow query: elasticsearch took 29335ms for q='...' (cache miss)"}
+{"ts": "2026-10-14T10:41:40Z", "service": "search-api", "level": "INFO", "message": "GET /search 200 in 53ms"}
+{"ts": "2026-10-14T10:43:02Z", "service": "search-api", "level": "WARN", "message": "Slow query: elasticsearch took 26983ms for q='...' (cache miss)"}
+{"ts": "2026-10-14T10:43:02Z", "service": "search-api", "level": "ERROR", "message": "GET /search timed out after 3000ms -> 504"}
+{"ts": "2026-10-14T10:44:02Z", "service": "search-api", "level": "WARN", "message": "Slow query: elasticsearch took 28964ms for q='...' (cache miss)"}
+{"ts": "2026-10-14T10:44:15Z", "service": "frontend-web", "level": "INFO", "message": "GET / 200 in 50ms"}
+{"ts": "2026-10-14T10:44:34Z", "service": "search-api", "level": "WARN", "message": "Slow query: elasticsearch took 21058ms for q='...' (cache miss)"}
+{"ts": "2026-10-14T10:44:42Z", "service": "search-api", "level": "ERROR", "message": "GET /search timed out after 3000ms -> 504"}
+{"ts": "2026-10-14T10:45:29Z", "service": "search-api", "level": "INFO", "message": "GET /search 200 in 141ms"}
+{"ts": "2026-10-14T10:45:44Z", "service": "search-api", "level": "WARN", "message": "Slow query: elasticsearch took 27642ms for q='...' (cache miss)"}
+{"ts": "2026-10-14T10:46:23Z", "service": "frontend-web", "level": "WARN", "message": "Slow request GET /healthz took 13530ms"}
+{"ts": "2026-10-14T10:46:36Z", "service": "search-api", "level": "WARN", "message": "Retrying metrics push to collector (attempt 1)"}
+{"ts": "2026-10-14T10:46:58Z", "service": "search-api", "level": "WARN", "message": "Slow query: elasticsearch took 27818ms for q='...' (cache miss)"}
+{"ts": "2026-10-14T10:47:51Z", "service": "search-api", "level": "WARN", "message": "Slow query: elasticsearch took 22980ms for q='...' (cache miss)"}
+{"ts": "2026-10-14T10:48:21Z", "service": "search-api", "level": "WARN", "message": "Slow query: elasticsearch took 26542ms for q='...' (cache miss)"}
+{"ts": "2026-10-14T10:48:58Z", "service": "search-api", "level": "WARN", "message": "Slow query: elasticsearch took 24207ms for q='...' (cache miss)"}
+{"ts": "2026-10-14T10:49:05Z", "service": "search-api", "level": "INFO", "message": "GET /search 200 in 163ms"}
+{"ts": "2026-10-14T10:49:13Z", "service": "search-api", "level": "ERROR", "message": "GET /search timed out after 3000ms -> 504"}
+{"ts": "2026-10-14T10:49:20Z", "service": "frontend-web", "level": "INFO", "message": "GET / 200 in 155ms"}
+{"ts": "2026-10-14T10:50:22Z", "service": "search-api", "level": "WARN", "message": "Slow query: elasticsearch took 25748ms for q='...' (cache miss)"}
+{"ts": "2026-10-14T10:51:14Z", "service": "search-api", "level": "WARN", "message": "Slow query: elasticsearch took 27437ms for q='...' (cache miss)"}
+{"ts": "2026-10-14T10:52:44Z", "service": "search-api", "level": "WARN", "message": "Slow query: elasticsearch took 22251ms for q='...' (cache miss)"}
+{"ts": "2026-10-14T10:53:30Z", "service": "search-api", "level": "ERROR", "message": "GET /search timed out after 3000ms -> 504"}
+{"ts": "2026-10-14T10:53:35Z", "service": "frontend-web", "level": "INFO", "message": "GET / 200 in 153ms"}
+{"ts": "2026-10-14T10:53:37Z", "service": "search-api", "level": "INFO", "message": "GET /search 200 in 88ms"}
+{"ts": "2026-10-14T10:54:10Z", "service": "search-api", "level": "WARN", "message": "Slow query: elasticsearch took 25508ms for q='...' (cache miss)"}
+{"ts": "2026-10-14T10:54:57Z", "service": "search-api", "level": "WARN", "message": "Slow query: elasticsearch took 21845ms for q='...' (cache miss)"}
+{"ts": "2026-10-14T10:55:40Z", "service": "search-api", "level": "ERROR", "message": "GET /search timed out after 3000ms -> 504"}
+{"ts": "2026-10-14T10:55:54Z", "service": "search-api", "level": "INFO", "message": "GET /search 200 in 152ms"}
+{"ts": "2026-10-14T10:56:05Z", "service": "search-api", "level": "WARN", "message": "Slow query: elasticsearch took 23439ms for q='...' (cache miss)"}
+{"ts": "2026-10-14T10:56:53Z", "service": "frontend-web", "level": "INFO", "message": "GET / 200 in 171ms"}
+{"ts": "2026-10-14T10:57:33Z", "service": "search-api", "level": "WARN", "message": "Slow query: elasticsearch took 28147ms for q='...' (cache miss)"}
+{"ts": "2026-10-14T10:57:37Z", "service": "search-api", "level": "ERROR", "message": "GET /search timed out after 3000ms -> 504"}
+{"ts": "2026-10-14T10:58:22Z", "service": "search-api", "level": "WARN", "message": "Slow query: elasticsearch took 27116ms for q='...' (cache miss)"}
+{"ts": "2026-10-14T10:58:33Z", "service": "search-api", "level": "INFO", "message": "GET /search 200 in 53ms"}
+{"ts": "2026-10-14T10:59:41Z", "service": "frontend-web", "level": "INFO", "message": "GET / 200 in 155ms"}
+{"ts": "2026-10-14T10:59:45Z", "service": "search-api", "level": "WARN", "message": "Slow query: elasticsearch took 27554ms for q='...' (cache miss)"}

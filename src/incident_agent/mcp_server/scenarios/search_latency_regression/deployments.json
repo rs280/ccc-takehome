@@ -1,0 +1,108 @@
+[
+  {
+    "id": "dep-7680",
+    "service": "search-api",
+    "version": "v5.1.4",
+    "deployed_at": "2026-10-06T16:20:00Z",
+    "author": "noor.b",
+    "status": "succeeded",
+    "summary": "Tune synonym dictionary",
+    "diff": {
+      "commits": [
+        "chore: update synonyms"
+      ],
+      "files_changed": [
+        "search/synonyms.txt"
+      ],
+      "config_changes": [],
+      "pipeline_steps": [
+        {
+          "name": "build",
+          "status": "passed"
+        },
+        {
+          "name": "unit-tests",
+          "status": "passed"
+        },
+        {
+          "name": "deploy",
+          "status": "passed"
+        }
+      ]
+    }
+  },
+  {
+    "id": "dep-7709",
+    "service": "search-api",
+    "version": "v5.2.0",
+    "deployed_at": "2026-10-14T09:15:00Z",
+    "author": "noor.b",
+    "status": "succeeded",
+    "summary": "Remove legacy result cache",
+    "diff": {
+      "commits": [
+        "chore: remove legacy redis result cache",
+        "refactor: query path simplification"
+      ],
+      "files_changed": [
+        "search/cache.py (deleted)",
+        "search/query.py"
+      ],
+      "config_changes": [
+        {
+          "key": "REDIS_CACHE_ENABLED",
+          "old": "true",
+          "new": "false"
+        }
+      ],
+      "pipeline_steps": [
+        {
+          "name": "build",
+          "status": "passed"
+        },
+        {
+          "name": "unit-tests",
+          "status": "passed"
+        },
+        {
+          "name": "deploy",
+          "status": "passed"
+        }
+      ]
+    }
+  },
+  {
+    "id": "dep-7710",
+    "service": "frontend-web",
+    "version": "v9.3.0",
+    "deployed_at": "2026-10-14T09:30:00Z",
+    "author": "lena.k",
+    "status": "succeeded",
+    "summary": "Update footer links and analytics snippet",
+    "diff": {
+      "commits": [
+        "chore: update footer links",
+        "feat: add consent banner analytics"
+      ],
+      "files_changed": [
+        "web/components/Footer.tsx",
+        "web/analytics.ts"
+      ],
+      "config_changes": [],
+      "pipeline_steps": [
+        {
+          "name": "build",
+          "status": "passed"
+        },
+        {
+          "name": "unit-tests",
+          "status": "passed"
+        },
+        {
+          "name": "deploy",
+          "status": "passed"
+        }
+      ]
+    }
+  }
+]

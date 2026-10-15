@@ -1,0 +1,186 @@
+{"ts": "2026-10-14T08:00:00Z", "service": "payments-api", "level": "INFO", "message": "GET /v1/payments 200 in 78ms"}
+{"ts": "2026-10-14T08:00:00Z", "service": "payments-api", "level": "WARN", "message": "Slow request GET /healthz took 13478ms"}
+{"ts": "2026-10-14T08:00:00Z", "service": "checkout-api", "level": "INFO", "message": "GET /api/cart 200 in 46ms"}
+{"ts": "2026-10-14T08:00:00Z", "service": "checkout-api", "level": "WARN", "message": "Slow request GET /healthz took 18832ms"}
+{"ts": "2026-10-14T08:00:00Z", "service": "payments-api", "level": "WARN", "message": "Card network latency elevated for issuer 48542"}
+{"ts": "2026-10-14T08:03:34Z", "service": "payments-api", "level": "INFO", "message": "GET /v1/payments 200 in 58ms"}
+{"ts": "2026-10-14T08:05:01Z", "service": "checkout-api", "level": "INFO", "message": "GET /api/cart 200 in 63ms"}
+{"ts": "2026-10-14T08:08:51Z", "service": "payments-api", "level": "INFO", "message": "GET /v1/payments 200 in 133ms"}
+{"ts": "2026-10-14T08:09:49Z", "service": "checkout-api", "level": "INFO", "message": "GET /api/cart 200 in 172ms"}
+{"ts": "2026-10-14T08:13:11Z", "service": "payments-api", "level": "INFO", "message": "GET /v1/payments 200 in 94ms"}
+{"ts": "2026-10-14T08:13:17Z", "service": "checkout-api", "level": "INFO", "message": "GET /api/cart 200 in 131ms"}
+{"ts": "2026-10-14T08:15:02Z", "service": "payments-api", "level": "WARN", "message": "Retrying metrics push to collector (attempt 1)"}
+{"ts": "2026-10-14T08:15:20Z", "service": "payments-api", "level": "INFO", "message": "GET /v1/payments 200 in 147ms"}
+{"ts": "2026-10-14T08:17:37Z", "service": "payments-api", "level": "INFO", "message": "GET /v1/payments 200 in 148ms"}
+{"ts": "2026-10-14T08:18:22Z", "service": "checkout-api", "level": "INFO", "message": "GET /api/cart 200 in 178ms"}
+{"ts": "2026-10-14T08:19:51Z", "service": "payments-api", "level": "INFO", "message": "GET /v1/payments 200 in 97ms"}
+{"ts": "2026-10-14T08:23:29Z", "service": "checkout-api", "level": "INFO", "message": "GET /api/cart 200 in 97ms"}
+{"ts": "2026-10-14T08:24:23Z", "service": "payments-api", "level": "INFO", "message": "GET /v1/payments 200 in 141ms"}
+{"ts": "2026-10-14T08:26:34Z", "service": "payments-api", "level": "INFO", "message": "GET /v1/payments 200 in 51ms"}
+{"ts": "2026-10-14T08:27:56Z", "service": "checkout-api", "level": "INFO", "message": "GET /api/cart 200 in 101ms"}
+{"ts": "2026-10-14T08:29:17Z", "service": "payments-api", "level": "WARN", "message": "Slow request GET /healthz took 14407ms"}
+{"ts": "2026-10-14T08:30:48Z", "service": "payments-api", "level": "INFO", "message": "GET /v1/payments 200 in 114ms"}
+{"ts": "2026-10-14T08:33:12Z", "service": "checkout-api", "level": "INFO", "message": "GET /api/cart 200 in 91ms"}
+{"ts": "2026-10-14T08:34:29Z", "service": "payments-api", "level": "INFO", "message": "GET /v1/payments 200 in 70ms"}
+{"ts": "2026-10-14T08:36:02Z", "service": "checkout-api", "level": "WARN", "message": "Retrying metrics push to collector (attempt 1)"}
+{"ts": "2026-10-14T08:37:17Z", "service": "checkout-api", "level": "INFO", "message": "GET /api/cart 200 in 47ms"}
+{"ts": "2026-10-14T08:38:46Z", "service": "payments-api", "level": "INFO", "message": "GET /v1/payments 200 in 66ms"}
+{"ts": "2026-10-14T08:43:05Z", "service": "payments-api", "level": "INFO", "message": "GET /v1/payments 200 in 135ms"}
+{"ts": "2026-10-14T08:43:14Z", "service": "checkout-api", "level": "INFO", "message": "GET /api/cart 200 in 160ms"}
+{"ts": "2026-10-14T08:45:29Z", "service": "payments-api", "level": "INFO", "message": "GET /v1/payments 200 in 55ms"}
+{"ts": "2026-10-14T08:45:30Z", "service": "payments-api", "level": "WARN", "message": "Retrying metrics push to collector (attempt 1)"}
+{"ts": "2026-10-14T08:46:16Z", "service": "checkout-api", "level": "INFO", "message": "GET /api/cart 200 in 154ms"}
+{"ts": "2026-10-14T08:49:57Z", "service": "payments-api", "level": "INFO", "message": "GET /v1/payments 200 in 176ms"}
+{"ts": "2026-10-14T08:51:30Z", "service": "checkout-api", "level": "INFO", "message": "GET /api/cart 200 in 133ms"}
+{"ts": "2026-10-14T08:53:40Z", "service": "payments-api", "level": "INFO", "message": "GET /v1/payments 200 in 159ms"}
+{"ts": "2026-10-14T08:53:49Z", "service": "payments-api", "level": "WARN", "message": "Card network latency elevated for issuer 42257"}
+{"ts": "2026-10-14T08:53:50Z", "service": "checkout-api", "level": "INFO", "message": "GET /api/cart 200 in 98ms"}
+{"ts": "2026-10-14T08:57:43Z", "service": "checkout-api", "level": "INFO", "message": "GET /api/cart 200 in 92ms"}
+{"ts": "2026-10-14T08:58:00Z", "service": "payments-api", "level": "INFO", "message": "GET /v1/payments 200 in 132ms"}
+{"ts": "2026-10-14T09:01:12Z", "service": "payments-api", "level": "INFO", "message": "GET /v1/payments 200 in 102ms"}
+{"ts": "2026-10-14T09:01:38Z", "service": "checkout-api", "level": "INFO", "message": "GET /api/cart 200 in 162ms"}
+{"ts": "2026-10-14T09:03:32Z", "service": "payments-api", "level": "INFO", "message": "GET /v1/payments 200 in 174ms"}
+{"ts": "2026-10-14T09:07:17Z", "service": "checkout-api", "level": "INFO", "message": "GET /api/cart 200 in 61ms"}
+{"ts": "2026-10-14T09:07:31Z", "service": "payments-api", "level": "INFO", "message": "GET /v1/payments 200 in 154ms"}
+{"ts": "2026-10-14T09:10:40Z", "service": "payments-api", "level": "INFO", "message": "GET /v1/payments 200 in 70ms"}
+{"ts": "2026-10-14T09:11:36Z", "service": "checkout-api", "level": "WARN", "message": "Slow request GET /healthz took 14319ms"}
+{"ts": "2026-10-14T09:12:37Z", "service": "checkout-api", "level": "INFO", "message": "GET /api/cart 200 in 139ms"}
+{"ts": "2026-10-14T09:13:03Z", "service": "payments-api", "level": "WARN", "message": "Slow request GET /healthz took 18768ms"}
+{"ts": "2026-10-14T09:14:43Z", "service": "payments-api", "level": "INFO", "message": "GET /v1/payments 200 in 127ms"}
+{"ts": "2026-10-14T09:17:19Z", "service": "payments-api", "level": "INFO", "message": "GET /v1/payments 200 in 147ms"}
+{"ts": "2026-10-14T09:17:45Z", "service": "checkout-api", "level": "INFO", "message": "GET /api/cart 200 in 162ms"}
+{"ts": "2026-10-14T09:19:29Z", "service": "payments-api", "level": "INFO", "message": "GET /v1/payments 200 in 120ms"}
+{"ts": "2026-10-14T09:22:50Z", "service": "payments-api", "level": "INFO", "message": "GET /v1/payments 200 in 167ms"}
+{"ts": "2026-10-14T09:23:18Z", "service": "checkout-api", "level": "INFO", "message": "GET /api/cart 200 in 125ms"}
+{"ts": "2026-10-14T09:25:39Z", "service": "checkout-api", "level": "INFO", "message": "GET /api/cart 200 in 158ms"}
+{"ts": "2026-10-14T09:27:09Z", "service": "payments-api", "level": "INFO", "message": "GET /v1/payments 200 in 57ms"}
+{"ts": "2026-10-14T09:27:32Z", "service": "checkout-api", "level": "WARN", "message": "Retrying metrics push to collector (attempt 1)"}
+{"ts": "2026-10-14T09:28:26Z", "service": "payments-api", "level": "WARN", "message": "Retrying metrics push to collector (attempt 1)"}
+{"ts": "2026-10-14T09:29:15Z", "service": "checkout-api", "level": "INFO", "message": "GET /api/cart 200 in 80ms"}
+{"ts": "2026-10-14T09:31:56Z", "service": "checkout-api", "level": "INFO", "message": "GET /api/cart 200 in 47ms"}
+{"ts": "2026-10-14T09:32:31Z", "service": "payments-api", "level": "INFO", "message": "GET /v1/payments 200 in 161ms"}
+{"ts": "2026-10-14T09:34:32Z", "service": "checkout-api", "level": "INFO", "message": "GET /api/cart 200 in 77ms"}
+{"ts": "2026-10-14T09:37:18Z", "service": "payments-api", "level": "INFO", "message": "GET /v1/payments 200 in 55ms"}
+{"ts": "2026-10-14T09:38:59Z", "service": "checkout-api", "level": "INFO", "message": "GET /api/cart 200 in 129ms"}
+{"ts": "2026-10-14T09:40:00Z", "service": "payments-api", "level": "INFO", "message": "Starting payments-api v3.8.0 (pid 1)"}
+{"ts": "2026-10-14T09:41:00Z", "service": "payments-api", "level": "ERROR", "message": "POST /v1/refunds failed: psycopg.errors.UndefinedColumn: column \"refund_reason\" of relation \"refunds\" does not exist -> 500"}
+{"ts": "2026-10-14T09:41:36Z", "service": "checkout-api", "level": "INFO", "message": "GET /api/cart 200 in 73ms"}
+{"ts": "2026-10-14T09:41:50Z", "service": "payments-api", "level": "ERROR", "message": "POST /v1/refunds failed: psycopg.errors.UndefinedColumn: column \"refund_reason\" of relation \"refunds\" does not exist -> 500"}
+{"ts": "2026-10-14T09:42:14Z", "service": "payments-api", "level": "INFO", "message": "GET /v1/payments 200 in 154ms"}
+{"ts": "2026-10-14T09:43:27Z", "service": "payments-api", "level": "ERROR", "message": "POST /v1/refunds failed: psycopg.errors.UndefinedColumn: column \"refund_reason\" of relation \"refunds\" does not exist -> 500"}
+{"ts": "2026-10-14T09:43:42Z", "service": "checkout-api", "level": "INFO", "message": "GET /api/cart 200 in 174ms"}
+{"ts": "2026-10-14T09:44:13Z", "service": "payments-api", "level": "ERROR", "message": "POST /v1/refunds failed: psycopg.errors.UndefinedColumn: column \"refund_reason\" of relation \"refunds\" does not exist -> 500"}
+{"ts": "2026-10-14T09:45:16Z", "service": "payments-api", "level": "ERROR", "message": "POST /v1/refunds failed: psycopg.errors.UndefinedColumn: column \"refund_reason\" of relation \"refunds\" does not exist -> 500"}
+{"ts": "2026-10-14T09:45:22Z", "service": "payments-api", "level": "INFO", "message": "GET /v1/payments 200 in 128ms"}
+{"ts": "2026-10-14T09:46:16Z", "service": "payments-api", "level": "ERROR", "message": "POST /v1/refunds failed: psycopg.errors.UndefinedColumn: column \"refund_reason\" of relation \"refunds\" does not exist -> 500"}
+{"ts": "2026-10-14T09:46:53Z", "service": "payments-api", "level": "ERROR", "message": "POST /v1/refunds failed: psycopg.errors.UndefinedColumn: column \"refund_reason\" of relation \"refunds\" does not exist -> 500"}
+{"ts": "2026-10-14T09:47:27Z", "service": "payments-api", "level": "INFO", "message": "GET /v1/payments 200 in 130ms"}
+{"ts": "2026-10-14T09:48:17Z", "service": "payments-api", "level": "ERROR", "message": "POST /v1/refunds failed: psycopg.errors.UndefinedColumn: column \"refund_reason\" of relation \"refunds\" does not exist -> 500"}
+{"ts": "2026-10-14T09:48:41Z", "service": "checkout-api", "level": "INFO", "message": "GET /api/cart 200 in 151ms"}
+{"ts": "2026-10-14T09:49:28Z", "service": "payments-api", "level": "ERROR", "message": "POST /v1/refunds failed: psycopg.errors.UndefinedColumn: column \"refund_reason\" of relation \"refunds\" does not exist -> 500"}
+{"ts": "2026-10-14T09:50:08Z", "service": "payments-api", "level": "INFO", "message": "GET /v1/payments 200 in 166ms"}
+{"ts": "2026-10-14T09:50:14Z", "service": "payments-api", "level": "WARN", "message": "Card network latency elevated for issuer 45707"}
+{"ts": "2026-10-14T09:51:05Z", "service": "checkout-api", "level": "WARN", "message": "Slow request GET /healthz took 12188ms"}
+{"ts": "2026-10-14T09:51:10Z", "service": "payments-api", "level": "ERROR", "message": "POST /v1/refunds failed: psycopg.errors.UndefinedColumn: column \"refund_reason\" of relation \"refunds\" does not exist -> 500"}
+{"ts": "2026-10-14T09:52:22Z", "service": "payments-api", "level": "INFO", "message": "GET /v1/payments 200 in 73ms"}
+{"ts": "2026-10-14T09:52:53Z", "service": "payments-api", "level": "ERROR", "message": "POST /v1/refunds failed: psycopg.errors.UndefinedColumn: column \"refund_reason\" of relation \"refunds\" does not exist -> 500"}
+{"ts": "2026-10-14T09:52:57Z", "service": "payments-api", "level": "WARN", "message": "Slow request GET /healthz took 16109ms"}
+{"ts": "2026-10-14T09:53:47Z", "service": "payments-api", "level": "ERROR", "message": "POST /v1/refunds failed: psycopg.errors.UndefinedColumn: column \"refund_reason\" of relation \"refunds\" does not exist -> 500"}
+{"ts": "2026-10-14T09:54:38Z", "service": "checkout-api", "level": "INFO", "message": "GET /api/cart 200 in 94ms"}
+{"ts": "2026-10-14T09:54:41Z", "service": "payments-api", "level": "ERROR", "message": "POST /v1/refunds failed: psycopg.errors.UndefinedColumn: column \"refund_reason\" of relation \"refunds\" does not exist -> 500"}
+{"ts": "2026-10-14T09:56:15Z", "service": "payments-api", "level": "ERROR", "message": "POST /v1/refunds failed: psycopg.errors.UndefinedColumn: column \"refund_reason\" of relation \"refunds\" does not exist -> 500"}
+{"ts": "2026-10-14T09:56:45Z", "service": "checkout-api", "level": "INFO", "message": "GET /api/cart 200 in 114ms"}
+{"ts": "2026-10-14T09:57:01Z", "service": "payments-api", "level": "ERROR", "message": "POST /v1/refunds failed: psycopg.errors.UndefinedColumn: column \"refund_reason\" of relation \"refunds\" does not exist -> 500"}
+{"ts": "2026-10-14T09:57:19Z", "service": "payments-api", "level": "INFO", "message": "GET /v1/payments 200 in 140ms"}
+{"ts": "2026-10-14T09:58:25Z", "service": "payments-api", "level": "ERROR", "message": "POST /v1/refunds failed: psycopg.errors.UndefinedColumn: column \"refund_reason\" of relation \"refunds\" does not exist -> 500"}
+{"ts": "2026-10-14T09:59:04Z", "service": "payments-api", "level": "ERROR", "message": "POST /v1/refunds failed: psycopg.errors.UndefinedColumn: column \"refund_reason\" of relation \"refunds\" does not exist -> 500"}
+{"ts": "2026-10-14T10:00:42Z", "service": "payments-api", "level": "ERROR", "message": "POST /v1/refunds failed: psycopg.errors.UndefinedColumn: column \"refund_reason\" of relation \"refunds\" does not exist -> 500"}
+{"ts": "2026-10-14T10:00:45Z", "service": "checkout-api", "level": "INFO", "message": "GET /api/cart 200 in 106ms"}
+{"ts": "2026-10-14T10:02:01Z", "service": "payments-api", "level": "ERROR", "message": "POST /v1/refunds failed: psycopg.errors.UndefinedColumn: column \"refund_reason\" of relation \"refunds\" does not exist -> 500"}
+{"ts": "2026-10-14T10:02:59Z", "service": "payments-api", "level": "INFO", "message": "GET /v1/payments 200 in 60ms"}
+{"ts": "2026-10-14T10:03:19Z", "service": "payments-api", "level": "ERROR", "message": "POST /v1/refunds failed: psycopg.errors.UndefinedColumn: column \"refund_reason\" of relation \"refunds\" does not exist -> 500"}
+{"ts": "2026-10-14T10:04:12Z", "service": "payments-api", "level": "ERROR", "message": "POST /v1/refunds failed: psycopg.errors.UndefinedColumn: column \"refund_reason\" of relation \"refunds\" does not exist -> 500"}
+{"ts": "2026-10-14T10:04:48Z", "service": "payments-api", "level": "ERROR", "message": "POST /v1/refunds failed: psycopg.errors.UndefinedColumn: column \"refund_reason\" of relation \"refunds\" does not exist -> 500"}
+{"ts": "2026-10-14T10:04:56Z", "service": "checkout-api", "level": "INFO", "message": "GET /api/cart 200 in 55ms"}
+{"ts": "2026-10-14T10:05:39Z", "service": "payments-api", "level": "INFO", "message": "GET /v1/payments 200 in 180ms"}
+{"ts": "2026-10-14T10:06:06Z", "service": "payments-api", "level": "ERROR", "message": "POST /v1/refunds failed: psycopg.errors.UndefinedColumn: column \"refund_reason\" of relation \"refunds\" does not exist -> 500"}
+{"ts": "2026-10-14T10:07:31Z", "service": "payments-api", "level": "ERROR", "message": "POST /v1/refunds failed: psycopg.errors.UndefinedColumn: column \"refund_reason\" of relation \"refunds\" does not exist -> 500"}
+{"ts": "2026-10-14T10:08:24Z", "service": "payments-api", "level": "ERROR", "message": "POST /v1/refunds failed: psycopg.errors.UndefinedColumn: column \"refund_reason\" of relation \"refunds\" does not exist -> 500"}
+{"ts": "2026-10-14T10:08:46Z", "service": "payments-api", "level": "INFO", "message": "GET /v1/payments 200 in 150ms"}
+{"ts": "2026-10-14T10:09:03Z", "service": "payments-api", "level": "WARN", "message": "Retrying metrics push to collector (attempt 1)"}
+{"ts": "2026-10-14T10:10:05Z", "service": "payments-api", "level": "ERROR", "message": "POST /v1/refunds failed: psycopg.errors.UndefinedColumn: column \"refund_reason\" of relation \"refunds\" does not exist -> 500"}
+{"ts": "2026-10-14T10:10:34Z", "service": "checkout-api", "level": "INFO", "message": "GET /api/cart 200 in 157ms"}
+{"ts": "2026-10-14T10:11:33Z", "service": "payments-api", "level": "ERROR", "message": "POST /v1/refunds failed: psycopg.errors.UndefinedColumn: column \"refund_reason\" of relation \"refunds\" does not exist -> 500"}
+{"ts": "2026-10-14T10:12:43Z", "service": "payments-api", "level": "ERROR", "message": "POST /v1/refunds failed: psycopg.errors.UndefinedColumn: column \"refund_reason\" of relation \"refunds\" does not exist -> 500"}
+{"ts": "2026-10-14T10:13:42Z", "service": "payments-api", "level": "ERROR", "message": "POST /v1/refunds failed: psycopg.errors.UndefinedColumn: column \"refund_reason\" of relation \"refunds\" does not exist -> 500"}
+{"ts": "2026-10-14T10:14:13Z", "service": "payments-api", "level": "INFO", "message": "GET /v1/payments 200 in 146ms"}
+{"ts": "2026-10-14T10:14:17Z", "service": "checkout-api", "level": "WARN", "message": "Retrying metrics push to collector (attempt 1)"}
+{"ts": "2026-10-14T10:14:20Z", "service": "payments-api", "level": "ERROR", "message": "POST /v1/refunds failed: psycopg.errors.UndefinedColumn: column \"refund_reason\" of relation \"refunds\" does not exist -> 500"}
+{"ts": "2026-10-14T10:15:13Z", "service": "checkout-api", "level": "INFO", "message": "GET /api/cart 200 in 147ms"}
+{"ts": "2026-10-14T10:15:33Z", "service": "payments-api", "level": "ERROR", "message": "POST /v1/refunds failed: psycopg.errors.UndefinedColumn: column \"refund_reason\" of relation \"refunds\" does not exist -> 500"}
+{"ts": "2026-10-14T10:16:42Z", "service": "payments-api", "level": "ERROR", "message": "POST /v1/refunds failed: psycopg.errors.UndefinedColumn: column \"refund_reason\" of relation \"refunds\" does not exist -> 500"}
+{"ts": "2026-10-14T10:18:03Z", "service": "payments-api", "level": "ERROR", "message": "POST /v1/refunds failed: psycopg.errors.UndefinedColumn: column \"refund_reason\" of relation \"refunds\" does not exist -> 500"}
+{"ts": "2026-10-14T10:19:16Z", "service": "payments-api", "level": "ERROR", "message": "POST /v1/refunds failed: psycopg.errors.UndefinedColumn: column \"refund_reason\" of relation \"refunds\" does not exist -> 500"}
+{"ts": "2026-10-14T10:20:10Z", "service": "payments-api", "level": "INFO", "message": "GET /v1/payments 200 in 99ms"}
+{"ts": "2026-10-14T10:20:12Z", "service": "payments-api", "level": "ERROR", "message": "POST /v1/refunds failed: psycopg.errors.UndefinedColumn: column \"refund_reason\" of relation \"refunds\" does not exist -> 500"}
+{"ts": "2026-10-14T10:20:32Z", "service": "checkout-api", "level": "INFO", "message": "GET /api/cart 200 in 73ms"}
+{"ts": "2026-10-14T10:21:11Z", "service": "payments-api", "level": "ERROR", "message": "POST /v1/refunds failed: psycopg.errors.UndefinedColumn: column \"refund_reason\" of relation \"refunds\" does not exist -> 500"}
+{"ts": "2026-10-14T10:22:46Z", "service": "payments-api", "level": "INFO", "message": "GET /v1/payments 200 in 78ms"}
+{"ts": "2026-10-14T10:22:56Z", "service": "payments-api", "level": "ERROR", "message": "POST /v1/refunds failed: psycopg.errors.UndefinedColumn: column \"refund_reason\" of relation \"refunds\" does not exist -> 500"}
+{"ts": "2026-10-14T10:23:32Z", "service": "payments-api", "level": "ERROR", "message": "POST /v1/refunds failed: psycopg.errors.UndefinedColumn: column \"refund_reason\" of relation \"refunds\" does not exist -> 500"}
+{"ts": "2026-10-14T10:24:18Z", "service": "payments-api", "level": "ERROR", "message": "POST /v1/refunds failed: psycopg.errors.UndefinedColumn: column \"refund_reason\" of relation \"refunds\" does not exist -> 500"}
+{"ts": "2026-10-14T10:24:39Z", "service": "checkout-api", "level": "INFO", "message": "GET /api/cart 200 in 170ms"}
+{"ts": "2026-10-14T10:25:42Z", "service": "payments-api", "level": "INFO", "message": "GET /v1/payments 200 in 43ms"}
+{"ts": "2026-10-14T10:25:54Z", "service": "payments-api", "level": "ERROR", "message": "POST /v1/refunds failed: psycopg.errors.UndefinedColumn: column \"refund_reason\" of relation \"refunds\" does not exist -> 500"}
+{"ts": "2026-10-14T10:26:44Z", "service": "checkout-api", "level": "INFO", "message": "GET /api/cart 200 in 86ms"}
+{"ts": "2026-10-14T10:27:17Z", "service": "payments-api", "level": "ERROR", "message": "POST /v1/refunds failed: psycopg.errors.UndefinedColumn: column \"refund_reason\" of relation \"refunds\" does not exist -> 500"}
+{"ts": "2026-10-14T10:28:05Z", "service": "payments-api", "level": "ERROR", "message": "POST /v1/refunds failed: psycopg.errors.UndefinedColumn: column \"refund_reason\" of relation \"refunds\" does not exist -> 500"}
+{"ts": "2026-10-14T10:28:41Z", "service": "payments-api", "level": "ERROR", "message": "POST /v1/refunds failed: psycopg.errors.UndefinedColumn: column \"refund_reason\" of relation \"refunds\" does not exist -> 500"}
+{"ts": "2026-10-14T10:29:38Z", "service": "payments-api", "level": "INFO", "message": "GET /v1/payments 200 in 107ms"}
+{"ts": "2026-10-14T10:30:24Z", "service": "payments-api", "level": "ERROR", "message": "POST /v1/refunds failed: psycopg.errors.UndefinedColumn: column \"refund_reason\" of relation \"refunds\" does not exist -> 500"}
+{"ts": "2026-10-14T10:31:10Z", "service": "checkout-api", "level": "INFO", "message": "GET /api/cart 200 in 84ms"}
+{"ts": "2026-10-14T10:31:16Z", "service": "payments-api", "level": "ERROR", "message": "POST /v1/refunds failed: psycopg.errors.UndefinedColumn: column \"refund_reason\" of relation \"refunds\" does not exist -> 500"}
+{"ts": "2026-10-14T10:32:16Z", "service": "payments-api", "level": "ERROR", "message": "POST /v1/refunds failed: psycopg.errors.UndefinedColumn: column \"refund_reason\" of relation \"refunds\" does not exist -> 500"}
+{"ts": "2026-10-14T10:32:46Z", "service": "payments-api", "level": "INFO", "message": "GET /v1/payments 200 in 147ms"}
+{"ts": "2026-10-14T10:33:18Z", "service": "payments-api", "level": "ERROR", "message": "POST /v1/refunds failed: psycopg.errors.UndefinedColumn: column \"refund_reason\" of relation \"refunds\" does not exist -> 500"}
+{"ts": "2026-10-14T10:33:31Z", "service": "payments-api", "level": "WARN", "message": "Slow request GET /healthz took 13645ms"}
+{"ts": "2026-10-14T10:33:44Z", "service": "checkout-api", "level": "INFO", "message": "GET /api/cart 200 in 55ms"}
+{"ts": "2026-10-14T10:34:28Z", "service": "payments-api", "level": "ERROR", "message": "POST /v1/refunds failed: psycopg.errors.UndefinedColumn: column \"refund_reason\" of relation \"refunds\" does not exist -> 500"}
+{"ts": "2026-10-14T10:34:55Z", "service": "payments-api", "level": "WARN", "message": "Card network latency elevated for issuer 44248"}
+{"ts": "2026-10-14T10:35:38Z", "service": "payments-api", "level": "ERROR", "message": "POST /v1/refunds failed: psycopg.errors.UndefinedColumn: column \"refund_reason\" of relation \"refunds\" does not exist -> 500"}
+{"ts": "2026-10-14T10:36:32Z", "service": "payments-api", "level": "ERROR", "message": "POST /v1/refunds failed: psycopg.errors.UndefinedColumn: column \"refund_reason\" of relation \"refunds\" does not exist -> 500"}
+{"ts": "2026-10-14T10:36:54Z", "service": "payments-api", "level": "INFO", "message": "GET /v1/payments 200 in 72ms"}
+{"ts": "2026-10-14T10:37:02Z", "service": "checkout-api", "level": "INFO", "message": "GET /api/cart 200 in 175ms"}
+{"ts": "2026-10-14T10:37:35Z", "service": "payments-api", "level": "ERROR", "message": "POST /v1/refunds failed: psycopg.errors.UndefinedColumn: column \"refund_reason\" of relation \"refunds\" does not exist -> 500"}
+{"ts": "2026-10-14T10:38:11Z", "service": "payments-api", "level": "ERROR", "message": "POST /v1/refunds failed: psycopg.errors.UndefinedColumn: column \"refund_reason\" of relation \"refunds\" does not exist -> 500"}
+{"ts": "2026-10-14T10:38:52Z", "service": "payments-api", "level": "ERROR", "message": "POST /v1/refunds failed: psycopg.errors.UndefinedColumn: column \"refund_reason\" of relation \"refunds\" does not exist -> 500"}
+{"ts": "2026-10-14T10:40:13Z", "service": "payments-api", "level": "ERROR", "message": "POST /v1/refunds failed: psycopg.errors.UndefinedColumn: column \"refund_reason\" of relation \"refunds\" does not exist -> 500"}
+{"ts": "2026-10-14T10:41:15Z", "service": "checkout-api", "level": "INFO", "message": "GET /api/cart 200 in 54ms"}
+{"ts": "2026-10-14T10:41:39Z", "service": "payments-api", "level": "ERROR", "message": "POST /v1/refunds failed: psycopg.errors.UndefinedColumn: column \"refund_reason\" of relation \"refunds\" does not exist -> 500"}
+{"ts": "2026-10-14T10:41:40Z", "service": "payments-api", "level": "INFO", "message": "GET /v1/payments 200 in 53ms"}
+{"ts": "2026-10-14T10:42:33Z", "service": "payments-api", "level": "ERROR", "message": "POST /v1/refunds failed: psycopg.errors.UndefinedColumn: column \"refund_reason\" of relation \"refunds\" does not exist -> 500"}
+{"ts": "2026-10-14T10:44:06Z", "service": "payments-api", "level": "ERROR", "message": "POST /v1/refunds failed: psycopg.errors.UndefinedColumn: column \"refund_reason\" of relation \"refunds\" does not exist -> 500"}
+{"ts": "2026-10-14T10:44:15Z", "service": "checkout-api", "level": "INFO", "message": "GET /api/cart 200 in 50ms"}
+{"ts": "2026-10-14T10:45:29Z", "service": "payments-api", "level": "INFO", "message": "GET /v1/payments 200 in 141ms"}
+{"ts": "2026-10-14T10:45:33Z", "service": "payments-api", "level": "ERROR", "message": "POST /v1/refunds failed: psycopg.errors.UndefinedColumn: column \"refund_reason\" of relation \"refunds\" does not exist -> 500"}
+{"ts": "2026-10-14T10:46:23Z", "service": "checkout-api", "level": "WARN", "message": "Slow request GET /healthz took 13530ms"}
+{"ts": "2026-10-14T10:46:36Z", "service": "payments-api", "level": "WARN", "message": "Retrying metrics push to collector (attempt 1)"}
+{"ts": "2026-10-14T10:47:11Z", "service": "payments-api", "level": "ERROR", "message": "POST /v1/refunds failed: psycopg.errors.UndefinedColumn: column \"refund_reason\" of relation \"refunds\" does not exist -> 500"}
+{"ts": "2026-10-14T10:48:44Z", "service": "payments-api", "level": "ERROR", "message": "POST /v1/refunds failed: psycopg.errors.UndefinedColumn: column \"refund_reason\" of relation \"refunds\" does not exist -> 500"}
+{"ts": "2026-10-14T10:49:05Z", "service": "payments-api", "level": "INFO", "message": "GET /v1/payments 200 in 163ms"}
+{"ts": "2026-10-14T10:49:20Z", "service": "checkout-api", "level": "INFO", "message": "GET /api/cart 200 in 155ms"}
+{"ts": "2026-10-14T10:49:21Z", "service": "payments-api", "level": "ERROR", "message": "POST /v1/refunds failed: psycopg.errors.UndefinedColumn: column \"refund_reason\" of relation \"refunds\" does not exist -> 500"}
+{"ts": "2026-10-14T10:51:03Z", "service": "payments-api", "level": "ERROR", "message": "POST /v1/refunds failed: psycopg.errors.UndefinedColumn: column \"refund_reason\" of relation \"refunds\" does not exist -> 500"}
+{"ts": "2026-10-14T10:52:18Z", "service": "payments-api", "level": "ERROR", "message": "POST /v1/refunds failed: psycopg.errors.UndefinedColumn: column \"refund_reason\" of relation \"refunds\" does not exist -> 500"}
+{"ts": "2026-10-14T10:53:35Z", "service": "checkout-api", "level": "INFO", "message": "GET /api/cart 200 in 153ms"}
+{"ts": "2026-10-14T10:53:37Z", "service": "payments-api", "level": "INFO", "message": "GET /v1/payments 200 in 88ms"}
+{"ts": "2026-10-14T10:53:40Z", "service": "payments-api", "level": "ERROR", "message": "POST /v1/refunds failed: psycopg.errors.UndefinedColumn: column \"refund_reason\" of relation \"refunds\" does not exist -> 500"}
+{"ts": "2026-10-14T10:54:15Z", "service": "payments-api", "level": "ERROR", "message": "POST /v1/refunds failed: psycopg.errors.UndefinedColumn: column \"refund_reason\" of relation \"refunds\" does not exist -> 500"}
+{"ts": "2026-10-14T10:55:53Z", "service": "payments-api", "level": "ERROR", "message": "POST /v1/refunds failed: psycopg.errors.UndefinedColumn: column \"refund_reason\" of relation \"refunds\" does not exist -> 500"}
+{"ts": "2026-10-14T10:55:54Z", "service": "payments-api", "level": "INFO", "message": "GET /v1/payments 200 in 152ms"}
+{"ts": "2026-10-14T10:56:33Z", "service": "payments-api", "level": "ERROR", "message": "POST /v1/refunds failed: psycopg.errors.UndefinedColumn: column \"refund_reason\" of relation \"refunds\" does not exist -> 500"}
+{"ts": "2026-10-14T10:56:53Z", "service": "checkout-api", "level": "INFO", "message": "GET /api/cart 200 in 171ms"}
+{"ts": "2026-10-14T10:58:05Z", "service": "payments-api", "level": "ERROR", "message": "POST /v1/refunds failed: psycopg.errors.UndefinedColumn: column \"refund_reason\" of relation \"refunds\" does not exist -> 500"}
+{"ts": "2026-10-14T10:58:33Z", "service": "payments-api", "level": "INFO", "message": "GET /v1/payments 200 in 53ms"}
+{"ts": "2026-10-14T10:59:31Z", "service": "payments-api", "level": "ERROR", "message": "POST /v1/refunds failed: psycopg.errors.UndefinedColumn: column \"refund_reason\" of relation \"refunds\" does not exist -> 500"}
+{"ts": "2026-10-14T10:59:41Z", "service": "checkout-api", "level": "INFO", "message": "GET /api/cart 200 in 155ms"}

@@ -1,0 +1,23 @@
+{
+  "category": "unknown",
+  "acceptable_categories": [
+    "unknown"
+  ],
+  "caused_by_latest_deploy": null,
+  "key_facts": [
+    "ConnectionResetError"
+  ],
+  "expected_tools": [
+    "search_logs|get_error_summary",
+    "get_metrics"
+  ],
+  "next_step_keywords": [
+    "monitor",
+    "trac",
+    "more data",
+    "investigate",
+    "reproduce"
+  ],
+  "reference_answer": "There is no clear incident: sporadic ConnectionResetError/ReadTimeout errors from avatar-cdn at a steady background rate (~0.4%, documented as known and normally below 1%), no recent deploy, no metric change. Root cause undetermined; gather more data (affected users, traces), monitor, and possibly add retries for avatar fetches.",
+  "max_confidence": 0.5
+}
