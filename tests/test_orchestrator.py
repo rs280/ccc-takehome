@@ -216,6 +216,26 @@ async def test_synthesis_too_large_even_when_compact_fails_cleanly():
         await run(too_large_for(prompts.SYNTHESIZER))
 
 
-async def test_oversized_critic_request_falls_back_to_citation_check():
+async def test_oversized_critic_request_falls_back_to_mechanical_check():
     result = await run(too_large_for(prompts.CRITIC))
     assert result.critic_verdicts[0].approved and not result.revised
+
+
+def metric_change(rel):
+    return json.dumps({"metric": "error_rate", "change": {"at": "09:20", "vs_latest_deploy": rel}})
+
+
+async def test_report_blaming_a_deploy_that_postdates_the_impact_is_revised():
+    exonerated = {**REPORT, "caused_by_latest_deploy": False}
+    llm = scripted(report=[REPORT, exonerated])
+    result = await run(llm, tools=toolbox(metrics=metric_change("50 min BEFORE latest deploy d")))
+    brief = next(c for c in llm.calls if c[0]["content"] == prompts.SYNTHESIZER)[1]["content"]
+    assert "BEFORE its latest deploy" in brief
+    assert any("caused_by_latest_deploy" in i for i in result.critic_verdicts[0].issues)
+    assert result.revised and result.report.caused_by_latest_deploy is False
+
+
+async def test_deploy_blame_allowed_when_impact_started_after_it():
+    llm = scripted()
+    result = await run(llm, tools=toolbox(metrics=metric_change("3 min AFTER latest deploy d")))
+    assert not result.revised and result.report.caused_by_latest_deploy is True

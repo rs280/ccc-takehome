@@ -77,7 +77,10 @@ async def investigate(
 
     tracer.event("stage", stage="synthesis")
     weak_signal = _weak_signal(ledger)
-    brief = _synthesis_brief(incident, triage, reports, failures, ledger, weak_signal)
+    predates_deploy = _impact_predates_deploy(ledger, triage.service)
+    brief = _synthesis_brief(
+        incident, triage, reports, failures, ledger, weak_signal, predates_deploy
+    )
     try:
         report = await _synthesize(brief, llm, tracer)
     except RequestTooLargeError as e:
@@ -85,7 +88,7 @@ async def investigate(
         # already quote the facts, so retry once without the raw excerpts.
         tracer.event("brief_too_large", error=str(e))
         compact = _synthesis_brief(
-            incident, triage, reports, failures, ledger, weak_signal, excerpt_budget=0
+            incident, triage, reports, failures, ledger, weak_signal, predates_deploy, 0
         )
         try:
             report = await _synthesize(compact, llm, tracer)
@@ -96,7 +99,7 @@ async def investigate(
     revised = False
     if use_critic:
         tracer.event("stage", stage="critic")
-        verdict = await _review(report, ledger, llm, tracer)
+        verdict = await _review(report, ledger, predates_deploy, llm, tracer)
         verdicts.append(verdict)
         if not verdict.approved:
             tracer.event("stage", stage="revision", issues=verdict.issues)
@@ -109,7 +112,7 @@ async def investigate(
             try:
                 report = await _synthesize(revision, llm, tracer)
                 revised = True
-                verdicts.append(_citation_check(report, ledger))
+                verdicts.append(_mechanical_check(report, ledger, predates_deploy))
             except (
                 InvestigationError,
                 RequestTooLargeError,
@@ -215,6 +218,27 @@ def _weak_signal(ledger: EvidenceLedger) -> bool:
     return bool(changes) and not any(changes)
 
 
+def _impact_predates_deploy(ledger: EvidenceLedger, service: str) -> list[str]:
+    """Metric changes on the affected service, when every one began BEFORE its latest deploy.
+
+    Then that deploy cannot have caused the impact. Decided in code: in evals the model repeated
+    the reporter's "after the deployment" even when every tool output said "50 min BEFORE".
+    Returns [] when any change came after the deploy, or when there is nothing to judge by.
+    """
+    before, after = [], []
+    for e in ledger:
+        if e.tool != "get_metrics" or e.is_error or e.args.get("service") != service:
+            continue
+        try:
+            change = json.loads(e.output).get("change")
+        except (json.JSONDecodeError, AttributeError):
+            continue
+        if isinstance(change, dict) and (when := change.get("vs_latest_deploy")):
+            line = f"[{e.id}] {e.args.get('metric')} changed level {when}"
+            (before if " BEFORE " in f" {when} " else after).append(line)
+    return before if before and not after else []
+
+
 def _cap_confidence(report: IncidentReport, tracer: Tracer) -> IncidentReport:
     if report.root_cause.confidence <= WEAK_SIGNAL_MAX_CONFIDENCE:
         return report
@@ -232,6 +256,7 @@ def _synthesis_brief(
     failures,
     ledger,
     weak_signal=False,
+    predates_deploy=(),
     excerpt_budget=BRIEF_EXCERPT_BUDGET,
 ) -> str:
     parts = [
@@ -254,6 +279,15 @@ def _synthesis_brief(
             f'category "unknown", confidence <= {WEAK_SIGNAL_MAX_CONFIDENCE}, and list in '
             "open_questions what data would resolve it."
         )
+    if predates_deploy:
+        parts.append(
+            "## Timeline (computed from the metrics, not an opinion)\n"
+            f"Every metric change on {triage.service} began BEFORE its latest deploy:\n"
+            + "\n".join(f"- {line}" for line in predates_deploy)
+            + "\nThat deploy cannot have caused this impact, whatever the incident report "
+            "assumes. Set caused_by_latest_deploy to false and explain the cause from the "
+            "evidence (for example a dependency). Do not recommend rolling it back."
+        )
     parts.append("## Evidence index (cite only these IDs)\n" + ledger.index())
     cited = [eid for rep in reports.values() for f in rep.findings for eid in f.evidence_ids]
     ids, omitted = _within_budget(ledger, cited + [e.id for e in ledger], excerpt_budget)
@@ -271,8 +305,11 @@ async def _synthesize(brief: str, llm, tracer) -> IncidentReport:
         raise InvestigationError(str(e)) from e
 
 
-def _citation_check(report: IncidentReport, ledger: EvidenceLedger) -> CriticVerdict:
-    """Deterministic grounding check: every cited evidence ID must exist."""
+def _mechanical_check(
+    report: IncidentReport, ledger: EvidenceLedger, predates_deploy: list[str]
+) -> CriticVerdict:
+    """Deterministic checks: every cited evidence ID exists, and the report does not blame a
+    deploy that came after the impact started."""
     issues = [
         f"Evidence item cites {item.evidence_id}, which does not exist. Cite only IDs from the "
         "evidence index."
@@ -281,11 +318,16 @@ def _citation_check(report: IncidentReport, ledger: EvidenceLedger) -> CriticVer
     ]
     if not report.evidence:
         issues.append("The report cites no evidence.")
+    if predates_deploy and report.caused_by_latest_deploy:
+        issues.append(
+            "caused_by_latest_deploy is true, but every metric change began BEFORE the latest "
+            "deploy (" + "; ".join(predates_deploy) + "). Set it to false and find the real cause."
+        )
     return CriticVerdict(approved=not issues, issues=issues)
 
 
-async def _review(report, ledger, llm, tracer) -> CriticVerdict:
-    mechanical = _citation_check(report, ledger)
+async def _review(report, ledger, predates_deploy, llm, tracer) -> CriticVerdict:
+    mechanical = _mechanical_check(report, ledger, predates_deploy)
     cited = [i.evidence_id for i in report.evidence if i.evidence_id in ledger]
     message = (
         f"## Report\n{report.model_dump_json()}\n\n"

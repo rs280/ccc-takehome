@@ -61,6 +61,8 @@ def _distinctive_tokens(text: str) -> set[str]:
     out = set()
     for raw in re.findall(r"[A-Za-z0-9_.:\-]+", text):
         t = raw.strip(".:-").lower()
+        # "201.68ms" is the number 201.68 with a unit; raw tool output keeps units in field names.
+        t = re.sub(r"^(\d[\d.]*)(ms|s|min|h|ki|mi|gi|kb|mb|gb)$", r"\1", t)
         is_identifier = re.search(r"\d", t) or "_" in t or (raw.isupper() and len(raw) >= 4)
         if len(t) >= 3 and is_identifier:
             out.add(t)

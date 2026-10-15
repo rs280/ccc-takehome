@@ -1,0 +1,793 @@
+{
+  "meta": {
+    "timestamp": "20261015T211903",
+    "model": "incident-qwen3",
+    "base_url": "http://localhost:11434/v1",
+    "reasoning_effort": "none",
+    "k": 3,
+    "critic": true,
+    "judge": false,
+    "scenarios": [
+      "orders_upstream_dependency"
+    ]
+  },
+  "runs": [
+    {
+      "scenario": "orders_upstream_dependency",
+      "attempt": 1,
+      "passed": true,
+      "scores": {
+        "schema_valid": {
+          "value": 1.0,
+          "passed": true,
+          "detail": ""
+        },
+        "root_cause_category": {
+          "value": 1.0,
+          "passed": true,
+          "detail": "got dependency_failure, expected dependency_failure"
+        },
+        "deploy_attribution": {
+          "value": 1.0,
+          "passed": true,
+          "detail": "got False, expected False"
+        },
+        "key_fact_recall": {
+          "value": 1.0,
+          "passed": true,
+          "detail": "all found"
+        },
+        "citation_grounding": {
+          "value": 1.0,
+          "passed": true,
+          "detail": ""
+        },
+        "tool_coverage": {
+          "value": 1.0,
+          "passed": true,
+          "detail": ""
+        },
+        "next_step_relevance": {
+          "value": 1.0,
+          "passed": true,
+          "detail": "matched ['inventory']"
+        },
+        "calibration": {
+          "value": 1.0,
+          "passed": true,
+          "detail": "confidence 0.90, want >= 0.5 when correct"
+        }
+      },
+      "elapsed_s": 414.7,
+      "llm_calls": 14,
+      "tool_calls": 11,
+      "tokens": {
+        "prompt": 26622,
+        "completion": 1928
+      },
+      "report": {
+        "summary": "The orders-api started returning HTTP 500 errors due to upstream timeouts to the inventory-service, which experienced database connection pool exhaustion. The latest deployment did not cause the issue.",
+        "incident_type": "upstream dependency failure",
+        "affected_services": [
+          "orders-api",
+          "inventory-service"
+        ],
+        "evidence": [
+          {
+            "evidence_id": "E2",
+            "source": "logs",
+            "detail": "The orders-api experienced 215 ERRORs related to upstream inventory-service timeouts after the latest deployment (dep-7716, v1.9.3)."
+          },
+          {
+            "evidence_id": "E8",
+            "source": "logs",
+            "detail": "The inventory-service had 137 ERRORs related to database connection pool exhaustion."
+          },
+          {
+            "evidence_id": "E4",
+            "source": "metrics",
+            "detail": "The error_rate for orders-api increased from 0.2% to 21.45% after the latest deployment."
+          },
+          {
+            "evidence_id": "E5",
+            "source": "metrics",
+            "detail": "The latency_p99_ms for orders-api increased from 201.68ms to 5081.27ms after the latest deployment."
+          },
+          {
+            "evidence_id": "E11",
+            "source": "metrics",
+            "detail": "The error_rate for inventory-service increased from 0.1% to 30.75% after the latest deployment."
+          },
+          {
+            "evidence_id": "E12",
+            "source": "metrics",
+            "detail": "The latency_p99_ms for inventory-service increased from 90.14ms to 5024.13ms after the latest deployment."
+          }
+        ],
+        "root_cause": {
+          "hypothesis": "The inventory-service experienced database connection pool exhaustion, leading to upstream timeouts for the orders-api, which resulted in HTTP 500 errors.",
+          "category": "dependency_failure",
+          "confidence": 0.9
+        },
+        "caused_by_latest_deploy": false,
+        "alternatives_ruled_out": [
+          "The latest deployment did not cause the issue as the error symptoms began before the deployment.",
+          "The deployment diff did not include any changes that could directly cause the HTTP 500 errors."
+        ],
+        "next_steps": [
+          {
+            "action": "Investigate and resolve the database connection pool exhaustion in the inventory-service.",
+            "priority": "P0",
+            "rationale": "The inventory-service's database connection pool exhaustion is the root cause of the upstream timeouts and HTTP 500 errors in the orders-api."
+          },
+          {
+            "action": "Monitor the inventory-service's error rate and latency to ensure the issue is resolved.",
+            "priority": "P1",
+            "rationale": "Confirm that the inventory-service's performance has returned to normal levels to prevent further issues."
+          },
+          {
+            "action": "Review the inventory-service's database configuration and connection pool settings to prevent future occurrences.",
+            "priority": "P2",
+            "rationale": "Ensure that the inventory-service is configured to handle the expected load and prevent similar issues in the future."
+          }
+        ],
+        "open_questions": [
+          "What caused the inventory-service's database connection pool exhaustion?",
+          "Are there any other services that may be affected by the inventory-service's performance issues?"
+        ]
+      },
+      "failed_specialists": {},
+      "revised": false,
+      "judge": null,
+      "error": null,
+      "trace_file": "/Users/rishabh/dev/ccc-takehome/evals/results/20261015T211903/traces/orders_upstream_dependency-1.jsonl",
+      "evidence": [
+        {
+          "id": "E1",
+          "agent": "orchestrator",
+          "tool": "list_services",
+          "args": {},
+          "output": "[{\"name\":\"checkout-api\",\"owner\":\"team-payments\",\"tier\":1,\"depends_on\":[\"payments-api\",\"inventory-service\",\"postgres-checkout\"]},{\"name\":\"payments-api\",\"owner\":\"team-payments\",\"tier\":1,\"depends_on\":[\"postgres-payments\"]},{\"name\":\"orders-api\",\"owner\":\"team-fulfilment\",\"tier\":1,\"depends_on\":[\"inventory-service\"]},{\"name\":\"inventory-service\",\"owner\":\"team-fulfilment\",\"tier\":1,\"depends_on\":[\"postgres-inventory\"]},{\"name\":\"search-api\",\"owner\":\"team-discovery\",\"tier\":2,\"depends_on\":[\"elasticsearch\",\"redis-search-cache\"]},{\"name\":\"report-worker\",\"owner\":\"team-data\",\"tier\":3,\"depends_on\":[\"postgres-analytics\"]},{\"name\":\"auth-api\",\"owner\":\"team-identity\",\"tier\":0,\"depends_on\":[\"identity-provider\"]},{\"name\":\"profile-api\",\"owner\":\"team-identity\",\"tier\":2,\"depends_on\":[\"postgres-profile\",\"avatar-cdn\"]},{\"name\":\"frontend-web\",\"owner\":\"team-web\",\"tier\":1,\"depends_on\":[\"checkout-api\"]}]",
+          "is_error": false
+        },
+        {
+          "id": "E2",
+          "agent": "logs",
+          "tool": "get_error_summary",
+          "args": {
+            "service": "orders-api",
+            "around": null
+          },
+          "output": "{\"pivot\":\"2026-10-14T10:10:00Z\",\"note\":\"Split on latest deploy dep-7716 (v1.9.3).\",\"log_window\":[\"2026-10-14T08:00:00Z\",\"2026-10-14T11:00:00Z\"],\"groups\":[{\"level\":\"ERROR\",\"example\":\"GET /orders/9592 failed: upstream inventory-service timeout after 5000ms -> 500\",\"count\":215,\"first_seen\":\"2026-10-14T09:20:00Z\",\"last_seen\":\"2026-10-14T10:59:34Z\",\"first_seen_vs_latest_deploy\":\"50 min BEFORE latest deploy dep-7716 (v1.9.3)\",\"before_pivot\":110,\"after_pivot\":105},{\"level\":\"WARN\",\"example\":\"Slow request GET /healthz took 13478ms\",\"count\":5,\"first_seen\":\"2026-10-14T08:00:00Z\",\"last_seen\":\"2026-10-14T10:33:31Z\",\"first_seen_vs_latest_deploy\":\"2.2 hours BEFORE latest deploy dep-7716 (v1.9.3)\",\"before_pivot\":4,\"after_pivot\":1},{\"level\":\"WARN\",\"example\":\"Retrying metrics push to collector (attempt 1)\",\"count\":5,\"first_seen\":\"2026-10-14T08:15:02Z\",\"last_seen\":\"2026-10-14T10:46:36Z\",\"first_seen_vs_latest_deploy\":\"115 min BEFORE latest deploy dep-7716 (v1.9.3)\",\"before_pivot\":4,\"after_pivot\":1}]}",
+          "is_error": false
+        },
+        {
+          "id": "E3",
+          "agent": "changes",
+          "tool": "get_recent_deployments",
+          "args": {
+            "service": "orders-api",
+            "limit": 2
+          },
+          "output": "[{\"id\":\"dep-7716\",\"service\":\"orders-api\",\"version\":\"v1.9.3\",\"deployed_at\":\"2026-10-14T10:10:00Z\",\"author\":\"kai.r\",\"status\":\"succeeded\",\"summary\":\"Bump logging library\",\"hours_before_now\":0.8},{\"id\":\"dep-7685\",\"service\":\"orders-api\",\"version\":\"v1.9.2\",\"deployed_at\":\"2026-10-08T13:00:00Z\",\"author\":\"kai.r\",\"status\":\"succeeded\",\"summary\":\"Add order notes\",\"hours_before_now\":142.0}]",
+          "is_error": false
+        },
+        {
+          "id": "E4",
+          "agent": "metrics",
+          "tool": "get_metrics",
+          "args": {
+            "metric": "error_rate",
+            "service": "orders-api"
+          },
+          "output": "{\"service\":\"orders-api\",\"metric\":\"error_rate\",\"unit\":\"% of requests\",\"change\":{\"at\":\"2026-10-14T09:20:00Z\",\"median_before\":0.2,\"median_after\":21.45,\"vs_latest_deploy\":\"50 min BEFORE latest deploy dep-7716 (v1.9.3)\"},\"summary\":{\"min\":0.193,\"median\":21.24,\"max\":23.045},\"points\":[{\"ts\":\"2026-10-14T08:00:00Z\",\"value\":0.193},{\"ts\":\"2026-10-14T08:10:00Z\",\"value\":0.199},{\"ts\":\"2026-10-14T08:20:00Z\",\"value\":0.208},{\"ts\":\"2026-10-14T08:30:00Z\",\"value\":0.195},{\"ts\":\"2026-10-14T08:40:00Z\",\"value\":0.194},{\"ts\":\"2026-10-14T08:50:00Z\",\"value\":0.196},{\"ts\":\"2026-10-14T09:00:00Z\",\"value\":0.204},{\"ts\":\"2026-10-14T09:10:00Z\",\"value\":0.207},{\"ts\":\"2026-10-14T09:20:00Z\",\"value\":21.24},{\"ts\":\"2026-10-14T09:30:00Z\",\"value\":21.243},{\"ts\":\"2026-10-14T09:40:00Z\",\"value\":21.445},{\"ts\":\"2026-10-14T09:50:00Z\",\"value\":21.618},{\"ts\":\"2026-10-14T10:00:00Z\",\"value\":22.049},{\"ts\":\"2026-10-14T10:10:00Z\",\"value\":21.254},{\"ts\":\"2026-10-14T10:20:00Z\",\"value\":21.622},{\"ts\":\"2026-10-14T10:30:00Z\",\"value\":21.316},{\"ts\":\"2026-10-14T10:40:00Z\",\"value\":23.045},{\"ts\":\"2026-10-14T10:50:00Z\",\"value\":22.503},{\"ts\":\"2026-10-14T11:00:00Z\",\"value\":21.124}]}",
+          "is_error": false
+        },
+        {
+          "id": "E5",
+          "agent": "metrics",
+          "tool": "get_metrics",
+          "args": {
+            "metric": "latency_p99_ms",
+            "service": "orders-api"
+          },
+          "output": "{\"service\":\"orders-api\",\"metric\":\"latency_p99_ms\",\"unit\":\"ms\",\"change\":{\"at\":\"2026-10-14T09:20:00Z\",\"median_before\":201.68,\"median_after\":5081.27,\"vs_latest_deploy\":\"50 min BEFORE latest deploy dep-7716 (v1.9.3)\"},\"summary\":{\"min\":192.033,\"median\":4899.504,\"max\":5248.412},\"points\":[{\"ts\":\"2026-10-14T08:00:00Z\",\"value\":209.248},{\"ts\":\"2026-10-14T08:10:00Z\",\"value\":192.033},{\"ts\":\"2026-10-14T08:20:00Z\",\"value\":197.685},{\"ts\":\"2026-10-14T08:30:00Z\",\"value\":209.677},{\"ts\":\"2026-10-14T08:40:00Z\",\"value\":205.898},{\"ts\":\"2026-10-14T08:50:00Z\",\"value\":204.666},{\"ts\":\"2026-10-14T09:00:00Z\",\"value\":198.698},{\"ts\":\"2026-10-14T09:10:00Z\",\"value\":193.924},{\"ts\":\"2026-10-14T09:20:00Z\",\"value\":5170.37},{\"ts\":\"2026-10-14T09:30:00Z\",\"value\":4899.504},{\"ts\":\"2026-10-14T09:40:00Z\",\"value\":4950.286},{\"ts\":\"2026-10-14T09:50:00Z\",\"value\":5043.054},{\"ts\":\"2026-10-14T10:00:00Z\",\"value\":4862.305},{\"ts\":\"2026-10-14T10:10:00Z\",\"value\":5048.501},{\"ts\":\"2026-10-14T10:20:00Z\",\"value\":5248.412},{\"ts\":\"2026-10-14T10:30:00Z\",\"value\":5198.654},{\"ts\":\"2026-10-14T10:40:00Z\",\"value\":5100.248},{\"ts\":\"2026-10-14T10:50:00Z\",\"value\":5167.513},{\"ts\":\"2026-10-14T11:00:00Z\",\"value\":5081.272}]}",
+          "is_error": false
+        },
+        {
+          "id": "E6",
+          "agent": "metrics",
+          "tool": "get_metrics",
+          "args": {
+            "metric": "memory_mb",
+            "service": "orders-api"
+          },
+          "output": "{\"service\":\"orders-api\",\"metric\":\"memory_mb\",\"unit\":\"MB\",\"change\":\"no significant change in level (variation is within normal noise)\",\"summary\":{\"min\":433.882,\"median\":456.369,\"max\":468.36},\"points\":[{\"ts\":\"2026-10-14T08:00:00Z\",\"value\":433.882},{\"ts\":\"2026-10-14T08:10:00Z\",\"value\":454.667},{\"ts\":\"2026-10-14T08:20:00Z\",\"value\":445.712},{\"ts\":\"2026-10-14T08:30:00Z\",\"value\":460.843},{\"ts\":\"2026-10-14T08:40:00Z\",\"value\":468.36},{\"ts\":\"2026-10-14T08:50:00Z\",\"value\":446.851},{\"ts\":\"2026-10-14T09:00:00Z\",\"value\":453.329},{\"ts\":\"2026-10-14T09:10:00Z\",\"value\":461.21},{\"ts\":\"2026-10-14T09:20:00Z\",\"value\":446.452},{\"ts\":\"2026-10-14T09:30:00Z\",\"value\":437.785},{\"ts\":\"2026-10-14T09:40:00Z\",\"value\":460.0},{\"ts\":\"2026-10-14T09:50:00Z\",\"value\":467.103},{\"ts\":\"2026-10-14T10:00:00Z\",\"value\":462.332},{\"ts\":\"2026-10-14T10:10:00Z\",\"value\":459.004},{\"ts\":\"2026-10-14T10:20:00Z\",\"value\":465.86},{\"ts\":\"2026-10-14T10:30:00Z\",\"value\":458.082},{\"ts\":\"2026-10-14T10:40:00Z\",\"value\":456.369},{\"ts\":\"2026-10-14T10:50:00Z\",\"value\":447.926},{\"ts\":\"2026-10-14T11:00:00Z\",\"value\":441.586}]}",
+          "is_error": false
+        },
+        {
+          "id": "E7",
+          "agent": "docs",
+          "tool": "search_docs",
+          "args": {
+            "query": "500 errors after deploy orders-api"
+          },
+          "output": "[{\"doc\":\"http-5xx-triage\",\"content\":\"# Runbook: Elevated HTTP 5xx errors\\n\\n1. Confirm scope: which endpoints, which services, since when. Compare error rate against the\\n   previous 1-2 hours of baseline.\\n2. Correlate the start time with recent deployments of the service AND its dependencies. A deploy\\n   is only a suspect if errors started at or after it. Errors that start before a deploy point\\n   elsewhere.\\n3. Group errors by signature (exception type and message). A single new signature that appears at\\n   deploy time usually means a code or config change. Timeouts against a dependency usually mean\\n   the dependency is unhealthy.\\n4. If a recent deploy is the likely cause and customer impact is high, roll back first and debug\\n   after (see rollback runbook).\\n5. If a dependency is failing, page the owning team and consider enabling degraded mode or\\n   circuit breakers instead of rolling back your own service.\\n\"},{\"doc\":\"orders-architecture\",\"content\":\"# orders-api architecture\\n\\norders-api serves order history and order details. Every GET /orders/{id} calls inventory-service\\nsynchronously for stock status with a 5000ms timeout and no fallback.\\n\"},{\"doc\":\"rollback\",\"content\":\"# Runbook: Rolling back a deployment\\n\\n- Use `deployctl rollback <service> --to <previous-version>`. Rollbacks take about 3 minutes.\\n- Rolling back is safe for stateless changes. If the release included a database migration that\\n  already ran, check the migration is backward compatible before rolling back code.\\n- After rollback, confirm the error rate returns to baseline within 10 minutes, then open an\\n  incident ticket with the failing deploy id.\\n- Rolling back a service that is failing because of a dependency does not help and wastes time.\\n\"}]",
+          "is_error": false
+        },
+        {
+          "id": "E8",
+          "agent": "logs",
+          "tool": "get_error_summary",
+          "args": {
+            "around": null,
+            "service": "inventory-service"
+          },
+          "output": "{\"pivot\":null,\"note\":\"No deployments recorded for this service.\",\"log_window\":[\"2026-10-14T08:00:00Z\",\"2026-10-14T11:00:00Z\"],\"groups\":[{\"level\":\"ERROR\",\"example\":\"Database connection pool exhausted (max=20, waiting=57); request aborted after 5000ms\",\"count\":137,\"first_seen\":\"2026-10-14T09:18:00Z\",\"last_seen\":\"2026-10-14T10:59:37Z\"},{\"level\":\"WARN\",\"example\":\"Slow request GET /healthz took 18832ms\",\"count\":4,\"first_seen\":\"2026-10-14T08:00:00Z\",\"last_seen\":\"2026-10-14T10:46:23Z\"},{\"level\":\"WARN\",\"example\":\"Retrying metrics push to collector (attempt 1)\",\"count\":3,\"first_seen\":\"2026-10-14T08:36:02Z\",\"last_seen\":\"2026-10-14T10:14:17Z\"}]}",
+          "is_error": false
+        },
+        {
+          "id": "E9",
+          "agent": "changes",
+          "tool": "get_deployment_diff",
+          "args": {
+            "deploy_id": "dep-7716"
+          },
+          "output": "{\"id\":\"dep-7716\",\"service\":\"orders-api\",\"version\":\"v1.9.3\",\"commits\":[\"chore(deps): bump structlog 24.1 -> 24.4\"],\"files_changed\":[\"pyproject.toml\",\"uv.lock\"],\"config_changes\":[],\"pipeline_steps\":[{\"name\":\"build\",\"status\":\"passed\"},{\"name\":\"unit-tests\",\"status\":\"passed\"},{\"name\":\"deploy\",\"status\":\"passed\"}]}",
+          "is_error": false
+        },
+        {
+          "id": "E10",
+          "agent": "metrics",
+          "tool": "get_metrics",
+          "args": {
+            "metric": "restarts",
+            "service": "orders-api"
+          },
+          "output": "{\"service\":\"orders-api\",\"metric\":\"restarts\",\"unit\":\"count per 10m\",\"change\":\"no significant change in level (variation is within normal noise)\",\"summary\":{\"min\":0.0,\"median\":0.0,\"max\":0.0},\"points\":[{\"ts\":\"2026-10-14T08:00:00Z\",\"value\":0.0},{\"ts\":\"2026-10-14T08:10:00Z\",\"value\":0.0},{\"ts\":\"2026-10-14T08:20:00Z\",\"value\":0.0},{\"ts\":\"2026-10-14T08:30:00Z\",\"value\":0.0},{\"ts\":\"2026-10-14T08:40:00Z\",\"value\":0.0},{\"ts\":\"2026-10-14T08:50:00Z\",\"value\":0.0},{\"ts\":\"2026-10-14T09:00:00Z\",\"value\":0.0},{\"ts\":\"2026-10-14T09:10:00Z\",\"value\":0.0},{\"ts\":\"2026-10-14T09:20:00Z\",\"value\":0.0},{\"ts\":\"2026-10-14T09:30:00Z\",\"value\":0.0},{\"ts\":\"2026-10-14T09:40:00Z\",\"value\":0.0},{\"ts\":\"2026-10-14T09:50:00Z\",\"value\":0.0},{\"ts\":\"2026-10-14T10:00:00Z\",\"value\":0.0},{\"ts\":\"2026-10-14T10:10:00Z\",\"value\":0.0},{\"ts\":\"2026-10-14T10:20:00Z\",\"value\":0.0},{\"ts\":\"2026-10-14T10:30:00Z\",\"value\":0.0},{\"ts\":\"2026-10-14T10:40:00Z\",\"value\":0.0},{\"ts\":\"2026-10-14T10:50:00Z\",\"value\":0.0},{\"ts\":\"2026-10-14T11:00:00Z\",\"value\":0.0}]}",
+          "is_error": false
+        },
+        {
+          "id": "E11",
+          "agent": "metrics",
+          "tool": "get_metrics",
+          "args": {
+            "metric": "error_rate",
+            "service": "inventory-service"
+          },
+          "output": "{\"service\":\"inventory-service\",\"metric\":\"error_rate\",\"unit\":\"% of requests\",\"change\":{\"at\":\"2026-10-14T09:20:00Z\",\"median_before\":0.1,\"median_after\":30.75},\"summary\":{\"min\":0.095,\"median\":30.146,\"max\":32.364},\"points\":[{\"ts\":\"2026-10-14T08:00:00Z\",\"value\":0.103},{\"ts\":\"2026-10-14T08:10:00Z\",\"value\":0.096},{\"ts\":\"2026-10-14T08:20:00Z\",\"value\":0.105},{\"ts\":\"2026-10-14T08:30:00Z\",\"value\":0.099},{\"ts\":\"2026-10-14T08:40:00Z\",\"value\":0.096},{\"ts\":\"2026-10-14T08:50:00Z\",\"value\":0.098},{\"ts\":\"2026-10-14T09:00:00Z\",\"value\":0.099},{\"ts\":\"2026-10-14T09:10:00Z\",\"value\":0.095},{\"ts\":\"2026-10-14T09:20:00Z\",\"value\":30.748},{\"ts\":\"2026-10-14T09:30:00Z\",\"value\":30.754},{\"ts\":\"2026-10-14T09:40:00Z\",\"value\":31.615},{\"ts\":\"2026-10-14T09:50:00Z\",\"value\":30.542},{\"ts\":\"2026-10-14T10:00:00Z\",\"value\":30.272},{\"ts\":\"2026-10-14T10:10:00Z\",\"value\":30.146},{\"ts\":\"2026-10-14T10:20:00Z\",\"value\":31.749},{\"ts\":\"2026-10-14T10:30:00Z\",\"value\":32.364},{\"ts\":\"2026-10-14T10:40:00Z\",\"value\":31.084},{\"ts\":\"2026-10-14T10:50:00Z\",\"value\":30.129},{\"ts\":\"2026-10-14T11:00:00Z\",\"value\":31.935}]}",
+          "is_error": false
+        },
+        {
+          "id": "E12",
+          "agent": "metrics",
+          "tool": "get_metrics",
+          "args": {
+            "metric": "latency_p99_ms",
+            "service": "inventory-service"
+          },
+          "output": "{\"service\":\"inventory-service\",\"metric\":\"latency_p99_ms\",\"unit\":\"ms\",\"change\":{\"at\":\"2026-10-14T09:20:00Z\",\"median_before\":90.14,\"median_after\":5024.13},\"summary\":{\"min\":86.664,\"median\":4862.993,\"max\":5231.932},\"points\":[{\"ts\":\"2026-10-14T08:00:00Z\",\"value\":89.028},{\"ts\":\"2026-10-14T08:10:00Z\",\"value\":87.408},{\"ts\":\"2026-10-14T08:20:00Z\",\"value\":86.664},{\"ts\":\"2026-10-14T08:30:00Z\",\"value\":92.489},{\"ts\":\"2026-10-14T08:40:00Z\",\"value\":92.786},{\"ts\":\"2026-10-14T08:50:00Z\",\"value\":91.209},{\"ts\":\"2026-10-14T09:00:00Z\",\"value\":89.722},{\"ts\":\"2026-10-14T09:10:00Z\",\"value\":90.558},{\"ts\":\"2026-10-14T09:20:00Z\",\"value\":4862.993},{\"ts\":\"2026-10-14T09:30:00Z\",\"value\":5231.932},{\"ts\":\"2026-10-14T09:40:00Z\",\"value\":4926.566},{\"ts\":\"2026-10-14T09:50:00Z\",\"value\":5069.398},{\"ts\":\"2026-10-14T10:00:00Z\",\"value\":5159.37},{\"ts\":\"2026-10-14T10:10:00Z\",\"value\":5158.09},{\"ts\":\"2026-10-14T10:20:00Z\",\"value\":4984.05},{\"ts\":\"2026-10-14T10:30:00Z\",\"value\":4897.171},{\"ts\":\"2026-10-14T10:40:00Z\",\"value\":5024.134},{\"ts\":\"2026-10-14T10:50:00Z\",\"value\":4812.583},{\"ts\":\"2026-10-14T11:00:00Z\",\"value\":5166.872}]}",
+          "is_error": false
+        }
+      ]
+    },
+    {
+      "scenario": "orders_upstream_dependency",
+      "attempt": 2,
+      "passed": true,
+      "scores": {
+        "schema_valid": {
+          "value": 1.0,
+          "passed": true,
+          "detail": ""
+        },
+        "root_cause_category": {
+          "value": 1.0,
+          "passed": true,
+          "detail": "got dependency_failure, expected dependency_failure"
+        },
+        "deploy_attribution": {
+          "value": 1.0,
+          "passed": true,
+          "detail": "got False, expected False"
+        },
+        "key_fact_recall": {
+          "value": 1.0,
+          "passed": true,
+          "detail": "all found"
+        },
+        "citation_grounding": {
+          "value": 1.0,
+          "passed": true,
+          "detail": ""
+        },
+        "tool_coverage": {
+          "value": 1.0,
+          "passed": true,
+          "detail": ""
+        },
+        "next_step_relevance": {
+          "value": 1.0,
+          "passed": true,
+          "detail": "matched ['inventory']"
+        },
+        "calibration": {
+          "value": 1.0,
+          "passed": true,
+          "detail": "confidence 0.90, want >= 0.5 when correct"
+        }
+      },
+      "elapsed_s": 537.2,
+      "llm_calls": 14,
+      "tool_calls": 11,
+      "tokens": {
+        "prompt": 26628,
+        "completion": 1931
+      },
+      "report": {
+        "summary": "The orders-api started returning HTTP 500 errors due to upstream inventory-service timeouts, which were caused by database connection pool exhaustion in the inventory-service. The latest deployment did not cause the issue.",
+        "incident_type": "elevated 5xx errors",
+        "affected_services": [
+          "orders-api",
+          "inventory-service"
+        ],
+        "evidence": [
+          {
+            "evidence_id": "E2",
+            "source": "logs",
+            "detail": "The orders-api's ERROR logs show a significant increase in upstream inventory-service timeouts after the latest deployment (dep-7716, v1.9.3)."
+          },
+          {
+            "evidence_id": "E8",
+            "source": "logs",
+            "detail": "The inventory-service's ERROR logs indicate database connection pool exhaustion, which may be a root cause for the upstream timeouts."
+          },
+          {
+            "evidence_id": "E4",
+            "source": "metrics",
+            "detail": "The error_rate for orders-api increased from 0.2% to 21.45% after the latest deployment."
+          },
+          {
+            "evidence_id": "E5",
+            "source": "metrics",
+            "detail": "The latency_p99_ms for orders-api increased from 201.68 ms to 5081.27 ms after the latest deployment."
+          },
+          {
+            "evidence_id": "E11",
+            "source": "metrics",
+            "detail": "The error_rate for inventory-service increased from 0.1% to 30.75% after the latest deployment."
+          },
+          {
+            "evidence_id": "E12",
+            "source": "metrics",
+            "detail": "The latency_p99_ms for inventory-service increased from 90.14 ms to 5024.13 ms after the latest deployment."
+          }
+        ],
+        "root_cause": {
+          "hypothesis": "The inventory-service's database connection pool exhaustion caused upstream timeouts in the orders-api, leading to HTTP 500 errors.",
+          "category": "dependency_failure",
+          "confidence": 0.9
+        },
+        "caused_by_latest_deploy": false,
+        "alternatives_ruled_out": [
+          "The latest deployment of orders-api did not cause the issue as the error rate and latency increased before the deployment.",
+          "No configuration changes or file modifications were identified in the deployment diff that could directly cause the HTTP 500 errors."
+        ],
+        "next_steps": [
+          {
+            "action": "Investigate and resolve the database connection pool exhaustion in the inventory-service.",
+            "priority": "P0",
+            "rationale": "The inventory-service's database connection pool exhaustion is the root cause of the upstream timeouts and HTTP 500 errors in the orders-api."
+          },
+          {
+            "action": "Monitor the inventory-service's error rate and latency to ensure the issue is resolved.",
+            "priority": "P1",
+            "rationale": "Confirm that the inventory-service's performance has improved and that the upstream timeouts have been resolved."
+          },
+          {
+            "action": "Review the inventory-service's database configuration and connection pool settings to prevent future issues.",
+            "priority": "P2",
+            "rationale": "Ensure that the inventory-service is configured to handle the expected load and prevent similar issues in the future."
+          }
+        ],
+        "open_questions": [
+          "What caused the inventory-service's database connection pool exhaustion?",
+          "Are there any other dependencies that could be affected by the inventory-service's performance issues?"
+        ]
+      },
+      "failed_specialists": {},
+      "revised": false,
+      "judge": null,
+      "error": null,
+      "trace_file": "/Users/rishabh/dev/ccc-takehome/evals/results/20261015T211903/traces/orders_upstream_dependency-2.jsonl",
+      "evidence": [
+        {
+          "id": "E1",
+          "agent": "orchestrator",
+          "tool": "list_services",
+          "args": {},
+          "output": "[{\"name\":\"checkout-api\",\"owner\":\"team-payments\",\"tier\":1,\"depends_on\":[\"payments-api\",\"inventory-service\",\"postgres-checkout\"]},{\"name\":\"payments-api\",\"owner\":\"team-payments\",\"tier\":1,\"depends_on\":[\"postgres-payments\"]},{\"name\":\"orders-api\",\"owner\":\"team-fulfilment\",\"tier\":1,\"depends_on\":[\"inventory-service\"]},{\"name\":\"inventory-service\",\"owner\":\"team-fulfilment\",\"tier\":1,\"depends_on\":[\"postgres-inventory\"]},{\"name\":\"search-api\",\"owner\":\"team-discovery\",\"tier\":2,\"depends_on\":[\"elasticsearch\",\"redis-search-cache\"]},{\"name\":\"report-worker\",\"owner\":\"team-data\",\"tier\":3,\"depends_on\":[\"postgres-analytics\"]},{\"name\":\"auth-api\",\"owner\":\"team-identity\",\"tier\":0,\"depends_on\":[\"identity-provider\"]},{\"name\":\"profile-api\",\"owner\":\"team-identity\",\"tier\":2,\"depends_on\":[\"postgres-profile\",\"avatar-cdn\"]},{\"name\":\"frontend-web\",\"owner\":\"team-web\",\"tier\":1,\"depends_on\":[\"checkout-api\"]}]",
+          "is_error": false
+        },
+        {
+          "id": "E2",
+          "agent": "logs",
+          "tool": "get_error_summary",
+          "args": {
+            "around": null,
+            "service": "orders-api"
+          },
+          "output": "{\"pivot\":\"2026-10-14T10:10:00Z\",\"note\":\"Split on latest deploy dep-7716 (v1.9.3).\",\"log_window\":[\"2026-10-14T08:00:00Z\",\"2026-10-14T11:00:00Z\"],\"groups\":[{\"level\":\"ERROR\",\"example\":\"GET /orders/9592 failed: upstream inventory-service timeout after 5000ms -> 500\",\"count\":215,\"first_seen\":\"2026-10-14T09:20:00Z\",\"last_seen\":\"2026-10-14T10:59:34Z\",\"first_seen_vs_latest_deploy\":\"50 min BEFORE latest deploy dep-7716 (v1.9.3)\",\"before_pivot\":110,\"after_pivot\":105},{\"level\":\"WARN\",\"example\":\"Slow request GET /healthz took 13478ms\",\"count\":5,\"first_seen\":\"2026-10-14T08:00:00Z\",\"last_seen\":\"2026-10-14T10:33:31Z\",\"first_seen_vs_latest_deploy\":\"2.2 hours BEFORE latest deploy dep-7716 (v1.9.3)\",\"before_pivot\":4,\"after_pivot\":1},{\"level\":\"WARN\",\"example\":\"Retrying metrics push to collector (attempt 1)\",\"count\":5,\"first_seen\":\"2026-10-14T08:15:02Z\",\"last_seen\":\"2026-10-14T10:46:36Z\",\"first_seen_vs_latest_deploy\":\"115 min BEFORE latest deploy dep-7716 (v1.9.3)\",\"before_pivot\":4,\"after_pivot\":1}]}",
+          "is_error": false
+        },
+        {
+          "id": "E3",
+          "agent": "changes",
+          "tool": "get_recent_deployments",
+          "args": {
+            "service": "orders-api",
+            "limit": 2
+          },
+          "output": "[{\"id\":\"dep-7716\",\"service\":\"orders-api\",\"version\":\"v1.9.3\",\"deployed_at\":\"2026-10-14T10:10:00Z\",\"author\":\"kai.r\",\"status\":\"succeeded\",\"summary\":\"Bump logging library\",\"hours_before_now\":0.8},{\"id\":\"dep-7685\",\"service\":\"orders-api\",\"version\":\"v1.9.2\",\"deployed_at\":\"2026-10-08T13:00:00Z\",\"author\":\"kai.r\",\"status\":\"succeeded\",\"summary\":\"Add order notes\",\"hours_before_now\":142.0}]",
+          "is_error": false
+        },
+        {
+          "id": "E4",
+          "agent": "metrics",
+          "tool": "get_metrics",
+          "args": {
+            "metric": "error_rate",
+            "service": "orders-api"
+          },
+          "output": "{\"service\":\"orders-api\",\"metric\":\"error_rate\",\"unit\":\"% of requests\",\"change\":{\"at\":\"2026-10-14T09:20:00Z\",\"median_before\":0.2,\"median_after\":21.45,\"vs_latest_deploy\":\"50 min BEFORE latest deploy dep-7716 (v1.9.3)\"},\"summary\":{\"min\":0.193,\"median\":21.24,\"max\":23.045},\"points\":[{\"ts\":\"2026-10-14T08:00:00Z\",\"value\":0.193},{\"ts\":\"2026-10-14T08:10:00Z\",\"value\":0.199},{\"ts\":\"2026-10-14T08:20:00Z\",\"value\":0.208},{\"ts\":\"2026-10-14T08:30:00Z\",\"value\":0.195},{\"ts\":\"2026-10-14T08:40:00Z\",\"value\":0.194},{\"ts\":\"2026-10-14T08:50:00Z\",\"value\":0.196},{\"ts\":\"2026-10-14T09:00:00Z\",\"value\":0.204},{\"ts\":\"2026-10-14T09:10:00Z\",\"value\":0.207},{\"ts\":\"2026-10-14T09:20:00Z\",\"value\":21.24},{\"ts\":\"2026-10-14T09:30:00Z\",\"value\":21.243},{\"ts\":\"2026-10-14T09:40:00Z\",\"value\":21.445},{\"ts\":\"2026-10-14T09:50:00Z\",\"value\":21.618},{\"ts\":\"2026-10-14T10:00:00Z\",\"value\":22.049},{\"ts\":\"2026-10-14T10:10:00Z\",\"value\":21.254},{\"ts\":\"2026-10-14T10:20:00Z\",\"value\":21.622},{\"ts\":\"2026-10-14T10:30:00Z\",\"value\":21.316},{\"ts\":\"2026-10-14T10:40:00Z\",\"value\":23.045},{\"ts\":\"2026-10-14T10:50:00Z\",\"value\":22.503},{\"ts\":\"2026-10-14T11:00:00Z\",\"value\":21.124}]}",
+          "is_error": false
+        },
+        {
+          "id": "E5",
+          "agent": "metrics",
+          "tool": "get_metrics",
+          "args": {
+            "metric": "latency_p99_ms",
+            "service": "orders-api"
+          },
+          "output": "{\"service\":\"orders-api\",\"metric\":\"latency_p99_ms\",\"unit\":\"ms\",\"change\":{\"at\":\"2026-10-14T09:20:00Z\",\"median_before\":201.68,\"median_after\":5081.27,\"vs_latest_deploy\":\"50 min BEFORE latest deploy dep-7716 (v1.9.3)\"},\"summary\":{\"min\":192.033,\"median\":4899.504,\"max\":5248.412},\"points\":[{\"ts\":\"2026-10-14T08:00:00Z\",\"value\":209.248},{\"ts\":\"2026-10-14T08:10:00Z\",\"value\":192.033},{\"ts\":\"2026-10-14T08:20:00Z\",\"value\":197.685},{\"ts\":\"2026-10-14T08:30:00Z\",\"value\":209.677},{\"ts\":\"2026-10-14T08:40:00Z\",\"value\":205.898},{\"ts\":\"2026-10-14T08:50:00Z\",\"value\":204.666},{\"ts\":\"2026-10-14T09:00:00Z\",\"value\":198.698},{\"ts\":\"2026-10-14T09:10:00Z\",\"value\":193.924},{\"ts\":\"2026-10-14T09:20:00Z\",\"value\":5170.37},{\"ts\":\"2026-10-14T09:30:00Z\",\"value\":4899.504},{\"ts\":\"2026-10-14T09:40:00Z\",\"value\":4950.286},{\"ts\":\"2026-10-14T09:50:00Z\",\"value\":5043.054},{\"ts\":\"2026-10-14T10:00:00Z\",\"value\":4862.305},{\"ts\":\"2026-10-14T10:10:00Z\",\"value\":5048.501},{\"ts\":\"2026-10-14T10:20:00Z\",\"value\":5248.412},{\"ts\":\"2026-10-14T10:30:00Z\",\"value\":5198.654},{\"ts\":\"2026-10-14T10:40:00Z\",\"value\":5100.248},{\"ts\":\"2026-10-14T10:50:00Z\",\"value\":5167.513},{\"ts\":\"2026-10-14T11:00:00Z\",\"value\":5081.272}]}",
+          "is_error": false
+        },
+        {
+          "id": "E6",
+          "agent": "metrics",
+          "tool": "get_metrics",
+          "args": {
+            "metric": "memory_mb",
+            "service": "orders-api"
+          },
+          "output": "{\"service\":\"orders-api\",\"metric\":\"memory_mb\",\"unit\":\"MB\",\"change\":\"no significant change in level (variation is within normal noise)\",\"summary\":{\"min\":433.882,\"median\":456.369,\"max\":468.36},\"points\":[{\"ts\":\"2026-10-14T08:00:00Z\",\"value\":433.882},{\"ts\":\"2026-10-14T08:10:00Z\",\"value\":454.667},{\"ts\":\"2026-10-14T08:20:00Z\",\"value\":445.712},{\"ts\":\"2026-10-14T08:30:00Z\",\"value\":460.843},{\"ts\":\"2026-10-14T08:40:00Z\",\"value\":468.36},{\"ts\":\"2026-10-14T08:50:00Z\",\"value\":446.851},{\"ts\":\"2026-10-14T09:00:00Z\",\"value\":453.329},{\"ts\":\"2026-10-14T09:10:00Z\",\"value\":461.21},{\"ts\":\"2026-10-14T09:20:00Z\",\"value\":446.452},{\"ts\":\"2026-10-14T09:30:00Z\",\"value\":437.785},{\"ts\":\"2026-10-14T09:40:00Z\",\"value\":460.0},{\"ts\":\"2026-10-14T09:50:00Z\",\"value\":467.103},{\"ts\":\"2026-10-14T10:00:00Z\",\"value\":462.332},{\"ts\":\"2026-10-14T10:10:00Z\",\"value\":459.004},{\"ts\":\"2026-10-14T10:20:00Z\",\"value\":465.86},{\"ts\":\"2026-10-14T10:30:00Z\",\"value\":458.082},{\"ts\":\"2026-10-14T10:40:00Z\",\"value\":456.369},{\"ts\":\"2026-10-14T10:50:00Z\",\"value\":447.926},{\"ts\":\"2026-10-14T11:00:00Z\",\"value\":441.586}]}",
+          "is_error": false
+        },
+        {
+          "id": "E7",
+          "agent": "docs",
+          "tool": "search_docs",
+          "args": {
+            "query": "500 errors after deploy orders-api"
+          },
+          "output": "[{\"doc\":\"http-5xx-triage\",\"content\":\"# Runbook: Elevated HTTP 5xx errors\\n\\n1. Confirm scope: which endpoints, which services, since when. Compare error rate against the\\n   previous 1-2 hours of baseline.\\n2. Correlate the start time with recent deployments of the service AND its dependencies. A deploy\\n   is only a suspect if errors started at or after it. Errors that start before a deploy point\\n   elsewhere.\\n3. Group errors by signature (exception type and message). A single new signature that appears at\\n   deploy time usually means a code or config change. Timeouts against a dependency usually mean\\n   the dependency is unhealthy.\\n4. If a recent deploy is the likely cause and customer impact is high, roll back first and debug\\n   after (see rollback runbook).\\n5. If a dependency is failing, page the owning team and consider enabling degraded mode or\\n   circuit breakers instead of rolling back your own service.\\n\"},{\"doc\":\"orders-architecture\",\"content\":\"# orders-api architecture\\n\\norders-api serves order history and order details. Every GET /orders/{id} calls inventory-service\\nsynchronously for stock status with a 5000ms timeout and no fallback.\\n\"},{\"doc\":\"rollback\",\"content\":\"# Runbook: Rolling back a deployment\\n\\n- Use `deployctl rollback <service> --to <previous-version>`. Rollbacks take about 3 minutes.\\n- Rolling back is safe for stateless changes. If the release included a database migration that\\n  already ran, check the migration is backward compatible before rolling back code.\\n- After rollback, confirm the error rate returns to baseline within 10 minutes, then open an\\n  incident ticket with the failing deploy id.\\n- Rolling back a service that is failing because of a dependency does not help and wastes time.\\n\"}]",
+          "is_error": false
+        },
+        {
+          "id": "E8",
+          "agent": "logs",
+          "tool": "get_error_summary",
+          "args": {
+            "around": null,
+            "service": "inventory-service"
+          },
+          "output": "{\"pivot\":null,\"note\":\"No deployments recorded for this service.\",\"log_window\":[\"2026-10-14T08:00:00Z\",\"2026-10-14T11:00:00Z\"],\"groups\":[{\"level\":\"ERROR\",\"example\":\"Database connection pool exhausted (max=20, waiting=57); request aborted after 5000ms\",\"count\":137,\"first_seen\":\"2026-10-14T09:18:00Z\",\"last_seen\":\"2026-10-14T10:59:37Z\"},{\"level\":\"WARN\",\"example\":\"Slow request GET /healthz took 18832ms\",\"count\":4,\"first_seen\":\"2026-10-14T08:00:00Z\",\"last_seen\":\"2026-10-14T10:46:23Z\"},{\"level\":\"WARN\",\"example\":\"Retrying metrics push to collector (attempt 1)\",\"count\":3,\"first_seen\":\"2026-10-14T08:36:02Z\",\"last_seen\":\"2026-10-14T10:14:17Z\"}]}",
+          "is_error": false
+        },
+        {
+          "id": "E9",
+          "agent": "changes",
+          "tool": "get_deployment_diff",
+          "args": {
+            "deploy_id": "dep-7716"
+          },
+          "output": "{\"id\":\"dep-7716\",\"service\":\"orders-api\",\"version\":\"v1.9.3\",\"commits\":[\"chore(deps): bump structlog 24.1 -> 24.4\"],\"files_changed\":[\"pyproject.toml\",\"uv.lock\"],\"config_changes\":[],\"pipeline_steps\":[{\"name\":\"build\",\"status\":\"passed\"},{\"name\":\"unit-tests\",\"status\":\"passed\"},{\"name\":\"deploy\",\"status\":\"passed\"}]}",
+          "is_error": false
+        },
+        {
+          "id": "E10",
+          "agent": "metrics",
+          "tool": "get_metrics",
+          "args": {
+            "service": "orders-api",
+            "metric": "restarts"
+          },
+          "output": "{\"service\":\"orders-api\",\"metric\":\"restarts\",\"unit\":\"count per 10m\",\"change\":\"no significant change in level (variation is within normal noise)\",\"summary\":{\"min\":0.0,\"median\":0.0,\"max\":0.0},\"points\":[{\"ts\":\"2026-10-14T08:00:00Z\",\"value\":0.0},{\"ts\":\"2026-10-14T08:10:00Z\",\"value\":0.0},{\"ts\":\"2026-10-14T08:20:00Z\",\"value\":0.0},{\"ts\":\"2026-10-14T08:30:00Z\",\"value\":0.0},{\"ts\":\"2026-10-14T08:40:00Z\",\"value\":0.0},{\"ts\":\"2026-10-14T08:50:00Z\",\"value\":0.0},{\"ts\":\"2026-10-14T09:00:00Z\",\"value\":0.0},{\"ts\":\"2026-10-14T09:10:00Z\",\"value\":0.0},{\"ts\":\"2026-10-14T09:20:00Z\",\"value\":0.0},{\"ts\":\"2026-10-14T09:30:00Z\",\"value\":0.0},{\"ts\":\"2026-10-14T09:40:00Z\",\"value\":0.0},{\"ts\":\"2026-10-14T09:50:00Z\",\"value\":0.0},{\"ts\":\"2026-10-14T10:00:00Z\",\"value\":0.0},{\"ts\":\"2026-10-14T10:10:00Z\",\"value\":0.0},{\"ts\":\"2026-10-14T10:20:00Z\",\"value\":0.0},{\"ts\":\"2026-10-14T10:30:00Z\",\"value\":0.0},{\"ts\":\"2026-10-14T10:40:00Z\",\"value\":0.0},{\"ts\":\"2026-10-14T10:50:00Z\",\"value\":0.0},{\"ts\":\"2026-10-14T11:00:00Z\",\"value\":0.0}]}",
+          "is_error": false
+        },
+        {
+          "id": "E11",
+          "agent": "metrics",
+          "tool": "get_metrics",
+          "args": {
+            "service": "inventory-service",
+            "metric": "error_rate"
+          },
+          "output": "{\"service\":\"inventory-service\",\"metric\":\"error_rate\",\"unit\":\"% of requests\",\"change\":{\"at\":\"2026-10-14T09:20:00Z\",\"median_before\":0.1,\"median_after\":30.75},\"summary\":{\"min\":0.095,\"median\":30.146,\"max\":32.364},\"points\":[{\"ts\":\"2026-10-14T08:00:00Z\",\"value\":0.103},{\"ts\":\"2026-10-14T08:10:00Z\",\"value\":0.096},{\"ts\":\"2026-10-14T08:20:00Z\",\"value\":0.105},{\"ts\":\"2026-10-14T08:30:00Z\",\"value\":0.099},{\"ts\":\"2026-10-14T08:40:00Z\",\"value\":0.096},{\"ts\":\"2026-10-14T08:50:00Z\",\"value\":0.098},{\"ts\":\"2026-10-14T09:00:00Z\",\"value\":0.099},{\"ts\":\"2026-10-14T09:10:00Z\",\"value\":0.095},{\"ts\":\"2026-10-14T09:20:00Z\",\"value\":30.748},{\"ts\":\"2026-10-14T09:30:00Z\",\"value\":30.754},{\"ts\":\"2026-10-14T09:40:00Z\",\"value\":31.615},{\"ts\":\"2026-10-14T09:50:00Z\",\"value\":30.542},{\"ts\":\"2026-10-14T10:00:00Z\",\"value\":30.272},{\"ts\":\"2026-10-14T10:10:00Z\",\"value\":30.146},{\"ts\":\"2026-10-14T10:20:00Z\",\"value\":31.749},{\"ts\":\"2026-10-14T10:30:00Z\",\"value\":32.364},{\"ts\":\"2026-10-14T10:40:00Z\",\"value\":31.084},{\"ts\":\"2026-10-14T10:50:00Z\",\"value\":30.129},{\"ts\":\"2026-10-14T11:00:00Z\",\"value\":31.935}]}",
+          "is_error": false
+        },
+        {
+          "id": "E12",
+          "agent": "metrics",
+          "tool": "get_metrics",
+          "args": {
+            "metric": "latency_p99_ms",
+            "service": "inventory-service"
+          },
+          "output": "{\"service\":\"inventory-service\",\"metric\":\"latency_p99_ms\",\"unit\":\"ms\",\"change\":{\"at\":\"2026-10-14T09:20:00Z\",\"median_before\":90.14,\"median_after\":5024.13},\"summary\":{\"min\":86.664,\"median\":4862.993,\"max\":5231.932},\"points\":[{\"ts\":\"2026-10-14T08:00:00Z\",\"value\":89.028},{\"ts\":\"2026-10-14T08:10:00Z\",\"value\":87.408},{\"ts\":\"2026-10-14T08:20:00Z\",\"value\":86.664},{\"ts\":\"2026-10-14T08:30:00Z\",\"value\":92.489},{\"ts\":\"2026-10-14T08:40:00Z\",\"value\":92.786},{\"ts\":\"2026-10-14T08:50:00Z\",\"value\":91.209},{\"ts\":\"2026-10-14T09:00:00Z\",\"value\":89.722},{\"ts\":\"2026-10-14T09:10:00Z\",\"value\":90.558},{\"ts\":\"2026-10-14T09:20:00Z\",\"value\":4862.993},{\"ts\":\"2026-10-14T09:30:00Z\",\"value\":5231.932},{\"ts\":\"2026-10-14T09:40:00Z\",\"value\":4926.566},{\"ts\":\"2026-10-14T09:50:00Z\",\"value\":5069.398},{\"ts\":\"2026-10-14T10:00:00Z\",\"value\":5159.37},{\"ts\":\"2026-10-14T10:10:00Z\",\"value\":5158.09},{\"ts\":\"2026-10-14T10:20:00Z\",\"value\":4984.05},{\"ts\":\"2026-10-14T10:30:00Z\",\"value\":4897.171},{\"ts\":\"2026-10-14T10:40:00Z\",\"value\":5024.134},{\"ts\":\"2026-10-14T10:50:00Z\",\"value\":4812.583},{\"ts\":\"2026-10-14T11:00:00Z\",\"value\":5166.872}]}",
+          "is_error": false
+        }
+      ]
+    },
+    {
+      "scenario": "orders_upstream_dependency",
+      "attempt": 3,
+      "passed": true,
+      "scores": {
+        "schema_valid": {
+          "value": 1.0,
+          "passed": true,
+          "detail": ""
+        },
+        "root_cause_category": {
+          "value": 1.0,
+          "passed": true,
+          "detail": "got dependency_failure, expected dependency_failure"
+        },
+        "deploy_attribution": {
+          "value": 1.0,
+          "passed": true,
+          "detail": "got False, expected False"
+        },
+        "key_fact_recall": {
+          "value": 1.0,
+          "passed": true,
+          "detail": "all found"
+        },
+        "citation_grounding": {
+          "value": 1.0,
+          "passed": true,
+          "detail": ""
+        },
+        "tool_coverage": {
+          "value": 1.0,
+          "passed": true,
+          "detail": ""
+        },
+        "next_step_relevance": {
+          "value": 1.0,
+          "passed": true,
+          "detail": "matched ['inventory']"
+        },
+        "calibration": {
+          "value": 1.0,
+          "passed": true,
+          "detail": "confidence 0.90, want >= 0.5 when correct"
+        }
+      },
+      "elapsed_s": 396.9,
+      "llm_calls": 14,
+      "tool_calls": 11,
+      "tokens": {
+        "prompt": 26625,
+        "completion": 1931
+      },
+      "report": {
+        "summary": "The orders-api started returning HTTP 500 errors due to upstream timeouts to the inventory-service, which experienced database connection pool exhaustion. The latest deployment did not cause the issue, as the error began before the deployment.",
+        "incident_type": "upstream dependency failure",
+        "affected_services": [
+          "orders-api",
+          "inventory-service"
+        ],
+        "evidence": [
+          {
+            "evidence_id": "E2",
+            "source": "logs",
+            "detail": "The orders-api experienced 215 ERRORs related to upstream inventory-service timeouts after the latest deployment (dep-7716, v1.9.3)."
+          },
+          {
+            "evidence_id": "E8",
+            "source": "logs",
+            "detail": "The inventory-service had 137 ERRORs related to database connection pool exhaustion."
+          },
+          {
+            "evidence_id": "E4",
+            "source": "metrics",
+            "detail": "The error_rate for orders-api increased from 0.2% to 21.45% after the latest deployment."
+          },
+          {
+            "evidence_id": "E5",
+            "source": "metrics",
+            "detail": "The latency_p99_ms for orders-api increased from 201.68 ms to 5081.27 ms after the latest deployment."
+          },
+          {
+            "evidence_id": "E11",
+            "source": "metrics",
+            "detail": "The error_rate for inventory-service increased from 0.1% to 30.75% after the latest deployment."
+          },
+          {
+            "evidence_id": "E12",
+            "source": "metrics",
+            "detail": "The latency_p99_ms for inventory-service increased from 90.14 ms to 5024.13 ms after the latest deployment."
+          }
+        ],
+        "root_cause": {
+          "hypothesis": "The inventory-service experienced database connection pool exhaustion, which caused upstream timeouts in the orders-api, resulting in HTTP 500 errors.",
+          "category": "dependency_failure",
+          "confidence": 0.9
+        },
+        "caused_by_latest_deploy": false,
+        "alternatives_ruled_out": [
+          "The latest deployment did not cause the issue as the error began before the deployment.",
+          "The deployment diff did not include any changes that could directly cause the HTTP 500 errors."
+        ],
+        "next_steps": [
+          {
+            "action": "Investigate and resolve the database connection pool exhaustion in the inventory-service.",
+            "priority": "P0",
+            "rationale": "The inventory-service's database connection pool exhaustion is the root cause of the upstream timeouts and HTTP 500 errors in the orders-api."
+          },
+          {
+            "action": "Monitor the inventory-service's error_rate and latency_p99_ms to ensure the issue is resolved.",
+            "priority": "P1",
+            "rationale": "Confirming the resolution of the inventory-service's issues is critical to prevent further upstream timeouts and errors in the orders-api."
+          },
+          {
+            "action": "Review the inventory-service's database configuration and connection pool settings to prevent future issues.",
+            "priority": "P2",
+            "rationale": "Preventing future occurrences of database connection pool exhaustion is essential for maintaining service reliability."
+          }
+        ],
+        "open_questions": [
+          "What caused the inventory-service's database connection pool exhaustion?",
+          "Are there any other services that depend on the inventory-service and may be affected by this issue?"
+        ]
+      },
+      "failed_specialists": {},
+      "revised": false,
+      "judge": null,
+      "error": null,
+      "trace_file": "/Users/rishabh/dev/ccc-takehome/evals/results/20261015T211903/traces/orders_upstream_dependency-3.jsonl",
+      "evidence": [
+        {
+          "id": "E1",
+          "agent": "orchestrator",
+          "tool": "list_services",
+          "args": {},
+          "output": "[{\"name\":\"checkout-api\",\"owner\":\"team-payments\",\"tier\":1,\"depends_on\":[\"payments-api\",\"inventory-service\",\"postgres-checkout\"]},{\"name\":\"payments-api\",\"owner\":\"team-payments\",\"tier\":1,\"depends_on\":[\"postgres-payments\"]},{\"name\":\"orders-api\",\"owner\":\"team-fulfilment\",\"tier\":1,\"depends_on\":[\"inventory-service\"]},{\"name\":\"inventory-service\",\"owner\":\"team-fulfilment\",\"tier\":1,\"depends_on\":[\"postgres-inventory\"]},{\"name\":\"search-api\",\"owner\":\"team-discovery\",\"tier\":2,\"depends_on\":[\"elasticsearch\",\"redis-search-cache\"]},{\"name\":\"report-worker\",\"owner\":\"team-data\",\"tier\":3,\"depends_on\":[\"postgres-analytics\"]},{\"name\":\"auth-api\",\"owner\":\"team-identity\",\"tier\":0,\"depends_on\":[\"identity-provider\"]},{\"name\":\"profile-api\",\"owner\":\"team-identity\",\"tier\":2,\"depends_on\":[\"postgres-profile\",\"avatar-cdn\"]},{\"name\":\"frontend-web\",\"owner\":\"team-web\",\"tier\":1,\"depends_on\":[\"checkout-api\"]}]",
+          "is_error": false
+        },
+        {
+          "id": "E2",
+          "agent": "logs",
+          "tool": "get_error_summary",
+          "args": {
+            "around": null,
+            "service": "orders-api"
+          },
+          "output": "{\"pivot\":\"2026-10-14T10:10:00Z\",\"note\":\"Split on latest deploy dep-7716 (v1.9.3).\",\"log_window\":[\"2026-10-14T08:00:00Z\",\"2026-10-14T11:00:00Z\"],\"groups\":[{\"level\":\"ERROR\",\"example\":\"GET /orders/9592 failed: upstream inventory-service timeout after 5000ms -> 500\",\"count\":215,\"first_seen\":\"2026-10-14T09:20:00Z\",\"last_seen\":\"2026-10-14T10:59:34Z\",\"first_seen_vs_latest_deploy\":\"50 min BEFORE latest deploy dep-7716 (v1.9.3)\",\"before_pivot\":110,\"after_pivot\":105},{\"level\":\"WARN\",\"example\":\"Slow request GET /healthz took 13478ms\",\"count\":5,\"first_seen\":\"2026-10-14T08:00:00Z\",\"last_seen\":\"2026-10-14T10:33:31Z\",\"first_seen_vs_latest_deploy\":\"2.2 hours BEFORE latest deploy dep-7716 (v1.9.3)\",\"before_pivot\":4,\"after_pivot\":1},{\"level\":\"WARN\",\"example\":\"Retrying metrics push to collector (attempt 1)\",\"count\":5,\"first_seen\":\"2026-10-14T08:15:02Z\",\"last_seen\":\"2026-10-14T10:46:36Z\",\"first_seen_vs_latest_deploy\":\"115 min BEFORE latest deploy dep-7716 (v1.9.3)\",\"before_pivot\":4,\"after_pivot\":1}]}",
+          "is_error": false
+        },
+        {
+          "id": "E3",
+          "agent": "changes",
+          "tool": "get_recent_deployments",
+          "args": {
+            "limit": 2,
+            "service": "orders-api"
+          },
+          "output": "[{\"id\":\"dep-7716\",\"service\":\"orders-api\",\"version\":\"v1.9.3\",\"deployed_at\":\"2026-10-14T10:10:00Z\",\"author\":\"kai.r\",\"status\":\"succeeded\",\"summary\":\"Bump logging library\",\"hours_before_now\":0.8},{\"id\":\"dep-7685\",\"service\":\"orders-api\",\"version\":\"v1.9.2\",\"deployed_at\":\"2026-10-08T13:00:00Z\",\"author\":\"kai.r\",\"status\":\"succeeded\",\"summary\":\"Add order notes\",\"hours_before_now\":142.0}]",
+          "is_error": false
+        },
+        {
+          "id": "E4",
+          "agent": "metrics",
+          "tool": "get_metrics",
+          "args": {
+            "metric": "error_rate",
+            "service": "orders-api"
+          },
+          "output": "{\"service\":\"orders-api\",\"metric\":\"error_rate\",\"unit\":\"% of requests\",\"change\":{\"at\":\"2026-10-14T09:20:00Z\",\"median_before\":0.2,\"median_after\":21.45,\"vs_latest_deploy\":\"50 min BEFORE latest deploy dep-7716 (v1.9.3)\"},\"summary\":{\"min\":0.193,\"median\":21.24,\"max\":23.045},\"points\":[{\"ts\":\"2026-10-14T08:00:00Z\",\"value\":0.193},{\"ts\":\"2026-10-14T08:10:00Z\",\"value\":0.199},{\"ts\":\"2026-10-14T08:20:00Z\",\"value\":0.208},{\"ts\":\"2026-10-14T08:30:00Z\",\"value\":0.195},{\"ts\":\"2026-10-14T08:40:00Z\",\"value\":0.194},{\"ts\":\"2026-10-14T08:50:00Z\",\"value\":0.196},{\"ts\":\"2026-10-14T09:00:00Z\",\"value\":0.204},{\"ts\":\"2026-10-14T09:10:00Z\",\"value\":0.207},{\"ts\":\"2026-10-14T09:20:00Z\",\"value\":21.24},{\"ts\":\"2026-10-14T09:30:00Z\",\"value\":21.243},{\"ts\":\"2026-10-14T09:40:00Z\",\"value\":21.445},{\"ts\":\"2026-10-14T09:50:00Z\",\"value\":21.618},{\"ts\":\"2026-10-14T10:00:00Z\",\"value\":22.049},{\"ts\":\"2026-10-14T10:10:00Z\",\"value\":21.254},{\"ts\":\"2026-10-14T10:20:00Z\",\"value\":21.622},{\"ts\":\"2026-10-14T10:30:00Z\",\"value\":21.316},{\"ts\":\"2026-10-14T10:40:00Z\",\"value\":23.045},{\"ts\":\"2026-10-14T10:50:00Z\",\"value\":22.503},{\"ts\":\"2026-10-14T11:00:00Z\",\"value\":21.124}]}",
+          "is_error": false
+        },
+        {
+          "id": "E5",
+          "agent": "metrics",
+          "tool": "get_metrics",
+          "args": {
+            "metric": "latency_p99_ms",
+            "service": "orders-api"
+          },
+          "output": "{\"service\":\"orders-api\",\"metric\":\"latency_p99_ms\",\"unit\":\"ms\",\"change\":{\"at\":\"2026-10-14T09:20:00Z\",\"median_before\":201.68,\"median_after\":5081.27,\"vs_latest_deploy\":\"50 min BEFORE latest deploy dep-7716 (v1.9.3)\"},\"summary\":{\"min\":192.033,\"median\":4899.504,\"max\":5248.412},\"points\":[{\"ts\":\"2026-10-14T08:00:00Z\",\"value\":209.248},{\"ts\":\"2026-10-14T08:10:00Z\",\"value\":192.033},{\"ts\":\"2026-10-14T08:20:00Z\",\"value\":197.685},{\"ts\":\"2026-10-14T08:30:00Z\",\"value\":209.677},{\"ts\":\"2026-10-14T08:40:00Z\",\"value\":205.898},{\"ts\":\"2026-10-14T08:50:00Z\",\"value\":204.666},{\"ts\":\"2026-10-14T09:00:00Z\",\"value\":198.698},{\"ts\":\"2026-10-14T09:10:00Z\",\"value\":193.924},{\"ts\":\"2026-10-14T09:20:00Z\",\"value\":5170.37},{\"ts\":\"2026-10-14T09:30:00Z\",\"value\":4899.504},{\"ts\":\"2026-10-14T09:40:00Z\",\"value\":4950.286},{\"ts\":\"2026-10-14T09:50:00Z\",\"value\":5043.054},{\"ts\":\"2026-10-14T10:00:00Z\",\"value\":4862.305},{\"ts\":\"2026-10-14T10:10:00Z\",\"value\":5048.501},{\"ts\":\"2026-10-14T10:20:00Z\",\"value\":5248.412},{\"ts\":\"2026-10-14T10:30:00Z\",\"value\":5198.654},{\"ts\":\"2026-10-14T10:40:00Z\",\"value\":5100.248},{\"ts\":\"2026-10-14T10:50:00Z\",\"value\":5167.513},{\"ts\":\"2026-10-14T11:00:00Z\",\"value\":5081.272}]}",
+          "is_error": false
+        },
+        {
+          "id": "E6",
+          "agent": "metrics",
+          "tool": "get_metrics",
+          "args": {
+            "metric": "memory_mb",
+            "service": "orders-api"
+          },
+          "output": "{\"service\":\"orders-api\",\"metric\":\"memory_mb\",\"unit\":\"MB\",\"change\":\"no significant change in level (variation is within normal noise)\",\"summary\":{\"min\":433.882,\"median\":456.369,\"max\":468.36},\"points\":[{\"ts\":\"2026-10-14T08:00:00Z\",\"value\":433.882},{\"ts\":\"2026-10-14T08:10:00Z\",\"value\":454.667},{\"ts\":\"2026-10-14T08:20:00Z\",\"value\":445.712},{\"ts\":\"2026-10-14T08:30:00Z\",\"value\":460.843},{\"ts\":\"2026-10-14T08:40:00Z\",\"value\":468.36},{\"ts\":\"2026-10-14T08:50:00Z\",\"value\":446.851},{\"ts\":\"2026-10-14T09:00:00Z\",\"value\":453.329},{\"ts\":\"2026-10-14T09:10:00Z\",\"value\":461.21},{\"ts\":\"2026-10-14T09:20:00Z\",\"value\":446.452},{\"ts\":\"2026-10-14T09:30:00Z\",\"value\":437.785},{\"ts\":\"2026-10-14T09:40:00Z\",\"value\":460.0},{\"ts\":\"2026-10-14T09:50:00Z\",\"value\":467.103},{\"ts\":\"2026-10-14T10:00:00Z\",\"value\":462.332},{\"ts\":\"2026-10-14T10:10:00Z\",\"value\":459.004},{\"ts\":\"2026-10-14T10:20:00Z\",\"value\":465.86},{\"ts\":\"2026-10-14T10:30:00Z\",\"value\":458.082},{\"ts\":\"2026-10-14T10:40:00Z\",\"value\":456.369},{\"ts\":\"2026-10-14T10:50:00Z\",\"value\":447.926},{\"ts\":\"2026-10-14T11:00:00Z\",\"value\":441.586}]}",
+          "is_error": false
+        },
+        {
+          "id": "E7",
+          "agent": "docs",
+          "tool": "search_docs",
+          "args": {
+            "query": "500 errors after deploy orders-api"
+          },
+          "output": "[{\"doc\":\"http-5xx-triage\",\"content\":\"# Runbook: Elevated HTTP 5xx errors\\n\\n1. Confirm scope: which endpoints, which services, since when. Compare error rate against the\\n   previous 1-2 hours of baseline.\\n2. Correlate the start time with recent deployments of the service AND its dependencies. A deploy\\n   is only a suspect if errors started at or after it. Errors that start before a deploy point\\n   elsewhere.\\n3. Group errors by signature (exception type and message). A single new signature that appears at\\n   deploy time usually means a code or config change. Timeouts against a dependency usually mean\\n   the dependency is unhealthy.\\n4. If a recent deploy is the likely cause and customer impact is high, roll back first and debug\\n   after (see rollback runbook).\\n5. If a dependency is failing, page the owning team and consider enabling degraded mode or\\n   circuit breakers instead of rolling back your own service.\\n\"},{\"doc\":\"orders-architecture\",\"content\":\"# orders-api architecture\\n\\norders-api serves order history and order details. Every GET /orders/{id} calls inventory-service\\nsynchronously for stock status with a 5000ms timeout and no fallback.\\n\"},{\"doc\":\"rollback\",\"content\":\"# Runbook: Rolling back a deployment\\n\\n- Use `deployctl rollback <service> --to <previous-version>`. Rollbacks take about 3 minutes.\\n- Rolling back is safe for stateless changes. If the release included a database migration that\\n  already ran, check the migration is backward compatible before rolling back code.\\n- After rollback, confirm the error rate returns to baseline within 10 minutes, then open an\\n  incident ticket with the failing deploy id.\\n- Rolling back a service that is failing because of a dependency does not help and wastes time.\\n\"}]",
+          "is_error": false
+        },
+        {
+          "id": "E8",
+          "agent": "logs",
+          "tool": "get_error_summary",
+          "args": {
+            "around": null,
+            "service": "inventory-service"
+          },
+          "output": "{\"pivot\":null,\"note\":\"No deployments recorded for this service.\",\"log_window\":[\"2026-10-14T08:00:00Z\",\"2026-10-14T11:00:00Z\"],\"groups\":[{\"level\":\"ERROR\",\"example\":\"Database connection pool exhausted (max=20, waiting=57); request aborted after 5000ms\",\"count\":137,\"first_seen\":\"2026-10-14T09:18:00Z\",\"last_seen\":\"2026-10-14T10:59:37Z\"},{\"level\":\"WARN\",\"example\":\"Slow request GET /healthz took 18832ms\",\"count\":4,\"first_seen\":\"2026-10-14T08:00:00Z\",\"last_seen\":\"2026-10-14T10:46:23Z\"},{\"level\":\"WARN\",\"example\":\"Retrying metrics push to collector (attempt 1)\",\"count\":3,\"first_seen\":\"2026-10-14T08:36:02Z\",\"last_seen\":\"2026-10-14T10:14:17Z\"}]}",
+          "is_error": false
+        },
+        {
+          "id": "E9",
+          "agent": "changes",
+          "tool": "get_deployment_diff",
+          "args": {
+            "deploy_id": "dep-7716"
+          },
+          "output": "{\"id\":\"dep-7716\",\"service\":\"orders-api\",\"version\":\"v1.9.3\",\"commits\":[\"chore(deps): bump structlog 24.1 -> 24.4\"],\"files_changed\":[\"pyproject.toml\",\"uv.lock\"],\"config_changes\":[],\"pipeline_steps\":[{\"name\":\"build\",\"status\":\"passed\"},{\"name\":\"unit-tests\",\"status\":\"passed\"},{\"name\":\"deploy\",\"status\":\"passed\"}]}",
+          "is_error": false
+        },
+        {
+          "id": "E10",
+          "agent": "metrics",
+          "tool": "get_metrics",
+          "args": {
+            "metric": "restarts",
+            "service": "orders-api"
+          },
+          "output": "{\"service\":\"orders-api\",\"metric\":\"restarts\",\"unit\":\"count per 10m\",\"change\":\"no significant change in level (variation is within normal noise)\",\"summary\":{\"min\":0.0,\"median\":0.0,\"max\":0.0},\"points\":[{\"ts\":\"2026-10-14T08:00:00Z\",\"value\":0.0},{\"ts\":\"2026-10-14T08:10:00Z\",\"value\":0.0},{\"ts\":\"2026-10-14T08:20:00Z\",\"value\":0.0},{\"ts\":\"2026-10-14T08:30:00Z\",\"value\":0.0},{\"ts\":\"2026-10-14T08:40:00Z\",\"value\":0.0},{\"ts\":\"2026-10-14T08:50:00Z\",\"value\":0.0},{\"ts\":\"2026-10-14T09:00:00Z\",\"value\":0.0},{\"ts\":\"2026-10-14T09:10:00Z\",\"value\":0.0},{\"ts\":\"2026-10-14T09:20:00Z\",\"value\":0.0},{\"ts\":\"2026-10-14T09:30:00Z\",\"value\":0.0},{\"ts\":\"2026-10-14T09:40:00Z\",\"value\":0.0},{\"ts\":\"2026-10-14T09:50:00Z\",\"value\":0.0},{\"ts\":\"2026-10-14T10:00:00Z\",\"value\":0.0},{\"ts\":\"2026-10-14T10:10:00Z\",\"value\":0.0},{\"ts\":\"2026-10-14T10:20:00Z\",\"value\":0.0},{\"ts\":\"2026-10-14T10:30:00Z\",\"value\":0.0},{\"ts\":\"2026-10-14T10:40:00Z\",\"value\":0.0},{\"ts\":\"2026-10-14T10:50:00Z\",\"value\":0.0},{\"ts\":\"2026-10-14T11:00:00Z\",\"value\":0.0}]}",
+          "is_error": false
+        },
+        {
+          "id": "E11",
+          "agent": "metrics",
+          "tool": "get_metrics",
+          "args": {
+            "service": "inventory-service",
+            "metric": "error_rate"
+          },
+          "output": "{\"service\":\"inventory-service\",\"metric\":\"error_rate\",\"unit\":\"% of requests\",\"change\":{\"at\":\"2026-10-14T09:20:00Z\",\"median_before\":0.1,\"median_after\":30.75},\"summary\":{\"min\":0.095,\"median\":30.146,\"max\":32.364},\"points\":[{\"ts\":\"2026-10-14T08:00:00Z\",\"value\":0.103},{\"ts\":\"2026-10-14T08:10:00Z\",\"value\":0.096},{\"ts\":\"2026-10-14T08:20:00Z\",\"value\":0.105},{\"ts\":\"2026-10-14T08:30:00Z\",\"value\":0.099},{\"ts\":\"2026-10-14T08:40:00Z\",\"value\":0.096},{\"ts\":\"2026-10-14T08:50:00Z\",\"value\":0.098},{\"ts\":\"2026-10-14T09:00:00Z\",\"value\":0.099},{\"ts\":\"2026-10-14T09:10:00Z\",\"value\":0.095},{\"ts\":\"2026-10-14T09:20:00Z\",\"value\":30.748},{\"ts\":\"2026-10-14T09:30:00Z\",\"value\":30.754},{\"ts\":\"2026-10-14T09:40:00Z\",\"value\":31.615},{\"ts\":\"2026-10-14T09:50:00Z\",\"value\":30.542},{\"ts\":\"2026-10-14T10:00:00Z\",\"value\":30.272},{\"ts\":\"2026-10-14T10:10:00Z\",\"value\":30.146},{\"ts\":\"2026-10-14T10:20:00Z\",\"value\":31.749},{\"ts\":\"2026-10-14T10:30:00Z\",\"value\":32.364},{\"ts\":\"2026-10-14T10:40:00Z\",\"value\":31.084},{\"ts\":\"2026-10-14T10:50:00Z\",\"value\":30.129},{\"ts\":\"2026-10-14T11:00:00Z\",\"value\":31.935}]}",
+          "is_error": false
+        },
+        {
+          "id": "E12",
+          "agent": "metrics",
+          "tool": "get_metrics",
+          "args": {
+            "metric": "latency_p99_ms",
+            "service": "inventory-service"
+          },
+          "output": "{\"service\":\"inventory-service\",\"metric\":\"latency_p99_ms\",\"unit\":\"ms\",\"change\":{\"at\":\"2026-10-14T09:20:00Z\",\"median_before\":90.14,\"median_after\":5024.13},\"summary\":{\"min\":86.664,\"median\":4862.993,\"max\":5231.932},\"points\":[{\"ts\":\"2026-10-14T08:00:00Z\",\"value\":89.028},{\"ts\":\"2026-10-14T08:10:00Z\",\"value\":87.408},{\"ts\":\"2026-10-14T08:20:00Z\",\"value\":86.664},{\"ts\":\"2026-10-14T08:30:00Z\",\"value\":92.489},{\"ts\":\"2026-10-14T08:40:00Z\",\"value\":92.786},{\"ts\":\"2026-10-14T08:50:00Z\",\"value\":91.209},{\"ts\":\"2026-10-14T09:00:00Z\",\"value\":89.722},{\"ts\":\"2026-10-14T09:10:00Z\",\"value\":90.558},{\"ts\":\"2026-10-14T09:20:00Z\",\"value\":4862.993},{\"ts\":\"2026-10-14T09:30:00Z\",\"value\":5231.932},{\"ts\":\"2026-10-14T09:40:00Z\",\"value\":4926.566},{\"ts\":\"2026-10-14T09:50:00Z\",\"value\":5069.398},{\"ts\":\"2026-10-14T10:00:00Z\",\"value\":5159.37},{\"ts\":\"2026-10-14T10:10:00Z\",\"value\":5158.09},{\"ts\":\"2026-10-14T10:20:00Z\",\"value\":4984.05},{\"ts\":\"2026-10-14T10:30:00Z\",\"value\":4897.171},{\"ts\":\"2026-10-14T10:40:00Z\",\"value\":5024.134},{\"ts\":\"2026-10-14T10:50:00Z\",\"value\":4812.583},{\"ts\":\"2026-10-14T11:00:00Z\",\"value\":5166.872}]}",
+          "is_error": false
+        }
+      ]
+    }
+  ]
+}

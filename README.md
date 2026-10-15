@@ -69,7 +69,7 @@ incident report
  │ Synthesizer  │ → IncidentReport (Pydantic schema)
  └──────┬───────┘
         ▼
- ┌──────────────┐  deterministic citation check + LLM review (timeline, grounding, calibration)
+ ┌──────────────┐  deterministic checks (citations, deploy timeline) + LLM review
  │ Critic       │──── issues? ──→ Synthesizer revises once
  └──────────────┘
 ```
@@ -231,14 +231,16 @@ prompt problem from a tool problem from a reasoning problem.
 
 ### Results and findings
 
-Local `qwen3:8b` (thinking off) on an Apple M3 laptop, k=1 per scenario, about 4 minutes per
+Local `qwen3:8b` (thinking off) on an Apple M3 laptop, k=1 per scenario, about 5 minutes per
 investigation. Full tables: [`evals/results/`](evals/results/).
 
 | Iteration | Pass | What changed |
 |---|---|---|
 | v1 (partial, 3/7 run) | 1/3 | First prompts and tools |
 | v2 | 1/7 | Tool fix 1: no before/after deploy split when the deploy predates the logs |
-| **v3** | **6/7** | Fixes A-F below |
+| v3 | 6/7 | The fixes in the first five rows below |
+| v3, re-run later | 5/7 | Same design plus the confidence cap; the red herring regressed (row 6) |
+| **v4** | **6/7** | Deploy timeline checked in code; `orders_upstream_dependency` then passed 4/4 (k=3 run plus the suite run) |
 
 **What the failures taught me** (each diagnosed from the run traces):
 
@@ -249,6 +251,8 @@ investigation. Full tables: [`evals/results/`](evals/results/).
 | Cert expiry: wrote "the deploy did not cause it" and set `deploy_related: true` in the same report; the critic approved | Ambiguous field name, plus a prompt template showing the literal value `true` (small models copy template values) | Renamed to `caused_by_latest_deploy`; templates show `<true \| false \| null>`; the critic checks the report's internal consistency |
 | Search: correct explanation, but labelled `code_bug` | `code_bug` acts as a catch-all for anything caused by a change | `code_bug` listed last and defined as the fallback category |
 | Checkout and payments failed `citation_grounding` with correct evidence | **Scorer bug**: words like "deployment" and "configuration" counted as facts to match verbatim | Only identifiers and numbers count as checkable facts; regression test added |
+| Red herring again, on a later run: all four specialists wrote "after the latest deployment" although every tool output said "50 min BEFORE"; the critic approved | Telling an 8B model the timeline is not enough, it still echoes the reporter. The v3 pass was partly luck | **The verdict moved into code too**: when every metric change on the affected service predates its latest deploy, the synthesis brief says so as a computed fact, and a deterministic critic check rejects a report that still blames the deploy. It fires only on this scenario across all saved runs |
+| Orders: `citation_grounding` called "201.68ms" unsupported though the evidence contains 201.68 | **Scorer bug**: a number with a unit was a different token from the bare number | Units are stripped from numbers; regression test; re-scoring every saved run changed no pass/fail result |
 
 Lessons:
 1. **Tool design is prompt design.** Most model "reasoning errors" came from tool outputs that
@@ -265,11 +269,12 @@ names `dependency_failure` (avatar-cdn) where the label is `unknown`. Arguably e
 defensible. I kept the label strict rather than relax it after seeing the output; changing
 labels to match results is how eval sets stop meaning anything.
 
-**Reliability (k=3, partial run).** `auth_cert_expiry` passed 3/3 and `checkout_bad_config` 1/1
-before the run was paused. `ambiguous_low_signal` failed 3/3, and calibration failed every time:
-the 0.4 confidence in v3 was luck, not a fix. One run per scenario would have hidden this. Next
-fix to try: a calibration rule enforced in code (cap confidence when no metric shows a
-significant change and no error signature is new), rather than another prompt instruction.
+**Reliability.** An earlier k=3 run (paused partway) had `auth_cert_expiry` 3/3 and
+`checkout_bad_config` 1/1, but `ambiguous_low_signal` failed calibration 3/3: the 0.4
+confidence in v3 was luck, not a fix. That led to a calibration rule in code (confidence capped
+at 0.4 when metrics were checked and none changed level); calibration has passed on every run
+since. Likewise the red herring passed in v3, failed on a re-run, and only became reliable once
+the timeline verdict moved into code (k=3: 3/3). One run per scenario hides exactly this.
 
 **Hosted models (Groq free tier).** I also ran gpt-oss-120b, gpt-oss-20b and qwen3.8-27b on
 Groq's free tier. None of these runs is a clean measurement of the model: they mostly measured
@@ -277,12 +282,13 @@ the free tier's limits. Each failure became a fix:
 
 | Run | Result | What actually happened | Fix |
 |---|---|---|---|
+| gpt-oss-120b, k=1 (after the fixes) | 3/4, then quota | A clean run: no crashes, and the suite stopped at the daily quota instead of scoring the rest. The one failure is the same ambiguous case | - |
 | gpt-oss-120b, k=3 | 2/21 | Daily token quota ran out after 5 runs; the other 16 failed in under a second and were scored as model failures | A daily-quota error now stops the suite and leaves the remaining runs unscored |
 | gpt-oss-20b, k=1 | 3/7 | Parallel specialists collided on the tokens-per-minute limit, exhausted the SDK's retries, and 3 runs silently lost their logs specialist | Per-minute 429s are waited out (`LLM_RATE_LIMIT_WAIT_S`) |
 | qwen3.8-27b, k=1 | 0/4, then quota | The synthesis prompt (8.9k tokens) exceeded a 7k input-tokens-per-minute cap; the 413 crashed every run, hidden inside an `ExceptionGroup` from the MCP client | Raw excerpts in the synthesis brief are capped; a 413 degrades instead of crashing; the MCP client re-raises the original error |
 
-I haven't re-run the hosted evals since these fixes. The local qwen3:8b results above are the
-ones to judge the system by.
+Only 4 of 7 scenarios fit in one day's free quota for a model, so the local qwen3:8b results
+above are the ones to judge the system by.
 
 **Caveats.** Seven scenarios is a small set,
 and the scenarios were written by the same person who wrote the prompts. Next steps would be
@@ -290,7 +296,7 @@ held-out scenarios written by someone else, and sampled real incidents.
 
 ## 5. Engineering and production readiness
 
-**Testing (what exists).** 77 tests run in about 3s with no model or network:
+**Testing (what exists).** 80 tests run in about 3s with no model or network:
 - Unit tests for the data layer and tools, JSON extraction from messy model output, and the
   scorers.
 - Agent-loop tests: disallowed tool, malformed arguments, tool exceptions, iteration cap, repair

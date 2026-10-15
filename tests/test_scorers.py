@@ -118,3 +118,19 @@ def test_grounding_tolerates_paraphrase_but_not_invented_identifiers():
         ]
     )
     assert citation_grounding(invented, led).value == 0.0
+
+
+def test_grounding_matches_numbers_written_with_units():
+    """Regression: '201.68ms' was unsupported against raw output containing 201.68."""
+    led = EvidenceLedger()
+    led.add("metrics", "get_metrics", {}, '{"median_before":201.68,"median_after":5081.27}')
+    with_units = report(
+        evidence=[
+            {
+                "evidence_id": "E1",
+                "source": "metrics",
+                "detail": "p99 latency rose from 201.68ms to 5081.27ms",
+            }
+        ]
+    )
+    assert citation_grounding(with_units, led).value == 1.0
