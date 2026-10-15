@@ -19,6 +19,7 @@ jobs:
       - run: uv sync --frozen
       - run: uv run ruff check .
       - run: uv run ruff format --check .
+      - run: shellcheck scripts/install.sh
       # Unit, MCP stdio integration, orchestrator and eval-harness tests. No model or network.
       - run: uv run pytest -q
       - name: Scenario data is reproducible from the generator

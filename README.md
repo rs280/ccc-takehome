@@ -13,18 +13,39 @@ OOM crash loops, expired certificates, and an ambiguous low-signal case where th
 $ uv run investigate --scenario checkout_bad_config
 # Incident report: elevated 5xx errors
 ...
+**Caused by latest deploy:** yes
+
 ## Probable root cause
-v2.4.1 reads DATABASE_POOL_SIZE but the deployment only sets DB_POOL_SIZE ...
+The KeyError: 'DATABASE_POOL_SIZE' occurred because the deployment introduced a change to use the
+environment variable 'DATABASE_POOL_SIZE' instead of 'DB_POOL_SIZE', which was not properly
+configured in the environment.
+
 Category: `bad_config`, confidence: 90%
+
 ## Evidence
-- [E2] (logs) KeyError: 'DATABASE_POOL_SIZE' at settings.py:41, 0 before / 260 after deploy - via `get_error_summary(...)`
+- **[E2]** (logs) The checkout-api service experienced 143 ERROR logs related to a KeyError:
+  'DATABASE_POOL_SIZE' 1 minute after the latest deployment. - via `get_error_summary(service=checkout-api, around=None)`
 ...
+## Recommended next steps
+- **P0** Roll back the latest deployment (dep-7715) to revert the configuration change and
+  restore the previous version (v2.4.0). ...
 ```
 
 ## Quick start
 
-Requirements: Python 3.12+, [uv](https://docs.astral.sh/uv/), and a model. The default is a free
-local model through [Ollama](https://ollama.com); any OpenAI-compatible endpoint also works.
+Requirements: macOS or Linux and a model. The default is a free local model through
+[Ollama](https://ollama.com); any OpenAI-compatible endpoint also works.
+
+**Installer.** One command sets everything up and is safe to re-run. It installs
+[uv](https://docs.astral.sh/uv/) if missing (user-level, no sudo), which fetches Python 3.12+ if
+needed; installs dependencies; pulls the model; and runs the offline tests to confirm:
+
+```bash
+./scripts/install.sh            # local model via Ollama (install Ollama first; the script says how)
+./scripts/install.sh --hosted   # no Ollama: creates .env for a Groq or Gemini key instead
+```
+
+**By hand**, the same steps:
 
 ```bash
 uv sync
@@ -371,7 +392,7 @@ src/incident_agent/
   agents/       base.py (agent loop), prompts.py, specs.py (roster)
   orchestrator.py  llm.py  mcp_client.py  evidence.py  schemas.py  tracing.py  render.py  cli.py
 evals/          runner.py, scorers.py, judge.py, results/
-scripts/        gen_scenarios.py, docs/ (runbook sources)
+scripts/        install.sh, gen_scenarios.py, docs/ (runbook sources)
 tests/          unit, integration, orchestrator, eval-harness tests
 docs/superpowers/  design spec and implementation plan
 ```
