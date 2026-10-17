@@ -16,5 +16,10 @@
   "next_step_keywords": [
     "inventory"
   ],
+  "forbidden_next_steps": [
+    "roll back",
+    "rollback",
+    "revert"
+  ],
   "reference_answer": "inventory-service exhausted its database connection pool from 09:18, so orders-api calls to it time out (5000ms) and return 500 from 09:20. The orders-api v1.9.3 deploy at 10:10 came after the errors began and only bumped a logging library; do not roll back. Escalate to team-fulfilment for inventory-service, add a circuit breaker/fallback in orders-api."
 }

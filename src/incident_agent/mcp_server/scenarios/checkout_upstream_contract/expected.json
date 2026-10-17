@@ -1,0 +1,24 @@
+{
+  "category": "code_bug",
+  "acceptable_categories": [
+    "code_bug",
+    "dependency_failure"
+  ],
+  "caused_by_latest_deploy": false,
+  "key_facts": [
+    "payments-api",
+    "amount_cents"
+  ],
+  "expected_tools": [
+    "search_logs|get_error_summary",
+    "get_recent_deployments",
+    "get_deployment_diff"
+  ],
+  "next_step_keywords": [
+    "payments-api",
+    "team-payments",
+    "amount_cents"
+  ],
+  "reference_answer": "payments-api v3.9.0 (dep-7714, 09:45) renamed amount_cents to amount in the POST /v1/payments response, a breaking API change. checkout-api (last deployed Oct 9) still reads amount_cents and raises KeyError from 09:46, returning 500. checkout-api's own deploy is not the cause. Roll back payments-api or restore the old field, then add contract tests between the two services.",
+  "tests": "Following the dependency graph: the cause is a deploy, but of another service"
+}

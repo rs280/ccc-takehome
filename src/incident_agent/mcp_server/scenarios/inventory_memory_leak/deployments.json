@@ -1,0 +1,140 @@
+[
+  {
+    "id": "dep-7695",
+    "service": "inventory-service",
+    "version": "v3.0.9",
+    "deployed_at": "2026-10-10T11:20:00Z",
+    "author": "tom.h",
+    "status": "succeeded",
+    "summary": "Stock reservation timeouts",
+    "diff": {
+      "commits": [
+        "fix: release stale reservations"
+      ],
+      "files_changed": [
+        "inventory/reservations.py"
+      ],
+      "config_changes": [],
+      "pipeline_steps": [
+        {
+          "name": "build",
+          "status": "passed"
+        },
+        {
+          "name": "unit-tests",
+          "status": "passed"
+        },
+        {
+          "name": "deploy",
+          "status": "passed"
+        }
+      ]
+    }
+  },
+  {
+    "id": "dep-7706",
+    "service": "inventory-service",
+    "version": "v3.1.0",
+    "deployed_at": "2026-10-13T16:00:00Z",
+    "author": "tom.h",
+    "status": "succeeded",
+    "summary": "Cache SKU lookups",
+    "diff": {
+      "commits": [
+        "perf: in-process cache for SKU lookups",
+        "chore: remove unused helpers"
+      ],
+      "files_changed": [
+        "inventory/sku_cache.py",
+        "inventory/lookup.py"
+      ],
+      "config_changes": [
+        {
+          "key": "SKU_CACHE_MAX_ENTRIES",
+          "old": "",
+          "new": "0 (unbounded)"
+        }
+      ],
+      "pipeline_steps": [
+        {
+          "name": "build",
+          "status": "passed"
+        },
+        {
+          "name": "unit-tests",
+          "status": "passed"
+        },
+        {
+          "name": "deploy",
+          "status": "passed"
+        }
+      ]
+    }
+  },
+  {
+    "id": "dep-7710",
+    "service": "frontend-web",
+    "version": "v9.3.0",
+    "deployed_at": "2026-10-14T09:30:00Z",
+    "author": "lena.k",
+    "status": "succeeded",
+    "summary": "Update footer links and analytics snippet",
+    "diff": {
+      "commits": [
+        "chore: update footer links",
+        "feat: add consent banner analytics"
+      ],
+      "files_changed": [
+        "web/components/Footer.tsx",
+        "web/analytics.ts"
+      ],
+      "config_changes": [],
+      "pipeline_steps": [
+        {
+          "name": "build",
+          "status": "passed"
+        },
+        {
+          "name": "unit-tests",
+          "status": "passed"
+        },
+        {
+          "name": "deploy",
+          "status": "passed"
+        }
+      ]
+    }
+  },
+  {
+    "id": "dep-7713",
+    "service": "inventory-service",
+    "version": "v3.1.1",
+    "deployed_at": "2026-10-14T09:55:00Z",
+    "author": "tom.h",
+    "status": "succeeded",
+    "summary": "Fix typo in log message",
+    "diff": {
+      "commits": [
+        "chore: fix typo in reservation log message"
+      ],
+      "files_changed": [
+        "inventory/reservations.py"
+      ],
+      "config_changes": [],
+      "pipeline_steps": [
+        {
+          "name": "build",
+          "status": "passed"
+        },
+        {
+          "name": "unit-tests",
+          "status": "passed"
+        },
+        {
+          "name": "deploy",
+          "status": "passed"
+        }
+      ]
+    }
+  }
+]

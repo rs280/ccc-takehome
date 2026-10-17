@@ -1,0 +1,1 @@
+inventory-service keeps getting OOMKilled and restarting since this morning's deploy. Should we roll it back?

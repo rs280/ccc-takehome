@@ -1,0 +1,1 @@
+search-api is returning 500 errors for most searches. Find out what is wrong.

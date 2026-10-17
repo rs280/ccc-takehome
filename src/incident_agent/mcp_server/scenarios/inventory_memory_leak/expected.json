@@ -1,0 +1,25 @@
+{
+  "category": "resource_exhaustion",
+  "acceptable_categories": [
+    "resource_exhaustion",
+    "code_bug"
+  ],
+  "caused_by_latest_deploy": false,
+  "key_facts": [
+    "v3.1.0",
+    "cache"
+  ],
+  "expected_tools": [
+    "search_logs|get_error_summary",
+    "get_recent_deployments",
+    "get_deployment_diff"
+  ],
+  "next_step_keywords": [
+    "v3.1.0",
+    "v3.0.9",
+    "cache",
+    "SKU_CACHE"
+  ],
+  "reference_answer": "inventory-service v3.1.0 (dep-7706, Oct 13 16:00) added an unbounded in-process SKU cache (SKU_CACHE_MAX_ENTRIES=0); memory grows until the 1024Mi limit and the pod is OOMKilled, roughly every 45 minutes since overnight. The OOMs began well before the latest deploy v3.1.1 (09:55), which only fixed a log typo, so rolling that back will not help. Bound the cache or roll back to v3.0.9.",
+  "tests": "Separating the latest deploy from an earlier one that is the real cause"
+}

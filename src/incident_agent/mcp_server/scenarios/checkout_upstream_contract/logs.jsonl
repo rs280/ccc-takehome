@@ -1,0 +1,377 @@
+{"ts": "2026-10-14T08:00:00Z", "service": "checkout-api", "level": "INFO", "message": "GET /api/cart 200 in 78ms"}
+{"ts": "2026-10-14T08:00:00Z", "service": "checkout-api", "level": "WARN", "message": "Slow request GET /healthz took 13478ms"}
+{"ts": "2026-10-14T08:00:00Z", "service": "payments-api", "level": "INFO", "message": "GET /v1/payments 200 in 46ms"}
+{"ts": "2026-10-14T08:00:00Z", "service": "payments-api", "level": "WARN", "message": "Slow request GET /healthz took 18832ms"}
+{"ts": "2026-10-14T08:00:00Z", "service": "frontend-web", "level": "INFO", "message": "GET / 200 in 159ms"}
+{"ts": "2026-10-14T08:00:00Z", "service": "frontend-web", "level": "WARN", "message": "Slow request GET /healthz took 14292ms"}
+{"ts": "2026-10-14T08:02:52Z", "service": "frontend-web", "level": "INFO", "message": "GET / 200 in 141ms"}
+{"ts": "2026-10-14T08:03:34Z", "service": "checkout-api", "level": "INFO", "message": "GET /api/cart 200 in 58ms"}
+{"ts": "2026-10-14T08:05:01Z", "service": "payments-api", "level": "INFO", "message": "GET /v1/payments 200 in 63ms"}
+{"ts": "2026-10-14T08:08:25Z", "service": "frontend-web", "level": "INFO", "message": "GET / 200 in 97ms"}
+{"ts": "2026-10-14T08:08:51Z", "service": "checkout-api", "level": "INFO", "message": "GET /api/cart 200 in 133ms"}
+{"ts": "2026-10-14T08:09:49Z", "service": "payments-api", "level": "INFO", "message": "GET /v1/payments 200 in 172ms"}
+{"ts": "2026-10-14T08:11:03Z", "service": "frontend-web", "level": "INFO", "message": "GET / 200 in 171ms"}
+{"ts": "2026-10-14T08:13:11Z", "service": "checkout-api", "level": "INFO", "message": "GET /api/cart 200 in 94ms"}
+{"ts": "2026-10-14T08:13:17Z", "service": "payments-api", "level": "INFO", "message": "GET /v1/payments 200 in 131ms"}
+{"ts": "2026-10-14T08:14:40Z", "service": "frontend-web", "level": "INFO", "message": "GET / 200 in 90ms"}
+{"ts": "2026-10-14T08:15:02Z", "service": "checkout-api", "level": "WARN", "message": "Retrying metrics push to collector (attempt 1)"}
+{"ts": "2026-10-14T08:15:20Z", "service": "checkout-api", "level": "INFO", "message": "GET /api/cart 200 in 147ms"}
+{"ts": "2026-10-14T08:17:37Z", "service": "checkout-api", "level": "INFO", "message": "GET /api/cart 200 in 148ms"}
+{"ts": "2026-10-14T08:18:06Z", "service": "frontend-web", "level": "INFO", "message": "GET / 200 in 133ms"}
+{"ts": "2026-10-14T08:18:22Z", "service": "payments-api", "level": "INFO", "message": "GET /v1/payments 200 in 178ms"}
+{"ts": "2026-10-14T08:19:51Z", "service": "checkout-api", "level": "INFO", "message": "GET /api/cart 200 in 97ms"}
+{"ts": "2026-10-14T08:20:11Z", "service": "frontend-web", "level": "INFO", "message": "GET / 200 in 152ms"}
+{"ts": "2026-10-14T08:23:29Z", "service": "payments-api", "level": "INFO", "message": "GET /v1/payments 200 in 97ms"}
+{"ts": "2026-10-14T08:24:23Z", "service": "checkout-api", "level": "INFO", "message": "GET /api/cart 200 in 141ms"}
+{"ts": "2026-10-14T08:24:59Z", "service": "frontend-web", "level": "INFO", "message": "GET / 200 in 124ms"}
+{"ts": "2026-10-14T08:25:07Z", "service": "frontend-web", "level": "WARN", "message": "Retrying metrics push to collector (attempt 1)"}
+{"ts": "2026-10-14T08:26:34Z", "service": "checkout-api", "level": "INFO", "message": "GET /api/cart 200 in 51ms"}
+{"ts": "2026-10-14T08:27:56Z", "service": "payments-api", "level": "INFO", "message": "GET /v1/payments 200 in 101ms"}
+{"ts": "2026-10-14T08:29:03Z", "service": "frontend-web", "level": "INFO", "message": "GET / 200 in 171ms"}
+{"ts": "2026-10-14T08:29:17Z", "service": "checkout-api", "level": "WARN", "message": "Slow request GET /healthz took 14407ms"}
+{"ts": "2026-10-14T08:30:48Z", "service": "checkout-api", "level": "INFO", "message": "GET /api/cart 200 in 114ms"}
+{"ts": "2026-10-14T08:33:12Z", "service": "payments-api", "level": "INFO", "message": "GET /v1/payments 200 in 91ms"}
+{"ts": "2026-10-14T08:34:29Z", "service": "checkout-api", "level": "INFO", "message": "GET /api/cart 200 in 70ms"}
+{"ts": "2026-10-14T08:34:54Z", "service": "frontend-web", "level": "INFO", "message": "GET / 200 in 98ms"}
+{"ts": "2026-10-14T08:36:02Z", "service": "payments-api", "level": "WARN", "message": "Retrying metrics push to collector (attempt 1)"}
+{"ts": "2026-10-14T08:37:17Z", "service": "payments-api", "level": "INFO", "message": "GET /v1/payments 200 in 47ms"}
+{"ts": "2026-10-14T08:38:46Z", "service": "checkout-api", "level": "INFO", "message": "GET /api/cart 200 in 66ms"}
+{"ts": "2026-10-14T08:40:47Z", "service": "frontend-web", "level": "INFO", "message": "GET / 200 in 61ms"}
+{"ts": "2026-10-14T08:43:05Z", "service": "checkout-api", "level": "INFO", "message": "GET /api/cart 200 in 135ms"}
+{"ts": "2026-10-14T08:43:14Z", "service": "payments-api", "level": "INFO", "message": "GET /v1/payments 200 in 160ms"}
+{"ts": "2026-10-14T08:43:51Z", "service": "frontend-web", "level": "INFO", "message": "GET / 200 in 86ms"}
+{"ts": "2026-10-14T08:44:13Z", "service": "frontend-web", "level": "WARN", "message": "Slow request GET /healthz took 12470ms"}
+{"ts": "2026-10-14T08:45:29Z", "service": "checkout-api", "level": "INFO", "message": "GET /api/cart 200 in 55ms"}
+{"ts": "2026-10-14T08:45:30Z", "service": "checkout-api", "level": "WARN", "message": "Retrying metrics push to collector (attempt 1)"}
+{"ts": "2026-10-14T08:46:16Z", "service": "payments-api", "level": "INFO", "message": "GET /v1/payments 200 in 154ms"}
+{"ts": "2026-10-14T08:46:56Z", "service": "frontend-web", "level": "INFO", "message": "GET / 200 in 148ms"}
+{"ts": "2026-10-14T08:49:57Z", "service": "checkout-api", "level": "INFO", "message": "GET /api/cart 200 in 176ms"}
+{"ts": "2026-10-14T08:51:30Z", "service": "payments-api", "level": "INFO", "message": "GET /v1/payments 200 in 133ms"}
+{"ts": "2026-10-14T08:52:20Z", "service": "frontend-web", "level": "INFO", "message": "GET / 200 in 143ms"}
+{"ts": "2026-10-14T08:53:40Z", "service": "checkout-api", "level": "INFO", "message": "GET /api/cart 200 in 159ms"}
+{"ts": "2026-10-14T08:53:50Z", "service": "payments-api", "level": "INFO", "message": "GET /v1/payments 200 in 98ms"}
+{"ts": "2026-10-14T08:54:56Z", "service": "frontend-web", "level": "INFO", "message": "GET / 200 in 166ms"}
+{"ts": "2026-10-14T08:57:43Z", "service": "payments-api", "level": "INFO", "message": "GET /v1/payments 200 in 92ms"}
+{"ts": "2026-10-14T08:58:00Z", "service": "checkout-api", "level": "INFO", "message": "GET /api/cart 200 in 132ms"}
+{"ts": "2026-10-14T08:59:44Z", "service": "frontend-web", "level": "INFO", "message": "GET / 200 in 111ms"}
+{"ts": "2026-10-14T09:01:12Z", "service": "checkout-api", "level": "INFO", "message": "GET /api/cart 200 in 102ms"}
+{"ts": "2026-10-14T09:01:38Z", "service": "payments-api", "level": "INFO", "message": "GET /v1/payments 200 in 162ms"}
+{"ts": "2026-10-14T09:01:58Z", "service": "frontend-web", "level": "INFO", "message": "GET / 200 in 148ms"}
+{"ts": "2026-10-14T09:03:32Z", "service": "checkout-api", "level": "INFO", "message": "GET /api/cart 200 in 174ms"}
+{"ts": "2026-10-14T09:06:42Z", "service": "frontend-web", "level": "WARN", "message": "Retrying metrics push to collector (attempt 1)"}
+{"ts": "2026-10-14T09:07:17Z", "service": "payments-api", "level": "INFO", "message": "GET /v1/payments 200 in 61ms"}
+{"ts": "2026-10-14T09:07:31Z", "service": "checkout-api", "level": "INFO", "message": "GET /api/cart 200 in 154ms"}
+{"ts": "2026-10-14T09:07:32Z", "service": "frontend-web", "level": "INFO", "message": "GET / 200 in 44ms"}
+{"ts": "2026-10-14T09:10:40Z", "service": "checkout-api", "level": "INFO", "message": "GET /api/cart 200 in 70ms"}
+{"ts": "2026-10-14T09:11:36Z", "service": "payments-api", "level": "WARN", "message": "Slow request GET /healthz took 14319ms"}
+{"ts": "2026-10-14T09:12:05Z", "service": "frontend-web", "level": "INFO", "message": "GET / 200 in 61ms"}
+{"ts": "2026-10-14T09:12:37Z", "service": "payments-api", "level": "INFO", "message": "GET /v1/payments 200 in 139ms"}
+{"ts": "2026-10-14T09:13:03Z", "service": "checkout-api", "level": "WARN", "message": "Slow request GET /healthz took 18768ms"}
+{"ts": "2026-10-14T09:14:43Z", "service": "checkout-api", "level": "INFO", "message": "GET /api/cart 200 in 127ms"}
+{"ts": "2026-10-14T09:16:31Z", "service": "frontend-web", "level": "INFO", "message": "GET / 200 in 57ms"}
+{"ts": "2026-10-14T09:17:19Z", "service": "checkout-api", "level": "INFO", "message": "GET /api/cart 200 in 147ms"}
+{"ts": "2026-10-14T09:17:45Z", "service": "payments-api", "level": "INFO", "message": "GET /v1/payments 200 in 162ms"}
+{"ts": "2026-10-14T09:19:29Z", "service": "checkout-api", "level": "INFO", "message": "GET /api/cart 200 in 120ms"}
+{"ts": "2026-10-14T09:19:34Z", "service": "frontend-web", "level": "INFO", "message": "GET / 200 in 156ms"}
+{"ts": "2026-10-14T09:19:46Z", "service": "frontend-web", "level": "WARN", "message": "Slow request GET /healthz took 15984ms"}
+{"ts": "2026-10-14T09:21:37Z", "service": "frontend-web", "level": "INFO", "message": "GET / 200 in 108ms"}
+{"ts": "2026-10-14T09:22:50Z", "service": "checkout-api", "level": "INFO", "message": "GET /api/cart 200 in 167ms"}
+{"ts": "2026-10-14T09:23:18Z", "service": "payments-api", "level": "INFO", "message": "GET /v1/payments 200 in 125ms"}
+{"ts": "2026-10-14T09:25:39Z", "service": "payments-api", "level": "INFO", "message": "GET /v1/payments 200 in 158ms"}
+{"ts": "2026-10-14T09:26:06Z", "service": "frontend-web", "level": "INFO", "message": "GET / 200 in 174ms"}
+{"ts": "2026-10-14T09:27:09Z", "service": "checkout-api", "level": "INFO", "message": "GET /api/cart 200 in 57ms"}
+{"ts": "2026-10-14T09:27:32Z", "service": "payments-api", "level": "WARN", "message": "Retrying metrics push to collector (attempt 1)"}
+{"ts": "2026-10-14T09:28:26Z", "service": "checkout-api", "level": "WARN", "message": "Retrying metrics push to collector (attempt 1)"}
+{"ts": "2026-10-14T09:29:15Z", "service": "payments-api", "level": "INFO", "message": "GET /v1/payments 200 in 80ms"}
+{"ts": "2026-10-14T09:30:56Z", "service": "frontend-web", "level": "INFO", "message": "GET / 200 in 81ms"}
+{"ts": "2026-10-14T09:31:56Z", "service": "payments-api", "level": "INFO", "message": "GET /v1/payments 200 in 47ms"}
+{"ts": "2026-10-14T09:32:31Z", "service": "checkout-api", "level": "INFO", "message": "GET /api/cart 200 in 161ms"}
+{"ts": "2026-10-14T09:33:59Z", "service": "frontend-web", "level": "INFO", "message": "GET / 200 in 91ms"}
+{"ts": "2026-10-14T09:34:23Z", "service": "frontend-web", "level": "WARN", "message": "Retrying metrics push to collector (attempt 1)"}
+{"ts": "2026-10-14T09:34:32Z", "service": "payments-api", "level": "INFO", "message": "GET /v1/payments 200 in 77ms"}
+{"ts": "2026-10-14T09:37:18Z", "service": "checkout-api", "level": "INFO", "message": "GET /api/cart 200 in 55ms"}
+{"ts": "2026-10-14T09:38:59Z", "service": "payments-api", "level": "INFO", "message": "GET /v1/payments 200 in 129ms"}
+{"ts": "2026-10-14T09:39:43Z", "service": "frontend-web", "level": "INFO", "message": "GET / 200 in 175ms"}
+{"ts": "2026-10-14T09:41:36Z", "service": "payments-api", "level": "INFO", "message": "GET /v1/payments 200 in 73ms"}
+{"ts": "2026-10-14T09:42:14Z", "service": "checkout-api", "level": "INFO", "message": "GET /api/cart 200 in 154ms"}
+{"ts": "2026-10-14T09:43:42Z", "service": "payments-api", "level": "INFO", "message": "GET /v1/payments 200 in 174ms"}
+{"ts": "2026-10-14T09:44:45Z", "service": "frontend-web", "level": "INFO", "message": "GET / 200 in 154ms"}
+{"ts": "2026-10-14T09:45:00Z", "service": "payments-api", "level": "INFO", "message": "Starting payments-api v3.9.0 (pid 1)"}
+{"ts": "2026-10-14T09:45:22Z", "service": "checkout-api", "level": "INFO", "message": "GET /api/cart 200 in 128ms"}
+{"ts": "2026-10-14T09:46:00Z", "service": "checkout-api", "level": "ERROR", "message": "Unhandled exception in POST /api/checkout: KeyError: 'amount_cents' while parsing payments-api response (app/clients/payments.py:88 in charge) -> 500"}
+{"ts": "2026-10-14T09:46:37Z", "service": "checkout-api", "level": "ERROR", "message": "Unhandled exception in POST /api/checkout: KeyError: 'amount_cents' while parsing payments-api response (app/clients/payments.py:88 in charge) -> 500"}
+{"ts": "2026-10-14T09:47:00Z", "service": "frontend-web", "level": "WARN", "message": "Upstream checkout-api returned 500 for POST /api/checkout"}
+{"ts": "2026-10-14T09:47:19Z", "service": "checkout-api", "level": "ERROR", "message": "Unhandled exception in POST /api/checkout: KeyError: 'amount_cents' while parsing payments-api response (app/clients/payments.py:88 in charge) -> 500"}
+{"ts": "2026-10-14T09:47:27Z", "service": "checkout-api", "level": "INFO", "message": "GET /api/cart 200 in 130ms"}
+{"ts": "2026-10-14T09:47:59Z", "service": "checkout-api", "level": "ERROR", "message": "Unhandled exception in POST /api/checkout: KeyError: 'amount_cents' while parsing payments-api response (app/clients/payments.py:88 in charge) -> 500"}
+{"ts": "2026-10-14T09:48:15Z", "service": "checkout-api", "level": "ERROR", "message": "Unhandled exception in POST /api/checkout: KeyError: 'amount_cents' while parsing payments-api response (app/clients/payments.py:88 in charge) -> 500"}
+{"ts": "2026-10-14T09:48:41Z", "service": "payments-api", "level": "INFO", "message": "GET /v1/payments 200 in 151ms"}
+{"ts": "2026-10-14T09:48:45Z", "service": "frontend-web", "level": "INFO", "message": "GET / 200 in 109ms"}
+{"ts": "2026-10-14T09:48:58Z", "service": "checkout-api", "level": "ERROR", "message": "Unhandled exception in POST /api/checkout: KeyError: 'amount_cents' while parsing payments-api response (app/clients/payments.py:88 in charge) -> 500"}
+{"ts": "2026-10-14T09:48:58Z", "service": "frontend-web", "level": "WARN", "message": "Upstream checkout-api returned 500 for POST /api/checkout"}
+{"ts": "2026-10-14T09:49:30Z", "service": "checkout-api", "level": "ERROR", "message": "Unhandled exception in POST /api/checkout: KeyError: 'amount_cents' while parsing payments-api response (app/clients/payments.py:88 in charge) -> 500"}
+{"ts": "2026-10-14T09:50:00Z", "service": "frontend-web", "level": "WARN", "message": "Upstream checkout-api returned 500 for POST /api/checkout"}
+{"ts": "2026-10-14T09:50:06Z", "service": "checkout-api", "level": "ERROR", "message": "Unhandled exception in POST /api/checkout: KeyError: 'amount_cents' while parsing payments-api response (app/clients/payments.py:88 in charge) -> 500"}
+{"ts": "2026-10-14T09:50:08Z", "service": "checkout-api", "level": "INFO", "message": "GET /api/cart 200 in 166ms"}
+{"ts": "2026-10-14T09:50:21Z", "service": "checkout-api", "level": "ERROR", "message": "Unhandled exception in POST /api/checkout: KeyError: 'amount_cents' while parsing payments-api response (app/clients/payments.py:88 in charge) -> 500"}
+{"ts": "2026-10-14T09:51:03Z", "service": "checkout-api", "level": "ERROR", "message": "Unhandled exception in POST /api/checkout: KeyError: 'amount_cents' while parsing payments-api response (app/clients/payments.py:88 in charge) -> 500"}
+{"ts": "2026-10-14T09:51:03Z", "service": "frontend-web", "level": "WARN", "message": "Upstream checkout-api returned 500 for POST /api/checkout"}
+{"ts": "2026-10-14T09:51:05Z", "service": "payments-api", "level": "WARN", "message": "Slow request GET /healthz took 12188ms"}
+{"ts": "2026-10-14T09:51:20Z", "service": "checkout-api", "level": "ERROR", "message": "Unhandled exception in POST /api/checkout: KeyError: 'amount_cents' while parsing payments-api response (app/clients/payments.py:88 in charge) -> 500"}
+{"ts": "2026-10-14T09:51:59Z", "service": "checkout-api", "level": "ERROR", "message": "Unhandled exception in POST /api/checkout: KeyError: 'amount_cents' while parsing payments-api response (app/clients/payments.py:88 in charge) -> 500"}
+{"ts": "2026-10-14T09:52:09Z", "service": "frontend-web", "level": "INFO", "message": "GET / 200 in 104ms"}
+{"ts": "2026-10-14T09:52:22Z", "service": "checkout-api", "level": "INFO", "message": "GET /api/cart 200 in 73ms"}
+{"ts": "2026-10-14T09:52:32Z", "service": "frontend-web", "level": "WARN", "message": "Upstream checkout-api returned 500 for POST /api/checkout"}
+{"ts": "2026-10-14T09:52:36Z", "service": "checkout-api", "level": "ERROR", "message": "Unhandled exception in POST /api/checkout: KeyError: 'amount_cents' while parsing payments-api response (app/clients/payments.py:88 in charge) -> 500"}
+{"ts": "2026-10-14T09:52:57Z", "service": "checkout-api", "level": "WARN", "message": "Slow request GET /healthz took 16109ms"}
+{"ts": "2026-10-14T09:53:13Z", "service": "checkout-api", "level": "ERROR", "message": "Unhandled exception in POST /api/checkout: KeyError: 'amount_cents' while parsing payments-api response (app/clients/payments.py:88 in charge) -> 500"}
+{"ts": "2026-10-14T09:53:53Z", "service": "checkout-api", "level": "ERROR", "message": "Unhandled exception in POST /api/checkout: KeyError: 'amount_cents' while parsing payments-api response (app/clients/payments.py:88 in charge) -> 500"}
+{"ts": "2026-10-14T09:54:17Z", "service": "frontend-web", "level": "INFO", "message": "GET / 200 in 169ms"}
+{"ts": "2026-10-14T09:54:28Z", "service": "frontend-web", "level": "WARN", "message": "Upstream checkout-api returned 500 for POST /api/checkout"}
+{"ts": "2026-10-14T09:54:36Z", "service": "checkout-api", "level": "ERROR", "message": "Unhandled exception in POST /api/checkout: KeyError: 'amount_cents' while parsing payments-api response (app/clients/payments.py:88 in charge) -> 500"}
+{"ts": "2026-10-14T09:54:38Z", "service": "payments-api", "level": "INFO", "message": "GET /v1/payments 200 in 94ms"}
+{"ts": "2026-10-14T09:55:09Z", "service": "checkout-api", "level": "ERROR", "message": "Unhandled exception in POST /api/checkout: KeyError: 'amount_cents' while parsing payments-api response (app/clients/payments.py:88 in charge) -> 500"}
+{"ts": "2026-10-14T09:55:22Z", "service": "frontend-web", "level": "WARN", "message": "Upstream checkout-api returned 500 for POST /api/checkout"}
+{"ts": "2026-10-14T09:55:42Z", "service": "checkout-api", "level": "ERROR", "message": "Unhandled exception in POST /api/checkout: KeyError: 'amount_cents' while parsing payments-api response (app/clients/payments.py:88 in charge) -> 500"}
+{"ts": "2026-10-14T09:56:17Z", "service": "checkout-api", "level": "ERROR", "message": "Unhandled exception in POST /api/checkout: KeyError: 'amount_cents' while parsing payments-api response (app/clients/payments.py:88 in charge) -> 500"}
+{"ts": "2026-10-14T09:56:32Z", "service": "checkout-api", "level": "ERROR", "message": "Unhandled exception in POST /api/checkout: KeyError: 'amount_cents' while parsing payments-api response (app/clients/payments.py:88 in charge) -> 500"}
+{"ts": "2026-10-14T09:56:45Z", "service": "payments-api", "level": "INFO", "message": "GET /v1/payments 200 in 114ms"}
+{"ts": "2026-10-14T09:56:55Z", "service": "checkout-api", "level": "ERROR", "message": "Unhandled exception in POST /api/checkout: KeyError: 'amount_cents' while parsing payments-api response (app/clients/payments.py:88 in charge) -> 500"}
+{"ts": "2026-10-14T09:57:09Z", "service": "frontend-web", "level": "WARN", "message": "Upstream checkout-api returned 500 for POST /api/checkout"}
+{"ts": "2026-10-14T09:57:19Z", "service": "checkout-api", "level": "INFO", "message": "GET /api/cart 200 in 140ms"}
+{"ts": "2026-10-14T09:57:30Z", "service": "checkout-api", "level": "ERROR", "message": "Unhandled exception in POST /api/checkout: KeyError: 'amount_cents' while parsing payments-api response (app/clients/payments.py:88 in charge) -> 500"}
+{"ts": "2026-10-14T09:57:54Z", "service": "checkout-api", "level": "ERROR", "message": "Unhandled exception in POST /api/checkout: KeyError: 'amount_cents' while parsing payments-api response (app/clients/payments.py:88 in charge) -> 500"}
+{"ts": "2026-10-14T09:58:30Z", "service": "frontend-web", "level": "INFO", "message": "GET / 200 in 171ms"}
+{"ts": "2026-10-14T09:58:32Z", "service": "checkout-api", "level": "ERROR", "message": "Unhandled exception in POST /api/checkout: KeyError: 'amount_cents' while parsing payments-api response (app/clients/payments.py:88 in charge) -> 500"}
+{"ts": "2026-10-14T09:58:54Z", "service": "frontend-web", "level": "WARN", "message": "Upstream checkout-api returned 500 for POST /api/checkout"}
+{"ts": "2026-10-14T09:58:56Z", "service": "checkout-api", "level": "ERROR", "message": "Unhandled exception in POST /api/checkout: KeyError: 'amount_cents' while parsing payments-api response (app/clients/payments.py:88 in charge) -> 500"}
+{"ts": "2026-10-14T09:59:12Z", "service": "checkout-api", "level": "ERROR", "message": "Unhandled exception in POST /api/checkout: KeyError: 'amount_cents' while parsing payments-api response (app/clients/payments.py:88 in charge) -> 500"}
+{"ts": "2026-10-14T09:59:51Z", "service": "checkout-api", "level": "ERROR", "message": "Unhandled exception in POST /api/checkout: KeyError: 'amount_cents' while parsing payments-api response (app/clients/payments.py:88 in charge) -> 500"}
+{"ts": "2026-10-14T10:00:07Z", "service": "frontend-web", "level": "WARN", "message": "Upstream checkout-api returned 500 for POST /api/checkout"}
+{"ts": "2026-10-14T10:00:18Z", "service": "checkout-api", "level": "ERROR", "message": "Unhandled exception in POST /api/checkout: KeyError: 'amount_cents' while parsing payments-api response (app/clients/payments.py:88 in charge) -> 500"}
+{"ts": "2026-10-14T10:00:45Z", "service": "payments-api", "level": "INFO", "message": "GET /v1/payments 200 in 106ms"}
+{"ts": "2026-10-14T10:00:50Z", "service": "checkout-api", "level": "ERROR", "message": "Unhandled exception in POST /api/checkout: KeyError: 'amount_cents' while parsing payments-api response (app/clients/payments.py:88 in charge) -> 500"}
+{"ts": "2026-10-14T10:01:13Z", "service": "checkout-api", "level": "ERROR", "message": "Unhandled exception in POST /api/checkout: KeyError: 'amount_cents' while parsing payments-api response (app/clients/payments.py:88 in charge) -> 500"}
+{"ts": "2026-10-14T10:01:30Z", "service": "frontend-web", "level": "WARN", "message": "Upstream checkout-api returned 500 for POST /api/checkout"}
+{"ts": "2026-10-14T10:01:46Z", "service": "checkout-api", "level": "ERROR", "message": "Unhandled exception in POST /api/checkout: KeyError: 'amount_cents' while parsing payments-api response (app/clients/payments.py:88 in charge) -> 500"}
+{"ts": "2026-10-14T10:02:24Z", "service": "frontend-web", "level": "INFO", "message": "GET / 200 in 67ms"}
+{"ts": "2026-10-14T10:02:28Z", "service": "checkout-api", "level": "ERROR", "message": "Unhandled exception in POST /api/checkout: KeyError: 'amount_cents' while parsing payments-api response (app/clients/payments.py:88 in charge) -> 500"}
+{"ts": "2026-10-14T10:02:50Z", "service": "frontend-web", "level": "WARN", "message": "Upstream checkout-api returned 500 for POST /api/checkout"}
+{"ts": "2026-10-14T10:02:58Z", "service": "checkout-api", "level": "ERROR", "message": "Unhandled exception in POST /api/checkout: KeyError: 'amount_cents' while parsing payments-api response (app/clients/payments.py:88 in charge) -> 500"}
+{"ts": "2026-10-14T10:02:59Z", "service": "checkout-api", "level": "INFO", "message": "GET /api/cart 200 in 60ms"}
+{"ts": "2026-10-14T10:03:14Z", "service": "checkout-api", "level": "ERROR", "message": "Unhandled exception in POST /api/checkout: KeyError: 'amount_cents' while parsing payments-api response (app/clients/payments.py:88 in charge) -> 500"}
+{"ts": "2026-10-14T10:03:19Z", "service": "frontend-web", "level": "WARN", "message": "Slow request GET /healthz took 17381ms"}
+{"ts": "2026-10-14T10:03:49Z", "service": "checkout-api", "level": "ERROR", "message": "Unhandled exception in POST /api/checkout: KeyError: 'amount_cents' while parsing payments-api response (app/clients/payments.py:88 in charge) -> 500"}
+{"ts": "2026-10-14T10:04:26Z", "service": "checkout-api", "level": "ERROR", "message": "Unhandled exception in POST /api/checkout: KeyError: 'amount_cents' while parsing payments-api response (app/clients/payments.py:88 in charge) -> 500"}
+{"ts": "2026-10-14T10:04:52Z", "service": "checkout-api", "level": "ERROR", "message": "Unhandled exception in POST /api/checkout: KeyError: 'amount_cents' while parsing payments-api response (app/clients/payments.py:88 in charge) -> 500"}
+{"ts": "2026-10-14T10:04:56Z", "service": "payments-api", "level": "INFO", "message": "GET /v1/payments 200 in 55ms"}
+{"ts": "2026-10-14T10:05:00Z", "service": "frontend-web", "level": "WARN", "message": "Upstream checkout-api returned 500 for POST /api/checkout"}
+{"ts": "2026-10-14T10:05:07Z", "service": "checkout-api", "level": "ERROR", "message": "Unhandled exception in POST /api/checkout: KeyError: 'amount_cents' while parsing payments-api response (app/clients/payments.py:88 in charge) -> 500"}
+{"ts": "2026-10-14T10:05:26Z", "service": "checkout-api", "level": "ERROR", "message": "Unhandled exception in POST /api/checkout: KeyError: 'amount_cents' while parsing payments-api response (app/clients/payments.py:88 in charge) -> 500"}
+{"ts": "2026-10-14T10:05:39Z", "service": "checkout-api", "level": "INFO", "message": "GET /api/cart 200 in 180ms"}
+{"ts": "2026-10-14T10:06:08Z", "service": "checkout-api", "level": "ERROR", "message": "Unhandled exception in POST /api/checkout: KeyError: 'amount_cents' while parsing payments-api response (app/clients/payments.py:88 in charge) -> 500"}
+{"ts": "2026-10-14T10:06:23Z", "service": "frontend-web", "level": "WARN", "message": "Upstream checkout-api returned 500 for POST /api/checkout"}
+{"ts": "2026-10-14T10:06:34Z", "service": "checkout-api", "level": "ERROR", "message": "Unhandled exception in POST /api/checkout: KeyError: 'amount_cents' while parsing payments-api response (app/clients/payments.py:88 in charge) -> 500"}
+{"ts": "2026-10-14T10:07:02Z", "service": "frontend-web", "level": "INFO", "message": "GET / 200 in 166ms"}
+{"ts": "2026-10-14T10:07:19Z", "service": "checkout-api", "level": "ERROR", "message": "Unhandled exception in POST /api/checkout: KeyError: 'amount_cents' while parsing payments-api response (app/clients/payments.py:88 in charge) -> 500"}
+{"ts": "2026-10-14T10:08:00Z", "service": "frontend-web", "level": "WARN", "message": "Upstream checkout-api returned 500 for POST /api/checkout"}
+{"ts": "2026-10-14T10:08:02Z", "service": "checkout-api", "level": "ERROR", "message": "Unhandled exception in POST /api/checkout: KeyError: 'amount_cents' while parsing payments-api response (app/clients/payments.py:88 in charge) -> 500"}
+{"ts": "2026-10-14T10:08:25Z", "service": "checkout-api", "level": "ERROR", "message": "Unhandled exception in POST /api/checkout: KeyError: 'amount_cents' while parsing payments-api response (app/clients/payments.py:88 in charge) -> 500"}
+{"ts": "2026-10-14T10:08:46Z", "service": "checkout-api", "level": "INFO", "message": "GET /api/cart 200 in 150ms"}
+{"ts": "2026-10-14T10:08:59Z", "service": "checkout-api", "level": "ERROR", "message": "Unhandled exception in POST /api/checkout: KeyError: 'amount_cents' while parsing payments-api response (app/clients/payments.py:88 in charge) -> 500"}
+{"ts": "2026-10-14T10:09:03Z", "service": "checkout-api", "level": "WARN", "message": "Retrying metrics push to collector (attempt 1)"}
+{"ts": "2026-10-14T10:09:43Z", "service": "checkout-api", "level": "ERROR", "message": "Unhandled exception in POST /api/checkout: KeyError: 'amount_cents' while parsing payments-api response (app/clients/payments.py:88 in charge) -> 500"}
+{"ts": "2026-10-14T10:09:54Z", "service": "frontend-web", "level": "WARN", "message": "Upstream checkout-api returned 500 for POST /api/checkout"}
+{"ts": "2026-10-14T10:10:08Z", "service": "checkout-api", "level": "ERROR", "message": "Unhandled exception in POST /api/checkout: KeyError: 'amount_cents' while parsing payments-api response (app/clients/payments.py:88 in charge) -> 500"}
+{"ts": "2026-10-14T10:10:34Z", "service": "payments-api", "level": "INFO", "message": "GET /v1/payments 200 in 157ms"}
+{"ts": "2026-10-14T10:10:44Z", "service": "frontend-web", "level": "WARN", "message": "Upstream checkout-api returned 500 for POST /api/checkout"}
+{"ts": "2026-10-14T10:10:49Z", "service": "checkout-api", "level": "ERROR", "message": "Unhandled exception in POST /api/checkout: KeyError: 'amount_cents' while parsing payments-api response (app/clients/payments.py:88 in charge) -> 500"}
+{"ts": "2026-10-14T10:11:10Z", "service": "checkout-api", "level": "ERROR", "message": "Unhandled exception in POST /api/checkout: KeyError: 'amount_cents' while parsing payments-api response (app/clients/payments.py:88 in charge) -> 500"}
+{"ts": "2026-10-14T10:11:13Z", "service": "frontend-web", "level": "INFO", "message": "GET / 200 in 169ms"}
+{"ts": "2026-10-14T10:11:37Z", "service": "frontend-web", "level": "WARN", "message": "Upstream checkout-api returned 500 for POST /api/checkout"}
+{"ts": "2026-10-14T10:11:53Z", "service": "checkout-api", "level": "ERROR", "message": "Unhandled exception in POST /api/checkout: KeyError: 'amount_cents' while parsing payments-api response (app/clients/payments.py:88 in charge) -> 500"}
+{"ts": "2026-10-14T10:12:27Z", "service": "checkout-api", "level": "ERROR", "message": "Unhandled exception in POST /api/checkout: KeyError: 'amount_cents' while parsing payments-api response (app/clients/payments.py:88 in charge) -> 500"}
+{"ts": "2026-10-14T10:12:38Z", "service": "frontend-web", "level": "WARN", "message": "Upstream checkout-api returned 500 for POST /api/checkout"}
+{"ts": "2026-10-14T10:12:57Z", "service": "checkout-api", "level": "ERROR", "message": "Unhandled exception in POST /api/checkout: KeyError: 'amount_cents' while parsing payments-api response (app/clients/payments.py:88 in charge) -> 500"}
+{"ts": "2026-10-14T10:13:26Z", "service": "checkout-api", "level": "ERROR", "message": "Unhandled exception in POST /api/checkout: KeyError: 'amount_cents' while parsing payments-api response (app/clients/payments.py:88 in charge) -> 500"}
+{"ts": "2026-10-14T10:13:37Z", "service": "frontend-web", "level": "WARN", "message": "Upstream checkout-api returned 500 for POST /api/checkout"}
+{"ts": "2026-10-14T10:13:50Z", "service": "checkout-api", "level": "ERROR", "message": "Unhandled exception in POST /api/checkout: KeyError: 'amount_cents' while parsing payments-api response (app/clients/payments.py:88 in charge) -> 500"}
+{"ts": "2026-10-14T10:14:13Z", "service": "checkout-api", "level": "INFO", "message": "GET /api/cart 200 in 146ms"}
+{"ts": "2026-10-14T10:14:17Z", "service": "payments-api", "level": "WARN", "message": "Retrying metrics push to collector (attempt 1)"}
+{"ts": "2026-10-14T10:14:24Z", "service": "checkout-api", "level": "ERROR", "message": "Unhandled exception in POST /api/checkout: KeyError: 'amount_cents' while parsing payments-api response (app/clients/payments.py:88 in charge) -> 500"}
+{"ts": "2026-10-14T10:14:26Z", "service": "frontend-web", "level": "INFO", "message": "GET / 200 in 98ms"}
+{"ts": "2026-10-14T10:14:32Z", "service": "frontend-web", "level": "WARN", "message": "Upstream checkout-api returned 500 for POST /api/checkout"}
+{"ts": "2026-10-14T10:14:56Z", "service": "checkout-api", "level": "ERROR", "message": "Unhandled exception in POST /api/checkout: KeyError: 'amount_cents' while parsing payments-api response (app/clients/payments.py:88 in charge) -> 500"}
+{"ts": "2026-10-14T10:15:13Z", "service": "payments-api", "level": "INFO", "message": "GET /v1/payments 200 in 147ms"}
+{"ts": "2026-10-14T10:15:16Z", "service": "checkout-api", "level": "ERROR", "message": "Unhandled exception in POST /api/checkout: KeyError: 'amount_cents' while parsing payments-api response (app/clients/payments.py:88 in charge) -> 500"}
+{"ts": "2026-10-14T10:15:37Z", "service": "checkout-api", "level": "ERROR", "message": "Unhandled exception in POST /api/checkout: KeyError: 'amount_cents' while parsing payments-api response (app/clients/payments.py:88 in charge) -> 500"}
+{"ts": "2026-10-14T10:15:44Z", "service": "frontend-web", "level": "WARN", "message": "Upstream checkout-api returned 500 for POST /api/checkout"}
+{"ts": "2026-10-14T10:15:59Z", "service": "checkout-api", "level": "ERROR", "message": "Unhandled exception in POST /api/checkout: KeyError: 'amount_cents' while parsing payments-api response (app/clients/payments.py:88 in charge) -> 500"}
+{"ts": "2026-10-14T10:16:27Z", "service": "checkout-api", "level": "ERROR", "message": "Unhandled exception in POST /api/checkout: KeyError: 'amount_cents' while parsing payments-api response (app/clients/payments.py:88 in charge) -> 500"}
+{"ts": "2026-10-14T10:16:49Z", "service": "checkout-api", "level": "ERROR", "message": "Unhandled exception in POST /api/checkout: KeyError: 'amount_cents' while parsing payments-api response (app/clients/payments.py:88 in charge) -> 500"}
+{"ts": "2026-10-14T10:16:57Z", "service": "frontend-web", "level": "WARN", "message": "Upstream checkout-api returned 500 for POST /api/checkout"}
+{"ts": "2026-10-14T10:17:21Z", "service": "checkout-api", "level": "ERROR", "message": "Unhandled exception in POST /api/checkout: KeyError: 'amount_cents' while parsing payments-api response (app/clients/payments.py:88 in charge) -> 500"}
+{"ts": "2026-10-14T10:17:47Z", "service": "checkout-api", "level": "ERROR", "message": "Unhandled exception in POST /api/checkout: KeyError: 'amount_cents' while parsing payments-api response (app/clients/payments.py:88 in charge) -> 500"}
+{"ts": "2026-10-14T10:17:49Z", "service": "frontend-web", "level": "INFO", "message": "GET / 200 in 143ms"}
+{"ts": "2026-10-14T10:18:24Z", "service": "checkout-api", "level": "ERROR", "message": "Unhandled exception in POST /api/checkout: KeyError: 'amount_cents' while parsing payments-api response (app/clients/payments.py:88 in charge) -> 500"}
+{"ts": "2026-10-14T10:18:52Z", "service": "checkout-api", "level": "ERROR", "message": "Unhandled exception in POST /api/checkout: KeyError: 'amount_cents' while parsing payments-api response (app/clients/payments.py:88 in charge) -> 500"}
+{"ts": "2026-10-14T10:19:04Z", "service": "frontend-web", "level": "WARN", "message": "Upstream checkout-api returned 500 for POST /api/checkout"}
+{"ts": "2026-10-14T10:19:18Z", "service": "checkout-api", "level": "ERROR", "message": "Unhandled exception in POST /api/checkout: KeyError: 'amount_cents' while parsing payments-api response (app/clients/payments.py:88 in charge) -> 500"}
+{"ts": "2026-10-14T10:19:48Z", "service": "checkout-api", "level": "ERROR", "message": "Unhandled exception in POST /api/checkout: KeyError: 'amount_cents' while parsing payments-api response (app/clients/payments.py:88 in charge) -> 500"}
+{"ts": "2026-10-14T10:20:10Z", "service": "checkout-api", "level": "INFO", "message": "GET /api/cart 200 in 99ms"}
+{"ts": "2026-10-14T10:20:23Z", "service": "checkout-api", "level": "ERROR", "message": "Unhandled exception in POST /api/checkout: KeyError: 'amount_cents' while parsing payments-api response (app/clients/payments.py:88 in charge) -> 500"}
+{"ts": "2026-10-14T10:20:32Z", "service": "payments-api", "level": "INFO", "message": "GET /v1/payments 200 in 73ms"}
+{"ts": "2026-10-14T10:20:41Z", "service": "checkout-api", "level": "ERROR", "message": "Unhandled exception in POST /api/checkout: KeyError: 'amount_cents' while parsing payments-api response (app/clients/payments.py:88 in charge) -> 500"}
+{"ts": "2026-10-14T10:20:45Z", "service": "frontend-web", "level": "WARN", "message": "Upstream checkout-api returned 500 for POST /api/checkout"}
+{"ts": "2026-10-14T10:21:08Z", "service": "checkout-api", "level": "ERROR", "message": "Unhandled exception in POST /api/checkout: KeyError: 'amount_cents' while parsing payments-api response (app/clients/payments.py:88 in charge) -> 500"}
+{"ts": "2026-10-14T10:21:46Z", "service": "frontend-web", "level": "WARN", "message": "Upstream checkout-api returned 500 for POST /api/checkout"}
+{"ts": "2026-10-14T10:21:52Z", "service": "checkout-api", "level": "ERROR", "message": "Unhandled exception in POST /api/checkout: KeyError: 'amount_cents' while parsing payments-api response (app/clients/payments.py:88 in charge) -> 500"}
+{"ts": "2026-10-14T10:22:08Z", "service": "checkout-api", "level": "ERROR", "message": "Unhandled exception in POST /api/checkout: KeyError: 'amount_cents' while parsing payments-api response (app/clients/payments.py:88 in charge) -> 500"}
+{"ts": "2026-10-14T10:22:23Z", "service": "checkout-api", "level": "ERROR", "message": "Unhandled exception in POST /api/checkout: KeyError: 'amount_cents' while parsing payments-api response (app/clients/payments.py:88 in charge) -> 500"}
+{"ts": "2026-10-14T10:22:46Z", "service": "checkout-api", "level": "INFO", "message": "GET /api/cart 200 in 78ms"}
+{"ts": "2026-10-14T10:23:04Z", "service": "checkout-api", "level": "ERROR", "message": "Unhandled exception in POST /api/checkout: KeyError: 'amount_cents' while parsing payments-api response (app/clients/payments.py:88 in charge) -> 500"}
+{"ts": "2026-10-14T10:23:07Z", "service": "frontend-web", "level": "WARN", "message": "Upstream checkout-api returned 500 for POST /api/checkout"}
+{"ts": "2026-10-14T10:23:42Z", "service": "checkout-api", "level": "ERROR", "message": "Unhandled exception in POST /api/checkout: KeyError: 'amount_cents' while parsing payments-api response (app/clients/payments.py:88 in charge) -> 500"}
+{"ts": "2026-10-14T10:23:46Z", "service": "frontend-web", "level": "INFO", "message": "GET / 200 in 73ms"}
+{"ts": "2026-10-14T10:24:02Z", "service": "checkout-api", "level": "ERROR", "message": "Unhandled exception in POST /api/checkout: KeyError: 'amount_cents' while parsing payments-api response (app/clients/payments.py:88 in charge) -> 500"}
+{"ts": "2026-10-14T10:24:19Z", "service": "checkout-api", "level": "ERROR", "message": "Unhandled exception in POST /api/checkout: KeyError: 'amount_cents' while parsing payments-api response (app/clients/payments.py:88 in charge) -> 500"}
+{"ts": "2026-10-14T10:24:27Z", "service": "frontend-web", "level": "WARN", "message": "Upstream checkout-api returned 500 for POST /api/checkout"}
+{"ts": "2026-10-14T10:24:39Z", "service": "payments-api", "level": "INFO", "message": "GET /v1/payments 200 in 170ms"}
+{"ts": "2026-10-14T10:24:58Z", "service": "checkout-api", "level": "ERROR", "message": "Unhandled exception in POST /api/checkout: KeyError: 'amount_cents' while parsing payments-api response (app/clients/payments.py:88 in charge) -> 500"}
+{"ts": "2026-10-14T10:25:32Z", "service": "checkout-api", "level": "ERROR", "message": "Unhandled exception in POST /api/checkout: KeyError: 'amount_cents' while parsing payments-api response (app/clients/payments.py:88 in charge) -> 500"}
+{"ts": "2026-10-14T10:25:34Z", "service": "frontend-web", "level": "WARN", "message": "Upstream checkout-api returned 500 for POST /api/checkout"}
+{"ts": "2026-10-14T10:25:42Z", "service": "checkout-api", "level": "INFO", "message": "GET /api/cart 200 in 43ms"}
+{"ts": "2026-10-14T10:25:50Z", "service": "frontend-web", "level": "INFO", "message": "GET / 200 in 150ms"}
+{"ts": "2026-10-14T10:26:06Z", "service": "checkout-api", "level": "ERROR", "message": "Unhandled exception in POST /api/checkout: KeyError: 'amount_cents' while parsing payments-api response (app/clients/payments.py:88 in charge) -> 500"}
+{"ts": "2026-10-14T10:26:42Z", "service": "checkout-api", "level": "ERROR", "message": "Unhandled exception in POST /api/checkout: KeyError: 'amount_cents' while parsing payments-api response (app/clients/payments.py:88 in charge) -> 500"}
+{"ts": "2026-10-14T10:26:44Z", "service": "payments-api", "level": "INFO", "message": "GET /v1/payments 200 in 86ms"}
+{"ts": "2026-10-14T10:26:59Z", "service": "checkout-api", "level": "ERROR", "message": "Unhandled exception in POST /api/checkout: KeyError: 'amount_cents' while parsing payments-api response (app/clients/payments.py:88 in charge) -> 500"}
+{"ts": "2026-10-14T10:27:25Z", "service": "checkout-api", "level": "ERROR", "message": "Unhandled exception in POST /api/checkout: KeyError: 'amount_cents' while parsing payments-api response (app/clients/payments.py:88 in charge) -> 500"}
+{"ts": "2026-10-14T10:27:38Z", "service": "frontend-web", "level": "WARN", "message": "Upstream checkout-api returned 500 for POST /api/checkout"}
+{"ts": "2026-10-14T10:27:41Z", "service": "checkout-api", "level": "ERROR", "message": "Unhandled exception in POST /api/checkout: KeyError: 'amount_cents' while parsing payments-api response (app/clients/payments.py:88 in charge) -> 500"}
+{"ts": "2026-10-14T10:28:04Z", "service": "checkout-api", "level": "ERROR", "message": "Unhandled exception in POST /api/checkout: KeyError: 'amount_cents' while parsing payments-api response (app/clients/payments.py:88 in charge) -> 500"}
+{"ts": "2026-10-14T10:28:29Z", "service": "frontend-web", "level": "INFO", "message": "GET / 200 in 137ms"}
+{"ts": "2026-10-14T10:28:33Z", "service": "checkout-api", "level": "ERROR", "message": "Unhandled exception in POST /api/checkout: KeyError: 'amount_cents' while parsing payments-api response (app/clients/payments.py:88 in charge) -> 500"}
+{"ts": "2026-10-14T10:28:34Z", "service": "frontend-web", "level": "WARN", "message": "Upstream checkout-api returned 500 for POST /api/checkout"}
+{"ts": "2026-10-14T10:28:56Z", "service": "checkout-api", "level": "ERROR", "message": "Unhandled exception in POST /api/checkout: KeyError: 'amount_cents' while parsing payments-api response (app/clients/payments.py:88 in charge) -> 500"}
+{"ts": "2026-10-14T10:29:12Z", "service": "checkout-api", "level": "ERROR", "message": "Unhandled exception in POST /api/checkout: KeyError: 'amount_cents' while parsing payments-api response (app/clients/payments.py:88 in charge) -> 500"}
+{"ts": "2026-10-14T10:29:38Z", "service": "checkout-api", "level": "INFO", "message": "GET /api/cart 200 in 107ms"}
+{"ts": "2026-10-14T10:29:54Z", "service": "checkout-api", "level": "ERROR", "message": "Unhandled exception in POST /api/checkout: KeyError: 'amount_cents' while parsing payments-api response (app/clients/payments.py:88 in charge) -> 500"}
+{"ts": "2026-10-14T10:30:17Z", "service": "checkout-api", "level": "ERROR", "message": "Unhandled exception in POST /api/checkout: KeyError: 'amount_cents' while parsing payments-api response (app/clients/payments.py:88 in charge) -> 500"}
+{"ts": "2026-10-14T10:30:35Z", "service": "frontend-web", "level": "WARN", "message": "Upstream checkout-api returned 500 for POST /api/checkout"}
+{"ts": "2026-10-14T10:30:39Z", "service": "checkout-api", "level": "ERROR", "message": "Unhandled exception in POST /api/checkout: KeyError: 'amount_cents' while parsing payments-api response (app/clients/payments.py:88 in charge) -> 500"}
+{"ts": "2026-10-14T10:31:10Z", "service": "payments-api", "level": "INFO", "message": "GET /v1/payments 200 in 84ms"}
+{"ts": "2026-10-14T10:31:15Z", "service": "checkout-api", "level": "ERROR", "message": "Unhandled exception in POST /api/checkout: KeyError: 'amount_cents' while parsing payments-api response (app/clients/payments.py:88 in charge) -> 500"}
+{"ts": "2026-10-14T10:31:36Z", "service": "checkout-api", "level": "ERROR", "message": "Unhandled exception in POST /api/checkout: KeyError: 'amount_cents' while parsing payments-api response (app/clients/payments.py:88 in charge) -> 500"}
+{"ts": "2026-10-14T10:31:48Z", "service": "frontend-web", "level": "WARN", "message": "Upstream checkout-api returned 500 for POST /api/checkout"}
+{"ts": "2026-10-14T10:31:53Z", "service": "checkout-api", "level": "ERROR", "message": "Unhandled exception in POST /api/checkout: KeyError: 'amount_cents' while parsing payments-api response (app/clients/payments.py:88 in charge) -> 500"}
+{"ts": "2026-10-14T10:32:17Z", "service": "checkout-api", "level": "ERROR", "message": "Unhandled exception in POST /api/checkout: KeyError: 'amount_cents' while parsing payments-api response (app/clients/payments.py:88 in charge) -> 500"}
+{"ts": "2026-10-14T10:32:46Z", "service": "checkout-api", "level": "INFO", "message": "GET /api/cart 200 in 147ms"}
+{"ts": "2026-10-14T10:32:46Z", "service": "checkout-api", "level": "ERROR", "message": "Unhandled exception in POST /api/checkout: KeyError: 'amount_cents' while parsing payments-api response (app/clients/payments.py:88 in charge) -> 500"}
+{"ts": "2026-10-14T10:33:05Z", "service": "checkout-api", "level": "ERROR", "message": "Unhandled exception in POST /api/checkout: KeyError: 'amount_cents' while parsing payments-api response (app/clients/payments.py:88 in charge) -> 500"}
+{"ts": "2026-10-14T10:33:08Z", "service": "frontend-web", "level": "WARN", "message": "Upstream checkout-api returned 500 for POST /api/checkout"}
+{"ts": "2026-10-14T10:33:31Z", "service": "checkout-api", "level": "WARN", "message": "Slow request GET /healthz took 13645ms"}
+{"ts": "2026-10-14T10:33:44Z", "service": "payments-api", "level": "INFO", "message": "GET /v1/payments 200 in 55ms"}
+{"ts": "2026-10-14T10:33:47Z", "service": "checkout-api", "level": "ERROR", "message": "Unhandled exception in POST /api/checkout: KeyError: 'amount_cents' while parsing payments-api response (app/clients/payments.py:88 in charge) -> 500"}
+{"ts": "2026-10-14T10:33:50Z", "service": "frontend-web", "level": "WARN", "message": "Retrying metrics push to collector (attempt 1)"}
+{"ts": "2026-10-14T10:33:58Z", "service": "frontend-web", "level": "INFO", "message": "GET / 200 in 102ms"}
+{"ts": "2026-10-14T10:34:29Z", "service": "checkout-api", "level": "ERROR", "message": "Unhandled exception in POST /api/checkout: KeyError: 'amount_cents' while parsing payments-api response (app/clients/payments.py:88 in charge) -> 500"}
+{"ts": "2026-10-14T10:34:38Z", "service": "frontend-web", "level": "WARN", "message": "Upstream checkout-api returned 500 for POST /api/checkout"}
+{"ts": "2026-10-14T10:35:11Z", "service": "checkout-api", "level": "ERROR", "message": "Unhandled exception in POST /api/checkout: KeyError: 'amount_cents' while parsing payments-api response (app/clients/payments.py:88 in charge) -> 500"}
+{"ts": "2026-10-14T10:35:24Z", "service": "frontend-web", "level": "WARN", "message": "Upstream checkout-api returned 500 for POST /api/checkout"}
+{"ts": "2026-10-14T10:35:27Z", "service": "checkout-api", "level": "ERROR", "message": "Unhandled exception in POST /api/checkout: KeyError: 'amount_cents' while parsing payments-api response (app/clients/payments.py:88 in charge) -> 500"}
+{"ts": "2026-10-14T10:35:44Z", "service": "checkout-api", "level": "ERROR", "message": "Unhandled exception in POST /api/checkout: KeyError: 'amount_cents' while parsing payments-api response (app/clients/payments.py:88 in charge) -> 500"}
+{"ts": "2026-10-14T10:36:11Z", "service": "checkout-api", "level": "ERROR", "message": "Unhandled exception in POST /api/checkout: KeyError: 'amount_cents' while parsing payments-api response (app/clients/payments.py:88 in charge) -> 500"}
+{"ts": "2026-10-14T10:36:30Z", "service": "frontend-web", "level": "WARN", "message": "Upstream checkout-api returned 500 for POST /api/checkout"}
+{"ts": "2026-10-14T10:36:54Z", "service": "checkout-api", "level": "INFO", "message": "GET /api/cart 200 in 72ms"}
+{"ts": "2026-10-14T10:36:55Z", "service": "checkout-api", "level": "ERROR", "message": "Unhandled exception in POST /api/checkout: KeyError: 'amount_cents' while parsing payments-api response (app/clients/payments.py:88 in charge) -> 500"}
+{"ts": "2026-10-14T10:37:02Z", "service": "payments-api", "level": "INFO", "message": "GET /v1/payments 200 in 175ms"}
+{"ts": "2026-10-14T10:37:16Z", "service": "checkout-api", "level": "ERROR", "message": "Unhandled exception in POST /api/checkout: KeyError: 'amount_cents' while parsing payments-api response (app/clients/payments.py:88 in charge) -> 500"}
+{"ts": "2026-10-14T10:37:32Z", "service": "checkout-api", "level": "ERROR", "message": "Unhandled exception in POST /api/checkout: KeyError: 'amount_cents' while parsing payments-api response (app/clients/payments.py:88 in charge) -> 500"}
+{"ts": "2026-10-14T10:38:17Z", "service": "checkout-api", "level": "ERROR", "message": "Unhandled exception in POST /api/checkout: KeyError: 'amount_cents' while parsing payments-api response (app/clients/payments.py:88 in charge) -> 500"}
+{"ts": "2026-10-14T10:38:28Z", "service": "frontend-web", "level": "WARN", "message": "Upstream checkout-api returned 500 for POST /api/checkout"}
+{"ts": "2026-10-14T10:38:35Z", "service": "checkout-api", "level": "ERROR", "message": "Unhandled exception in POST /api/checkout: KeyError: 'amount_cents' while parsing payments-api response (app/clients/payments.py:88 in charge) -> 500"}
+{"ts": "2026-10-14T10:38:44Z", "service": "frontend-web", "level": "INFO", "message": "GET / 200 in 157ms"}
+{"ts": "2026-10-14T10:38:52Z", "service": "checkout-api", "level": "ERROR", "message": "Unhandled exception in POST /api/checkout: KeyError: 'amount_cents' while parsing payments-api response (app/clients/payments.py:88 in charge) -> 500"}
+{"ts": "2026-10-14T10:39:19Z", "service": "frontend-web", "level": "WARN", "message": "Upstream checkout-api returned 500 for POST /api/checkout"}
+{"ts": "2026-10-14T10:39:24Z", "service": "checkout-api", "level": "ERROR", "message": "Unhandled exception in POST /api/checkout: KeyError: 'amount_cents' while parsing payments-api response (app/clients/payments.py:88 in charge) -> 500"}
+{"ts": "2026-10-14T10:39:50Z", "service": "checkout-api", "level": "ERROR", "message": "Unhandled exception in POST /api/checkout: KeyError: 'amount_cents' while parsing payments-api response (app/clients/payments.py:88 in charge) -> 500"}
+{"ts": "2026-10-14T10:40:08Z", "service": "checkout-api", "level": "ERROR", "message": "Unhandled exception in POST /api/checkout: KeyError: 'amount_cents' while parsing payments-api response (app/clients/payments.py:88 in charge) -> 500"}
+{"ts": "2026-10-14T10:40:34Z", "service": "checkout-api", "level": "ERROR", "message": "Unhandled exception in POST /api/checkout: KeyError: 'amount_cents' while parsing payments-api response (app/clients/payments.py:88 in charge) -> 500"}
+{"ts": "2026-10-14T10:40:37Z", "service": "frontend-web", "level": "WARN", "message": "Upstream checkout-api returned 500 for POST /api/checkout"}
+{"ts": "2026-10-14T10:40:58Z", "service": "checkout-api", "level": "ERROR", "message": "Unhandled exception in POST /api/checkout: KeyError: 'amount_cents' while parsing payments-api response (app/clients/payments.py:88 in charge) -> 500"}
+{"ts": "2026-10-14T10:41:15Z", "service": "payments-api", "level": "INFO", "message": "GET /v1/payments 200 in 54ms"}
+{"ts": "2026-10-14T10:41:28Z", "service": "frontend-web", "level": "INFO", "message": "GET / 200 in 154ms"}
+{"ts": "2026-10-14T10:41:32Z", "service": "checkout-api", "level": "ERROR", "message": "Unhandled exception in POST /api/checkout: KeyError: 'amount_cents' while parsing payments-api response (app/clients/payments.py:88 in charge) -> 500"}
+{"ts": "2026-10-14T10:41:40Z", "service": "checkout-api", "level": "INFO", "message": "GET /api/cart 200 in 53ms"}
+{"ts": "2026-10-14T10:41:49Z", "service": "checkout-api", "level": "ERROR", "message": "Unhandled exception in POST /api/checkout: KeyError: 'amount_cents' while parsing payments-api response (app/clients/payments.py:88 in charge) -> 500"}
+{"ts": "2026-10-14T10:42:05Z", "service": "checkout-api", "level": "ERROR", "message": "Unhandled exception in POST /api/checkout: KeyError: 'amount_cents' while parsing payments-api response (app/clients/payments.py:88 in charge) -> 500"}
+{"ts": "2026-10-14T10:42:08Z", "service": "frontend-web", "level": "WARN", "message": "Upstream checkout-api returned 500 for POST /api/checkout"}
+{"ts": "2026-10-14T10:42:26Z", "service": "checkout-api", "level": "ERROR", "message": "Unhandled exception in POST /api/checkout: KeyError: 'amount_cents' while parsing payments-api response (app/clients/payments.py:88 in charge) -> 500"}
+{"ts": "2026-10-14T10:42:52Z", "service": "checkout-api", "level": "ERROR", "message": "Unhandled exception in POST /api/checkout: KeyError: 'amount_cents' while parsing payments-api response (app/clients/payments.py:88 in charge) -> 500"}
+{"ts": "2026-10-14T10:43:15Z", "service": "checkout-api", "level": "ERROR", "message": "Unhandled exception in POST /api/checkout: KeyError: 'amount_cents' while parsing payments-api response (app/clients/payments.py:88 in charge) -> 500"}
+{"ts": "2026-10-14T10:43:29Z", "service": "frontend-web", "level": "INFO", "message": "GET / 200 in 124ms"}
+{"ts": "2026-10-14T10:43:39Z", "service": "checkout-api", "level": "ERROR", "message": "Unhandled exception in POST /api/checkout: KeyError: 'amount_cents' while parsing payments-api response (app/clients/payments.py:88 in charge) -> 500"}
+{"ts": "2026-10-14T10:43:50Z", "service": "frontend-web", "level": "WARN", "message": "Upstream checkout-api returned 500 for POST /api/checkout"}
+{"ts": "2026-10-14T10:44:15Z", "service": "payments-api", "level": "INFO", "message": "GET /v1/payments 200 in 50ms"}
+{"ts": "2026-10-14T10:44:19Z", "service": "checkout-api", "level": "ERROR", "message": "Unhandled exception in POST /api/checkout: KeyError: 'amount_cents' while parsing payments-api response (app/clients/payments.py:88 in charge) -> 500"}
+{"ts": "2026-10-14T10:44:55Z", "service": "checkout-api", "level": "ERROR", "message": "Unhandled exception in POST /api/checkout: KeyError: 'amount_cents' while parsing payments-api response (app/clients/payments.py:88 in charge) -> 500"}
+{"ts": "2026-10-14T10:45:29Z", "service": "checkout-api", "level": "INFO", "message": "GET /api/cart 200 in 141ms"}
+{"ts": "2026-10-14T10:45:34Z", "service": "checkout-api", "level": "ERROR", "message": "Unhandled exception in POST /api/checkout: KeyError: 'amount_cents' while parsing payments-api response (app/clients/payments.py:88 in charge) -> 500"}
+{"ts": "2026-10-14T10:45:45Z", "service": "frontend-web", "level": "WARN", "message": "Upstream checkout-api returned 500 for POST /api/checkout"}
+{"ts": "2026-10-14T10:45:53Z", "service": "checkout-api", "level": "ERROR", "message": "Unhandled exception in POST /api/checkout: KeyError: 'amount_cents' while parsing payments-api response (app/clients/payments.py:88 in charge) -> 500"}
+{"ts": "2026-10-14T10:46:08Z", "service": "checkout-api", "level": "ERROR", "message": "Unhandled exception in POST /api/checkout: KeyError: 'amount_cents' while parsing payments-api response (app/clients/payments.py:88 in charge) -> 500"}
+{"ts": "2026-10-14T10:46:23Z", "service": "payments-api", "level": "WARN", "message": "Slow request GET /healthz took 13530ms"}
+{"ts": "2026-10-14T10:46:35Z", "service": "frontend-web", "level": "WARN", "message": "Upstream checkout-api returned 500 for POST /api/checkout"}
+{"ts": "2026-10-14T10:46:36Z", "service": "checkout-api", "level": "WARN", "message": "Retrying metrics push to collector (attempt 1)"}
+{"ts": "2026-10-14T10:46:41Z", "service": "checkout-api", "level": "ERROR", "message": "Unhandled exception in POST /api/checkout: KeyError: 'amount_cents' while parsing payments-api response (app/clients/payments.py:88 in charge) -> 500"}
+{"ts": "2026-10-14T10:47:10Z", "service": "checkout-api", "level": "ERROR", "message": "Unhandled exception in POST /api/checkout: KeyError: 'amount_cents' while parsing payments-api response (app/clients/payments.py:88 in charge) -> 500"}
+{"ts": "2026-10-14T10:47:31Z", "service": "checkout-api", "level": "ERROR", "message": "Unhandled exception in POST /api/checkout: KeyError: 'amount_cents' while parsing payments-api response (app/clients/payments.py:88 in charge) -> 500"}
+{"ts": "2026-10-14T10:47:58Z", "service": "checkout-api", "level": "ERROR", "message": "Unhandled exception in POST /api/checkout: KeyError: 'amount_cents' while parsing payments-api response (app/clients/payments.py:88 in charge) -> 500"}
+{"ts": "2026-10-14T10:48:19Z", "service": "frontend-web", "level": "WARN", "message": "Upstream checkout-api returned 500 for POST /api/checkout"}
+{"ts": "2026-10-14T10:48:30Z", "service": "checkout-api", "level": "ERROR", "message": "Unhandled exception in POST /api/checkout: KeyError: 'amount_cents' while parsing payments-api response (app/clients/payments.py:88 in charge) -> 500"}
+{"ts": "2026-10-14T10:49:05Z", "service": "checkout-api", "level": "INFO", "message": "GET /api/cart 200 in 163ms"}
+{"ts": "2026-10-14T10:49:14Z", "service": "checkout-api", "level": "ERROR", "message": "Unhandled exception in POST /api/checkout: KeyError: 'amount_cents' while parsing payments-api response (app/clients/payments.py:88 in charge) -> 500"}
+{"ts": "2026-10-14T10:49:20Z", "service": "payments-api", "level": "INFO", "message": "GET /v1/payments 200 in 155ms"}
+{"ts": "2026-10-14T10:49:23Z", "service": "frontend-web", "level": "INFO", "message": "GET / 200 in 122ms"}
+{"ts": "2026-10-14T10:49:37Z", "service": "checkout-api", "level": "ERROR", "message": "Unhandled exception in POST /api/checkout: KeyError: 'amount_cents' while parsing payments-api response (app/clients/payments.py:88 in charge) -> 500"}
+{"ts": "2026-10-14T10:49:55Z", "service": "checkout-api", "level": "ERROR", "message": "Unhandled exception in POST /api/checkout: KeyError: 'amount_cents' while parsing payments-api response (app/clients/payments.py:88 in charge) -> 500"}
+{"ts": "2026-10-14T10:50:15Z", "service": "checkout-api", "level": "ERROR", "message": "Unhandled exception in POST /api/checkout: KeyError: 'amount_cents' while parsing payments-api response (app/clients/payments.py:88 in charge) -> 500"}
+{"ts": "2026-10-14T10:50:21Z", "service": "frontend-web", "level": "WARN", "message": "Upstream checkout-api returned 500 for POST /api/checkout"}
+{"ts": "2026-10-14T10:50:44Z", "service": "checkout-api", "level": "ERROR", "message": "Unhandled exception in POST /api/checkout: KeyError: 'amount_cents' while parsing payments-api response (app/clients/payments.py:88 in charge) -> 500"}
+{"ts": "2026-10-14T10:51:18Z", "service": "frontend-web", "level": "WARN", "message": "Upstream checkout-api returned 500 for POST /api/checkout"}
+{"ts": "2026-10-14T10:51:25Z", "service": "checkout-api", "level": "ERROR", "message": "Unhandled exception in POST /api/checkout: KeyError: 'amount_cents' while parsing payments-api response (app/clients/payments.py:88 in charge) -> 500"}
+{"ts": "2026-10-14T10:51:48Z", "service": "checkout-api", "level": "ERROR", "message": "Unhandled exception in POST /api/checkout: KeyError: 'amount_cents' while parsing payments-api response (app/clients/payments.py:88 in charge) -> 500"}
+{"ts": "2026-10-14T10:52:11Z", "service": "checkout-api", "level": "ERROR", "message": "Unhandled exception in POST /api/checkout: KeyError: 'amount_cents' while parsing payments-api response (app/clients/payments.py:88 in charge) -> 500"}
+{"ts": "2026-10-14T10:52:21Z", "service": "frontend-web", "level": "INFO", "message": "GET / 200 in 95ms"}
+{"ts": "2026-10-14T10:52:39Z", "service": "checkout-api", "level": "ERROR", "message": "Unhandled exception in POST /api/checkout: KeyError: 'amount_cents' while parsing payments-api response (app/clients/payments.py:88 in charge) -> 500"}
+{"ts": "2026-10-14T10:53:01Z", "service": "checkout-api", "level": "ERROR", "message": "Unhandled exception in POST /api/checkout: KeyError: 'amount_cents' while parsing payments-api response (app/clients/payments.py:88 in charge) -> 500"}
+{"ts": "2026-10-14T10:53:26Z", "service": "frontend-web", "level": "WARN", "message": "Slow request GET /healthz took 13371ms"}
+{"ts": "2026-10-14T10:53:26Z", "service": "checkout-api", "level": "ERROR", "message": "Unhandled exception in POST /api/checkout: KeyError: 'amount_cents' while parsing payments-api response (app/clients/payments.py:88 in charge) -> 500"}
+{"ts": "2026-10-14T10:53:29Z", "service": "frontend-web", "level": "WARN", "message": "Upstream checkout-api returned 500 for POST /api/checkout"}
+{"ts": "2026-10-14T10:53:35Z", "service": "payments-api", "level": "INFO", "message": "GET /v1/payments 200 in 153ms"}
+{"ts": "2026-10-14T10:53:37Z", "service": "checkout-api", "level": "INFO", "message": "GET /api/cart 200 in 88ms"}
+{"ts": "2026-10-14T10:54:11Z", "service": "checkout-api", "level": "ERROR", "message": "Unhandled exception in POST /api/checkout: KeyError: 'amount_cents' while parsing payments-api response (app/clients/payments.py:88 in charge) -> 500"}
+{"ts": "2026-10-14T10:54:20Z", "service": "frontend-web", "level": "WARN", "message": "Upstream checkout-api returned 500 for POST /api/checkout"}
+{"ts": "2026-10-14T10:54:33Z", "service": "checkout-api", "level": "ERROR", "message": "Unhandled exception in POST /api/checkout: KeyError: 'amount_cents' while parsing payments-api response (app/clients/payments.py:88 in charge) -> 500"}
+{"ts": "2026-10-14T10:55:18Z", "service": "checkout-api", "level": "ERROR", "message": "Unhandled exception in POST /api/checkout: KeyError: 'amount_cents' while parsing payments-api response (app/clients/payments.py:88 in charge) -> 500"}
+{"ts": "2026-10-14T10:55:19Z", "service": "frontend-web", "level": "WARN", "message": "Upstream checkout-api returned 500 for POST /api/checkout"}
+{"ts": "2026-10-14T10:55:47Z", "service": "frontend-web", "level": "INFO", "message": "GET / 200 in 125ms"}
+{"ts": "2026-10-14T10:55:47Z", "service": "checkout-api", "level": "ERROR", "message": "Unhandled exception in POST /api/checkout: KeyError: 'amount_cents' while parsing payments-api response (app/clients/payments.py:88 in charge) -> 500"}
+{"ts": "2026-10-14T10:55:54Z", "service": "checkout-api", "level": "INFO", "message": "GET /api/cart 200 in 152ms"}
+{"ts": "2026-10-14T10:56:17Z", "service": "frontend-web", "level": "WARN", "message": "Upstream checkout-api returned 500 for POST /api/checkout"}
+{"ts": "2026-10-14T10:56:29Z", "service": "checkout-api", "level": "ERROR", "message": "Unhandled exception in POST /api/checkout: KeyError: 'amount_cents' while parsing payments-api response (app/clients/payments.py:88 in charge) -> 500"}
+{"ts": "2026-10-14T10:56:51Z", "service": "checkout-api", "level": "ERROR", "message": "Unhandled exception in POST /api/checkout: KeyError: 'amount_cents' while parsing payments-api response (app/clients/payments.py:88 in charge) -> 500"}
+{"ts": "2026-10-14T10:56:53Z", "service": "payments-api", "level": "INFO", "message": "GET /v1/payments 200 in 171ms"}
+{"ts": "2026-10-14T10:57:21Z", "service": "frontend-web", "level": "WARN", "message": "Upstream checkout-api returned 500 for POST /api/checkout"}
+{"ts": "2026-10-14T10:57:24Z", "service": "checkout-api", "level": "ERROR", "message": "Unhandled exception in POST /api/checkout: KeyError: 'amount_cents' while parsing payments-api response (app/clients/payments.py:88 in charge) -> 500"}
+{"ts": "2026-10-14T10:57:50Z", "service": "checkout-api", "level": "ERROR", "message": "Unhandled exception in POST /api/checkout: KeyError: 'amount_cents' while parsing payments-api response (app/clients/payments.py:88 in charge) -> 500"}
+{"ts": "2026-10-14T10:58:23Z", "service": "checkout-api", "level": "ERROR", "message": "Unhandled exception in POST /api/checkout: KeyError: 'amount_cents' while parsing payments-api response (app/clients/payments.py:88 in charge) -> 500"}
+{"ts": "2026-10-14T10:58:27Z", "service": "frontend-web", "level": "WARN", "message": "Upstream checkout-api returned 500 for POST /api/checkout"}
+{"ts": "2026-10-14T10:58:33Z", "service": "checkout-api", "level": "INFO", "message": "GET /api/cart 200 in 53ms"}
+{"ts": "2026-10-14T10:58:58Z", "service": "checkout-api", "level": "ERROR", "message": "Unhandled exception in POST /api/checkout: KeyError: 'amount_cents' while parsing payments-api response (app/clients/payments.py:88 in charge) -> 500"}
+{"ts": "2026-10-14T10:59:14Z", "service": "checkout-api", "level": "ERROR", "message": "Unhandled exception in POST /api/checkout: KeyError: 'amount_cents' while parsing payments-api response (app/clients/payments.py:88 in charge) -> 500"}
+{"ts": "2026-10-14T10:59:19Z", "service": "frontend-web", "level": "INFO", "message": "GET / 200 in 111ms"}
+{"ts": "2026-10-14T10:59:30Z", "service": "checkout-api", "level": "ERROR", "message": "Unhandled exception in POST /api/checkout: KeyError: 'amount_cents' while parsing payments-api response (app/clients/payments.py:88 in charge) -> 500"}
+{"ts": "2026-10-14T10:59:30Z", "service": "frontend-web", "level": "WARN", "message": "Upstream checkout-api returned 500 for POST /api/checkout"}
+{"ts": "2026-10-14T10:59:41Z", "service": "payments-api", "level": "INFO", "message": "GET /v1/payments 200 in 155ms"}

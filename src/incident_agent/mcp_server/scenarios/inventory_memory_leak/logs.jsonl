@@ -1,0 +1,143 @@
+{"ts": "2026-10-14T08:00:00Z", "service": "inventory-service", "level": "INFO", "message": "GET /stock 200 in 78ms"}
+{"ts": "2026-10-14T08:00:00Z", "service": "inventory-service", "level": "WARN", "message": "Slow request GET /healthz took 13478ms"}
+{"ts": "2026-10-14T08:00:00Z", "service": "orders-api", "level": "INFO", "message": "GET /orders 200 in 46ms"}
+{"ts": "2026-10-14T08:00:00Z", "service": "orders-api", "level": "WARN", "message": "Slow request GET /healthz took 18832ms"}
+{"ts": "2026-10-14T08:00:00Z", "service": "orders-api", "level": "WARN", "message": "inventory-service connection refused during restart; retried successfully"}
+{"ts": "2026-10-14T08:03:34Z", "service": "inventory-service", "level": "INFO", "message": "GET /stock 200 in 58ms"}
+{"ts": "2026-10-14T08:05:01Z", "service": "orders-api", "level": "INFO", "message": "GET /orders 200 in 63ms"}
+{"ts": "2026-10-14T08:07:11Z", "service": "orders-api", "level": "WARN", "message": "inventory-service connection refused during restart; retried successfully"}
+{"ts": "2026-10-14T08:08:51Z", "service": "inventory-service", "level": "INFO", "message": "GET /stock 200 in 133ms"}
+{"ts": "2026-10-14T08:09:49Z", "service": "orders-api", "level": "INFO", "message": "GET /orders 200 in 172ms"}
+{"ts": "2026-10-14T08:12:00Z", "service": "inventory-service", "level": "ERROR", "message": "Container inventory-service terminated: OOMKilled (exit code 137), memory limit 1024Mi"}
+{"ts": "2026-10-14T08:12:05Z", "service": "inventory-service", "level": "WARN", "message": "Back-off restarting failed container inventory-service (CrashLoopBackOff)"}
+{"ts": "2026-10-14T08:12:30Z", "service": "inventory-service", "level": "INFO", "message": "SKU cache warmed: 0 entries (max: unbounded)"}
+{"ts": "2026-10-14T08:13:11Z", "service": "inventory-service", "level": "INFO", "message": "GET /stock 200 in 94ms"}
+{"ts": "2026-10-14T08:13:17Z", "service": "orders-api", "level": "INFO", "message": "GET /orders 200 in 131ms"}
+{"ts": "2026-10-14T08:15:02Z", "service": "inventory-service", "level": "WARN", "message": "Retrying metrics push to collector (attempt 1)"}
+{"ts": "2026-10-14T08:15:20Z", "service": "inventory-service", "level": "INFO", "message": "GET /stock 200 in 147ms"}
+{"ts": "2026-10-14T08:17:37Z", "service": "inventory-service", "level": "INFO", "message": "GET /stock 200 in 148ms"}
+{"ts": "2026-10-14T08:18:22Z", "service": "orders-api", "level": "INFO", "message": "GET /orders 200 in 178ms"}
+{"ts": "2026-10-14T08:19:51Z", "service": "inventory-service", "level": "INFO", "message": "GET /stock 200 in 97ms"}
+{"ts": "2026-10-14T08:21:02Z", "service": "orders-api", "level": "WARN", "message": "inventory-service connection refused during restart; retried successfully"}
+{"ts": "2026-10-14T08:23:29Z", "service": "orders-api", "level": "INFO", "message": "GET /orders 200 in 97ms"}
+{"ts": "2026-10-14T08:24:23Z", "service": "inventory-service", "level": "INFO", "message": "GET /stock 200 in 141ms"}
+{"ts": "2026-10-14T08:26:34Z", "service": "inventory-service", "level": "INFO", "message": "GET /stock 200 in 51ms"}
+{"ts": "2026-10-14T08:27:39Z", "service": "orders-api", "level": "WARN", "message": "inventory-service connection refused during restart; retried successfully"}
+{"ts": "2026-10-14T08:27:56Z", "service": "orders-api", "level": "INFO", "message": "GET /orders 200 in 101ms"}
+{"ts": "2026-10-14T08:29:17Z", "service": "inventory-service", "level": "WARN", "message": "Slow request GET /healthz took 14407ms"}
+{"ts": "2026-10-14T08:30:48Z", "service": "inventory-service", "level": "INFO", "message": "GET /stock 200 in 114ms"}
+{"ts": "2026-10-14T08:33:12Z", "service": "orders-api", "level": "INFO", "message": "GET /orders 200 in 91ms"}
+{"ts": "2026-10-14T08:34:29Z", "service": "inventory-service", "level": "INFO", "message": "GET /stock 200 in 70ms"}
+{"ts": "2026-10-14T08:36:02Z", "service": "orders-api", "level": "WARN", "message": "Retrying metrics push to collector (attempt 1)"}
+{"ts": "2026-10-14T08:36:41Z", "service": "orders-api", "level": "WARN", "message": "inventory-service connection refused during restart; retried successfully"}
+{"ts": "2026-10-14T08:37:17Z", "service": "orders-api", "level": "INFO", "message": "GET /orders 200 in 47ms"}
+{"ts": "2026-10-14T08:38:46Z", "service": "inventory-service", "level": "INFO", "message": "GET /stock 200 in 66ms"}
+{"ts": "2026-10-14T08:43:05Z", "service": "inventory-service", "level": "INFO", "message": "GET /stock 200 in 135ms"}
+{"ts": "2026-10-14T08:43:14Z", "service": "orders-api", "level": "INFO", "message": "GET /orders 200 in 160ms"}
+{"ts": "2026-10-14T08:45:15Z", "service": "orders-api", "level": "WARN", "message": "inventory-service connection refused during restart; retried successfully"}
+{"ts": "2026-10-14T08:45:29Z", "service": "inventory-service", "level": "INFO", "message": "GET /stock 200 in 55ms"}
+{"ts": "2026-10-14T08:45:30Z", "service": "inventory-service", "level": "WARN", "message": "Retrying metrics push to collector (attempt 1)"}
+{"ts": "2026-10-14T08:46:16Z", "service": "orders-api", "level": "INFO", "message": "GET /orders 200 in 154ms"}
+{"ts": "2026-10-14T08:49:57Z", "service": "inventory-service", "level": "INFO", "message": "GET /stock 200 in 176ms"}
+{"ts": "2026-10-14T08:50:27Z", "service": "orders-api", "level": "WARN", "message": "inventory-service connection refused during restart; retried successfully"}
+{"ts": "2026-10-14T08:51:30Z", "service": "orders-api", "level": "INFO", "message": "GET /orders 200 in 133ms"}
+{"ts": "2026-10-14T08:53:40Z", "service": "inventory-service", "level": "INFO", "message": "GET /stock 200 in 159ms"}
+{"ts": "2026-10-14T08:53:50Z", "service": "orders-api", "level": "INFO", "message": "GET /orders 200 in 98ms"}
+{"ts": "2026-10-14T08:57:00Z", "service": "inventory-service", "level": "ERROR", "message": "Container inventory-service terminated: OOMKilled (exit code 137), memory limit 1024Mi"}
+{"ts": "2026-10-14T08:57:05Z", "service": "inventory-service", "level": "WARN", "message": "Back-off restarting failed container inventory-service (CrashLoopBackOff)"}
+{"ts": "2026-10-14T08:57:30Z", "service": "inventory-service", "level": "INFO", "message": "SKU cache warmed: 0 entries (max: unbounded)"}
+{"ts": "2026-10-14T08:57:43Z", "service": "orders-api", "level": "INFO", "message": "GET /orders 200 in 92ms"}
+{"ts": "2026-10-14T08:58:00Z", "service": "inventory-service", "level": "INFO", "message": "GET /stock 200 in 132ms"}
+{"ts": "2026-10-14T09:01:12Z", "service": "inventory-service", "level": "INFO", "message": "GET /stock 200 in 102ms"}
+{"ts": "2026-10-14T09:01:38Z", "service": "orders-api", "level": "INFO", "message": "GET /orders 200 in 162ms"}
+{"ts": "2026-10-14T09:02:29Z", "service": "orders-api", "level": "WARN", "message": "inventory-service connection refused during restart; retried successfully"}
+{"ts": "2026-10-14T09:03:32Z", "service": "inventory-service", "level": "INFO", "message": "GET /stock 200 in 174ms"}
+{"ts": "2026-10-14T09:07:17Z", "service": "orders-api", "level": "INFO", "message": "GET /orders 200 in 61ms"}
+{"ts": "2026-10-14T09:07:31Z", "service": "inventory-service", "level": "INFO", "message": "GET /stock 200 in 154ms"}
+{"ts": "2026-10-14T09:10:40Z", "service": "inventory-service", "level": "INFO", "message": "GET /stock 200 in 70ms"}
+{"ts": "2026-10-14T09:11:36Z", "service": "orders-api", "level": "WARN", "message": "Slow request GET /healthz took 14319ms"}
+{"ts": "2026-10-14T09:12:37Z", "service": "orders-api", "level": "INFO", "message": "GET /orders 200 in 139ms"}
+{"ts": "2026-10-14T09:12:39Z", "service": "orders-api", "level": "WARN", "message": "inventory-service connection refused during restart; retried successfully"}
+{"ts": "2026-10-14T09:13:03Z", "service": "inventory-service", "level": "WARN", "message": "Slow request GET /healthz took 18768ms"}
+{"ts": "2026-10-14T09:14:43Z", "service": "inventory-service", "level": "INFO", "message": "GET /stock 200 in 127ms"}
+{"ts": "2026-10-14T09:17:19Z", "service": "inventory-service", "level": "INFO", "message": "GET /stock 200 in 147ms"}
+{"ts": "2026-10-14T09:17:45Z", "service": "orders-api", "level": "INFO", "message": "GET /orders 200 in 162ms"}
+{"ts": "2026-10-14T09:19:29Z", "service": "inventory-service", "level": "INFO", "message": "GET /stock 200 in 120ms"}
+{"ts": "2026-10-14T09:22:50Z", "service": "inventory-service", "level": "INFO", "message": "GET /stock 200 in 167ms"}
+{"ts": "2026-10-14T09:23:18Z", "service": "orders-api", "level": "INFO", "message": "GET /orders 200 in 125ms"}
+{"ts": "2026-10-14T09:25:39Z", "service": "orders-api", "level": "INFO", "message": "GET /orders 200 in 158ms"}
+{"ts": "2026-10-14T09:27:09Z", "service": "inventory-service", "level": "INFO", "message": "GET /stock 200 in 57ms"}
+{"ts": "2026-10-14T09:27:16Z", "service": "orders-api", "level": "WARN", "message": "inventory-service connection refused during restart; retried successfully"}
+{"ts": "2026-10-14T09:27:32Z", "service": "orders-api", "level": "WARN", "message": "Retrying metrics push to collector (attempt 1)"}
+{"ts": "2026-10-14T09:28:26Z", "service": "inventory-service", "level": "WARN", "message": "Retrying metrics push to collector (attempt 1)"}
+{"ts": "2026-10-14T09:29:15Z", "service": "orders-api", "level": "INFO", "message": "GET /orders 200 in 80ms"}
+{"ts": "2026-10-14T09:31:56Z", "service": "orders-api", "level": "INFO", "message": "GET /orders 200 in 47ms"}
+{"ts": "2026-10-14T09:32:31Z", "service": "inventory-service", "level": "INFO", "message": "GET /stock 200 in 161ms"}
+{"ts": "2026-10-14T09:34:32Z", "service": "orders-api", "level": "INFO", "message": "GET /orders 200 in 77ms"}
+{"ts": "2026-10-14T09:37:18Z", "service": "inventory-service", "level": "INFO", "message": "GET /stock 200 in 55ms"}
+{"ts": "2026-10-14T09:38:59Z", "service": "orders-api", "level": "INFO", "message": "GET /orders 200 in 129ms"}
+{"ts": "2026-10-14T09:41:36Z", "service": "orders-api", "level": "INFO", "message": "GET /orders 200 in 73ms"}
+{"ts": "2026-10-14T09:41:59Z", "service": "orders-api", "level": "WARN", "message": "inventory-service connection refused during restart; retried successfully"}
+{"ts": "2026-10-14T09:42:00Z", "service": "inventory-service", "level": "ERROR", "message": "Container inventory-service terminated: OOMKilled (exit code 137), memory limit 1024Mi"}
+{"ts": "2026-10-14T09:42:05Z", "service": "inventory-service", "level": "WARN", "message": "Back-off restarting failed container inventory-service (CrashLoopBackOff)"}
+{"ts": "2026-10-14T09:42:14Z", "service": "inventory-service", "level": "INFO", "message": "GET /stock 200 in 154ms"}
+{"ts": "2026-10-14T09:42:30Z", "service": "inventory-service", "level": "INFO", "message": "SKU cache warmed: 0 entries (max: unbounded)"}
+{"ts": "2026-10-14T09:43:42Z", "service": "orders-api", "level": "INFO", "message": "GET /orders 200 in 174ms"}
+{"ts": "2026-10-14T09:45:22Z", "service": "inventory-service", "level": "INFO", "message": "GET /stock 200 in 128ms"}
+{"ts": "2026-10-14T09:47:27Z", "service": "inventory-service", "level": "INFO", "message": "GET /stock 200 in 130ms"}
+{"ts": "2026-10-14T09:48:41Z", "service": "orders-api", "level": "INFO", "message": "GET /orders 200 in 151ms"}
+{"ts": "2026-10-14T09:49:38Z", "service": "orders-api", "level": "WARN", "message": "inventory-service connection refused during restart; retried successfully"}
+{"ts": "2026-10-14T09:50:08Z", "service": "inventory-service", "level": "INFO", "message": "GET /stock 200 in 166ms"}
+{"ts": "2026-10-14T09:51:05Z", "service": "orders-api", "level": "WARN", "message": "Slow request GET /healthz took 12188ms"}
+{"ts": "2026-10-14T09:52:22Z", "service": "inventory-service", "level": "INFO", "message": "GET /stock 200 in 73ms"}
+{"ts": "2026-10-14T09:52:57Z", "service": "inventory-service", "level": "WARN", "message": "Slow request GET /healthz took 16109ms"}
+{"ts": "2026-10-14T09:54:38Z", "service": "orders-api", "level": "INFO", "message": "GET /orders 200 in 94ms"}
+{"ts": "2026-10-14T09:55:00Z", "service": "inventory-service", "level": "INFO", "message": "Starting inventory-service v3.1.1 (pid 1)"}
+{"ts": "2026-10-14T09:56:45Z", "service": "orders-api", "level": "INFO", "message": "GET /orders 200 in 114ms"}
+{"ts": "2026-10-14T09:57:19Z", "service": "inventory-service", "level": "INFO", "message": "GET /stock 200 in 140ms"}
+{"ts": "2026-10-14T09:57:20Z", "service": "orders-api", "level": "WARN", "message": "inventory-service connection refused during restart; retried successfully"}
+{"ts": "2026-10-14T10:00:45Z", "service": "orders-api", "level": "INFO", "message": "GET /orders 200 in 106ms"}
+{"ts": "2026-10-14T10:02:59Z", "service": "inventory-service", "level": "INFO", "message": "GET /stock 200 in 60ms"}
+{"ts": "2026-10-14T10:04:56Z", "service": "orders-api", "level": "INFO", "message": "GET /orders 200 in 55ms"}
+{"ts": "2026-10-14T10:05:39Z", "service": "inventory-service", "level": "INFO", "message": "GET /stock 200 in 180ms"}
+{"ts": "2026-10-14T10:08:46Z", "service": "inventory-service", "level": "INFO", "message": "GET /stock 200 in 150ms"}
+{"ts": "2026-10-14T10:09:03Z", "service": "inventory-service", "level": "WARN", "message": "Retrying metrics push to collector (attempt 1)"}
+{"ts": "2026-10-14T10:10:34Z", "service": "orders-api", "level": "INFO", "message": "GET /orders 200 in 157ms"}
+{"ts": "2026-10-14T10:10:50Z", "service": "orders-api", "level": "WARN", "message": "inventory-service connection refused during restart; retried successfully"}
+{"ts": "2026-10-14T10:14:13Z", "service": "inventory-service", "level": "INFO", "message": "GET /stock 200 in 146ms"}
+{"ts": "2026-10-14T10:14:17Z", "service": "orders-api", "level": "WARN", "message": "Retrying metrics push to collector (attempt 1)"}
+{"ts": "2026-10-14T10:15:13Z", "service": "orders-api", "level": "INFO", "message": "GET /orders 200 in 147ms"}
+{"ts": "2026-10-14T10:17:20Z", "service": "orders-api", "level": "WARN", "message": "inventory-service connection refused during restart; retried successfully"}
+{"ts": "2026-10-14T10:20:10Z", "service": "inventory-service", "level": "INFO", "message": "GET /stock 200 in 99ms"}
+{"ts": "2026-10-14T10:20:32Z", "service": "orders-api", "level": "INFO", "message": "GET /orders 200 in 73ms"}
+{"ts": "2026-10-14T10:22:46Z", "service": "inventory-service", "level": "INFO", "message": "GET /stock 200 in 78ms"}
+{"ts": "2026-10-14T10:24:39Z", "service": "orders-api", "level": "INFO", "message": "GET /orders 200 in 170ms"}
+{"ts": "2026-10-14T10:25:42Z", "service": "inventory-service", "level": "INFO", "message": "GET /stock 200 in 43ms"}
+{"ts": "2026-10-14T10:26:44Z", "service": "orders-api", "level": "INFO", "message": "GET /orders 200 in 86ms"}
+{"ts": "2026-10-14T10:27:00Z", "service": "inventory-service", "level": "ERROR", "message": "Container inventory-service terminated: OOMKilled (exit code 137), memory limit 1024Mi"}
+{"ts": "2026-10-14T10:27:05Z", "service": "inventory-service", "level": "WARN", "message": "Back-off restarting failed container inventory-service (CrashLoopBackOff)"}
+{"ts": "2026-10-14T10:27:30Z", "service": "inventory-service", "level": "INFO", "message": "SKU cache warmed: 0 entries (max: unbounded)"}
+{"ts": "2026-10-14T10:29:20Z", "service": "orders-api", "level": "WARN", "message": "inventory-service connection refused during restart; retried successfully"}
+{"ts": "2026-10-14T10:29:38Z", "service": "inventory-service", "level": "INFO", "message": "GET /stock 200 in 107ms"}
+{"ts": "2026-10-14T10:31:10Z", "service": "orders-api", "level": "INFO", "message": "GET /orders 200 in 84ms"}
+{"ts": "2026-10-14T10:32:46Z", "service": "inventory-service", "level": "INFO", "message": "GET /stock 200 in 147ms"}
+{"ts": "2026-10-14T10:33:31Z", "service": "inventory-service", "level": "WARN", "message": "Slow request GET /healthz took 13645ms"}
+{"ts": "2026-10-14T10:33:44Z", "service": "orders-api", "level": "INFO", "message": "GET /orders 200 in 55ms"}
+{"ts": "2026-10-14T10:34:55Z", "service": "orders-api", "level": "WARN", "message": "inventory-service connection refused during restart; retried successfully"}
+{"ts": "2026-10-14T10:36:54Z", "service": "inventory-service", "level": "INFO", "message": "GET /stock 200 in 72ms"}
+{"ts": "2026-10-14T10:37:02Z", "service": "orders-api", "level": "INFO", "message": "GET /orders 200 in 175ms"}
+{"ts": "2026-10-14T10:41:15Z", "service": "orders-api", "level": "INFO", "message": "GET /orders 200 in 54ms"}
+{"ts": "2026-10-14T10:41:40Z", "service": "inventory-service", "level": "INFO", "message": "GET /stock 200 in 53ms"}
+{"ts": "2026-10-14T10:44:15Z", "service": "orders-api", "level": "INFO", "message": "GET /orders 200 in 50ms"}
+{"ts": "2026-10-14T10:45:29Z", "service": "inventory-service", "level": "INFO", "message": "GET /stock 200 in 141ms"}
+{"ts": "2026-10-14T10:46:23Z", "service": "orders-api", "level": "WARN", "message": "Slow request GET /healthz took 13530ms"}
+{"ts": "2026-10-14T10:46:36Z", "service": "inventory-service", "level": "WARN", "message": "Retrying metrics push to collector (attempt 1)"}
+{"ts": "2026-10-14T10:48:52Z", "service": "orders-api", "level": "WARN", "message": "inventory-service connection refused during restart; retried successfully"}
+{"ts": "2026-10-14T10:49:05Z", "service": "inventory-service", "level": "INFO", "message": "GET /stock 200 in 163ms"}
+{"ts": "2026-10-14T10:49:20Z", "service": "orders-api", "level": "INFO", "message": "GET /orders 200 in 155ms"}
+{"ts": "2026-10-14T10:53:35Z", "service": "orders-api", "level": "INFO", "message": "GET /orders 200 in 153ms"}
+{"ts": "2026-10-14T10:53:37Z", "service": "inventory-service", "level": "INFO", "message": "GET /stock 200 in 88ms"}
+{"ts": "2026-10-14T10:55:54Z", "service": "inventory-service", "level": "INFO", "message": "GET /stock 200 in 152ms"}
+{"ts": "2026-10-14T10:56:53Z", "service": "orders-api", "level": "INFO", "message": "GET /orders 200 in 171ms"}
+{"ts": "2026-10-14T10:58:33Z", "service": "inventory-service", "level": "INFO", "message": "GET /stock 200 in 53ms"}
+{"ts": "2026-10-14T10:59:41Z", "service": "orders-api", "level": "INFO", "message": "GET /orders 200 in 155ms"}

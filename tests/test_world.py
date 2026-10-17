@@ -12,7 +12,7 @@ def test_all_scenarios_load_and_have_ground_truth():
     import json
 
     names = available_scenarios()
-    assert len(names) == 7
+    assert len(names) == 10
     for name in names:
         w = World.load(name)
         assert w.incident and w.logs and w.deployments and w.docs

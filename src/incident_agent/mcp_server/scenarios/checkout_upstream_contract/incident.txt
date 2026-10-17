@@ -1,0 +1,1 @@
+checkout-api has been returning HTTP 500s on checkout since around 09:50. We have not deployed checkout-api this week. What changed?
